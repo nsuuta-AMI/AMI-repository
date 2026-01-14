@@ -1,0 +1,20 @@
+describe('Test partner account page', () => {
+    it('add a accountability partnert', () => {
+        cy.visit('https://account.africanmanagers.org/ami_auth/login')
+        cy.get('input[name="user[login]"]').type('stella@muraho.tech')
+        cy.get('input[name="user[password]"]').type('AMI123456')
+        cy.get('button[type="submit"]').click()
+        cy.url().should('include', '/dashboard')
+       cy.get(':nth-child(8) > .dropdown > .nav-link > .img-fluid').click()
+       cy.get('.dropdown-main-list:nth-child(3)').click()
+       cy.get('#partnership_my_role').clear().type('Product')
+       cy.get('#partnership_my_responsibilities').clear().type('I love working with people')
+       cy.get('#partnership_annual_objective').clear().type('To aim for Higher for Heights')
+       cy.get('#partnership_name').clear().type('african')
+       cy.get('#partnership_email').clear().type('muksnnabunje@gmail.com')
+       cy.get('#partnership_partner_role').clear().type('accounbality partner')
+       cy.get('.pull-right > .btn').click()
+       cy.log('partner account tested successfully')
+
+    })
+})
