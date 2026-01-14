@@ -1,0 +1,52 @@
+describe('Testing profiles', () => {
+    it('should interact with profiles page', () => {
+      // Visit the webpage where the profile is located
+       cy.visit('https://account.africanmanagers.org/ami_auth/login')
+        cy.successfullogin()
+        cy.opennewacademy()
+      //cy.wait(2000)
+        //cy.opennewacademy()
+        cy.get(':nth-child(8) > .dropdown > .nav-link > .img-fluid').click()
+        //cy.wait(2000)
+        cy.get(':nth-child(8) > .dropdown > .dropdown-menu > [href="https://account.africanmanagers.org/ami_auth/userprofile/252129"]').click({ force: true })
+        cy.get('#foo_search_phrase').type('Louange')
+        cy.reload()
+        cy.wait(2000)
+        cy.get('.default-icon-primary-button-web-border > .fa').click()
+        //cy.get('.default-icon-primary-button-web-border')
+        cy.wait(2000)
+        cy.get('#user_name').type('Louange')
+        cy.get('#editpropop > .modal-dialog > .modal-content > form > .modal-footer > .default-text-primary-button-web').click({ force: true })
+        cy.get('.summerybox > .dx > .icbtn').click({force: true})
+        cy.wait(2000)
+       //cy.get('#editsummary > .modal-dialog > .modal-content > form > .modal-footer > .default-text-primary-button-web').click()
+        cy.get(':nth-child(3) > .dx > .icbtn').click({force: true})
+        cy.get('#\\37 78asdf_role').type("QA").click({force: true})
+        cy.get('#\\37 78asdf_location').type('Rwanda')
+        cy.get(':nth-child(4) > .custom-control > .custom-control-label').click()
+        cy.get('#\\37 78asdf_date_start')
+        .type('2023-10-05') // Enter the date string in the format 'mm/dd/yy'
+        cy.wait(2000)
+        cy.get('#\\37 78asdf_date_end').type('2023-12-02')
+        cy.get('#\\37 78asdf_description').type('I like reading')
+        cy.get('#\\37 78asdf > .modal-footer > .default-text-primary-button-web').click({ force: true })
+        
+        cy.wait(20000)
+        //update education
+        cy.get(':nth-child(4) > .dx > .icbtn').click()
+        cy.get('#\\36 78asdf_institution').type('Chicago')
+        //cy.get('#\\36 78asdf_institution').type('Chicago')
+        cy.get('#\\36 78asdf_level').type('Master of Science in Information Technology')
+        cy.get('#\\36 78asdf_subject').type('Internet of Things')
+        cy.get(':nth-child(5) > .custom-control > .custom-control-label').click()
+        cy.get('#\\36 78asdf_date_start').type('2023-01-05')
+        cy.wait(2000)
+        cy.get('#\\36 78asdf_date_end').type('2025-12-02')
+        cy.get('#\\36 78asdf_education_detail').type('I like computing')
+        cy.get('#\\36 78asdf > .modal-footer > .default-text-primary-button-web').click()
+        cy.wait(2000)
+
+    })
+
+  })
+        
