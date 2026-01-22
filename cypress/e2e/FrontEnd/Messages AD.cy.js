@@ -45,6 +45,18 @@ const login = () => {
       .click({ force: true })
   }
   
+  // COMMON function: send a private message
+const sendPrivateMessage = () => {
+  cy.get('#message-body')
+    .click({ force: true })
+    .type('hey, This is an automated Private message')
+
+  cy.get('[type="submit"] > .cursor-pointer')
+    .click({ force: true })
+
+  cy.wait(2000)
+}
+
   
   // ---------- TEST SUITE ----------
   
@@ -64,6 +76,13 @@ const login = () => {
       navigateToMessages()
       addMemberToPrivateChat()
     })
-  
+  // Test 3: LOGIN + NAVIGATE + ADD MEMBER + SEND MESSAGE
+it('Send a private message', () => {
+  cy.viewport(1920, 1080)
+  login()
+  navigateToMessages()
+  addMemberToPrivateChat()
+  sendPrivateMessage()
+})
   })
   
