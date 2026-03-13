@@ -143,14 +143,8 @@ it('should create a poll and send the post', () => {
   cy.get('.justify-between > [type="submit"] > .rounded') 
   .should('not.be.disabled')  // wait until clickable
   .click({ force: true });
-<<<<<<< HEAD
-  //cy.get('button')
-    //.contains(/send|post/i)
-    //.click();
-=======
   // Close the poll creation UI if a close icon exists
   cy.get('#closeIcon > span > .fas').click({ force: true }).wait(1000);
->>>>>>> 5e0524dd1873b89365e7de8efee8b5923355cb3c
 
 });
 
