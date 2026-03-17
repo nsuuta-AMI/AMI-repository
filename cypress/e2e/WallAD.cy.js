@@ -7,7 +7,7 @@ describe('Forum Post Interactions', () => {
     cy.forumpage();
   });
 
-  it('Should post on the wall', () => {
+ it('Should post on the wall', () => {
     cy.get('#post-body')
       .should('be.visible')
       .type('This is my automated Post!');
@@ -24,7 +24,7 @@ describe('Forum Post Interactions', () => {
   });
 
  it('should click on the Like and Reply buttons', () => {
-    cy.get('#posts-54808', { timeout: 10000 })
+    cy.get('#posts-55334', { timeout: 10000 })
       .should('exist')
       .within(() => {
         cy.contains('button', 'Like').click();
@@ -42,9 +42,9 @@ describe('Forum Post Interactions', () => {
 
   it('should Pin & Un Pin a post', () => {
 
-    cy.get('#posts-54808 > .relative > .flex-col.flex-1 > .lg\\:pt-2\\.5 > .cursor-pointer > .text-primary-gray-dark-3').click();
+    cy.get('#posts-55332 > .relative > .flex-col.flex-1 > .lg\\:pt-2\\.5 > .cursor-pointer > .text-primary-gray-dark-3').click();
     cy.wait(20000)
-    cy.get('#toggle-posts-54808 > .flex-col.gap-2 > :nth-child(1)').click({ force: true });
+    cy.get('#toggle-posts-55332 > .flex-col.gap-2 > :nth-child(1)').click({ force: true });
     //cy.get('#posts-54648 > .relative > .flex-col.flex-1 > .lg\:pt-2\.5 > .cursor-pointer > .text-primary-gray-dark-3').click();
     //cy.wait(20000);
     //cy.get('#toggle-posts-54648 > .flex-col.gap-2 > :nth-child(1)').click();
@@ -57,17 +57,18 @@ describe('Forum Post Interactions', () => {
 
 
   // Open the options menu on the post
-  cy.get('#posts-54809 > .relative > .flex-col.flex-1 > .lg\\:pt-2\\.5 > .cursor-pointer > .text-primary-gray-dark-3')
+  
+  cy.get('#posts-55335 > .relative > .flex-col.flex-1 > .lg\\:pt-2\\.5 > .cursor-pointer > .text-primary-gray-dark-3')
     .click();
 
   cy.wait(20000);
 
   // Click "Edit"
-  cy.get('#toggle-posts-54809 > .flex-col.gap-2 > :nth-child(3)')
+  cy.get('#toggle-posts-55335 > .flex-col.gap-2 > :nth-child(3)')
     .click({ force: true });
     cy.wait(20000)
  // Type "hello" inside the edit modal
-  cy.get('#edit-message-form-edit-posts-54809 > .group')
+  cy.get('#edit-message-form-edit-posts-55335 > .group')
     .find('textarea, input[type="text"]')
     .should('be.visible')
     .clear({ force: true })
@@ -75,7 +76,7 @@ describe('Forum Post Interactions', () => {
 
   // Click the Send button inside the modal
 
-  cy.get('#edit-message-form-edit-posts-54809 > .group > .justify-between > .gap-2 > button')
+  cy.get('#edit-message-form-edit-posts-55335 > .group > .justify-between > .gap-2 > button')
   .should('not.be.disabled')  // wait until clickable
   .click({ force: true });
 
@@ -116,37 +117,35 @@ describe('Forum Post Interactions', () => {
 it('should create a poll and send the post', () => {
 
   // Click Poll icon
-  cy.get('[src="/images/Tooltip Trigger (2).svg"]')
+  cy.get('[src="/images/Tooltip Trigger (2).svg"]', { timeout: 10000 })
     .should('be.visible')
-    .click({ force: true });
+    .click();
 
-  // Enter poll question
-  cy.get('#post-body')
-  //cy.get('input[placeholder="Ask a question"]')
-    .type('Which option do you prefer?');
+  // Wait for post input to be ready
+ cy.get('.lg\\:pt-6 > :nth-child(1) > #message-form > .group > .shadow-learning-jounreny-component-shadow > .body-normal > #post-body', { timeout: 10000 })
+  .should('be.visible')   
+  .and('not.be.disabled')      
+  .click()                     
+  .clear()                    
+  .type('Which option do you prefer?'); 
 
   // Enter poll options
-  cy.get('#poll_option_0')
-  //cy.get('input[placeholder="Option 1"]')
+  cy.get('#poll_option_0', { timeout: 10000 })
+    .should('be.visible')
+    .and('not.be.disabled')
     .type('Option A');
 
-  cy.get('#poll_option_1')
-    //cy.get('input[placeholder="Option 2"]')
+  cy.get('#poll_option_1', { timeout: 10000 })
+    .should('be.visible')
+    .and('not.be.disabled')
     .type('Option B');
 
-  // (Optional) Add more options if available
-  // cy.get('button').contains('Add option').click();
-  // cy.get('input[placeholder="Option 3"]').type('Option C');
-
   // Click Send/Post button
-  
-  cy.get('.justify-between > [type="submit"] > .rounded') 
-  .should('not.be.disabled')  // wait until clickable
-  .click({ force: true });
-  // Close the poll creation UI if a close icon exists
-  cy.get('#closeIcon > span > .fas').click({ force: true }).wait(1000);
+  cy.get('.justify-between > [type="submit"] > .rounded', { timeout: 10000 })
+    .should('be.visible')
+    .and('not.be.disabled')
+    .click();
 
-});
+})
 
-});
-
+})
