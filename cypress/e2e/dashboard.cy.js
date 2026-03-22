@@ -1,12 +1,12 @@
 describe('Dashboard page', () => {
-  it('search for academy AMI DEMO ACADEMY', () => {
+  it('search for academy AMI DEMO ACADEMY - AUTOMATION 2026', () => {
     cy.visit('https://account.africanmanagers.org/ami_auth/login');
     cy.successfullogin();
 
     cy.get('[id="select2-gybselect-container"]').click();
-    cy.get('.select2-search__field').type('AMI DEMO ACADEMY');
+    cy.get('.select2-search__field').type(' AMI DEMO ACADEMY - AUTOMATION 2026');
     cy.get("li[role='option']").each(function ($ele, index, list) {
-      if ($ele.text() === 'AMI DEMO ACADEMY') {
+      if ($ele.text() === 'AMI DEMO ACADEMY - AUTOMATION 2026') {
         cy.log("Found academy");
         cy.wrap($ele).click({ force: true });
         cy.title().should("include", "African Management Initiative");

@@ -7,7 +7,7 @@ Cypress.Commands.add('clickImage', () => {
 
 Cypress.Commands.add('successfullogin', (email, password) => { 
   cy.get('#user_login').type('butatululu@gmail.com');
-  cy.get('#user_password').type('AMI123456700');
+  cy.get('#user_password').type('AMI1234567800');
   cy.get('.comn-flex-box > .btnRed').click();
   cy.url({ timeout: 30000 }).should('include', '/dashboard');
 });
