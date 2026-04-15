@@ -2,7 +2,7 @@
 const login = () => {
   cy.visit('https://account.africanmanagers.org/ami_auth/login')
   cy.get('input[name="user[login]"]').type('stella@muraho.tech')
-  cy.get('input[name="user[password]"]').type('AMI1234567')
+  cy.get('input[name="user[password]"]').type('AMI12345678')
   cy.get('button[type="submit"]').click()
 }
 

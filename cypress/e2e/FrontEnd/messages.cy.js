@@ -2,7 +2,7 @@ describe('Test the Messages page', () => {
   it('test private chats', () => {
     cy.visit('https://account.africanmanagers.org/ami_auth/login')
     cy.get('input[name="user[login]"]').type('stella@muraho.tech') // replace with valid email
-    cy.get('input[name="user[password]"]').type('AMI123456') // replace with valid password
+    cy.get('input[name="user[password]"]').type('AMI12345678') // replace with valid password
     cy.get('button[type="submit"]').click()// Replace with the URL of your calendar page
      
   
