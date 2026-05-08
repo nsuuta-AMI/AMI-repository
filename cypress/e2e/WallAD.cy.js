@@ -24,7 +24,7 @@ describe('Forum Post Interactions', () => {
   });
 
  it('should click on the Like and Reply buttons', () => {
-    cy.get('#posts-55338', { timeout: 10000 })
+    cy.get('#posts-55764', { timeout: 10000 })
       .should('exist')
       .within(() => {
         cy.contains('button', 'Like').click();
@@ -42,12 +42,10 @@ describe('Forum Post Interactions', () => {
 
   it('should Pin & Un Pin a post', () => {
 
-    cy.get('#posts-55332 > .relative > .flex-col.flex-1 > .lg\\:pt-2\\.5 > .cursor-pointer > .text-primary-gray-dark-3').click();
+    cy.get('#posts-55789 > .relative > .flex-col.flex-1 > .lg\\:pt-2\\.5 > .cursor-pointer > .text-primary-gray-dark-3').click();
     cy.wait(20000)
-    cy.get('#toggle-posts-55332 > .flex-col.gap-2 > :nth-child(1)').click({ force: true });
-    //cy.get('#posts-54648 > .relative > .flex-col.flex-1 > .lg\:pt-2\.5 > .cursor-pointer > .text-primary-gray-dark-3').click();
-    //cy.wait(20000);
-    //cy.get('#toggle-posts-54648 > .flex-col.gap-2 > :nth-child(1)').click();
+    cy.get('#toggle-posts-55789 > .flex-col.gap-2 > :nth-child(1)').click({ force: true });
+    
   });
 
   it('should Edit a post', () => {
@@ -58,17 +56,17 @@ describe('Forum Post Interactions', () => {
 
   // Open the options menu on the post
   
-  cy.get('#posts-55391 > .relative > .flex-col.flex-1 > .lg\\:pt-2\\.5 > .cursor-pointer > .text-primary-gray-dark-3')
+  cy.get('#posts-55509 > .relative > .flex-col.flex-1 > .lg\\:pt-2\\.5 > .cursor-pointer > .text-primary-gray-dark-3')
     .click();
 
   cy.wait(20000);
 
   // Click "Edit"
-  cy.get('#toggle-posts-55391 > .flex-col.gap-2 > :nth-child(3)')
+  cy.get('#toggle-posts-55509 > .flex-col.gap-2 > :nth-child(3)')
     .click({ force: true });
     cy.wait(20000)
  // Type "hello" inside the edit modal
-  cy.get('#edit-message-form-edit-posts-55391 > .group')
+  cy.get('#edit-message-form-edit-posts-55509 > .group')
     .find('textarea, input[type="text"]')
     .should('be.visible')
     .clear({ force: true })
@@ -76,7 +74,7 @@ describe('Forum Post Interactions', () => {
 
   // Click the Send button inside the modal
 
-  cy.get('#edit-message-form-edit-posts-55391 > .group > .justify-between > .gap-2 > button')
+  cy.get('#edit-message-form-edit-posts-55509 > .group > .justify-between > .gap-2 > button')
   .should('not.be.disabled')  // wait until clickable
   .click({ force: true });
 
