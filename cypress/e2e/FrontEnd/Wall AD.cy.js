@@ -5,7 +5,6 @@ const login = () => {
   cy.get('button[type="submit"]').click()
 }
 
-// COMMON function: navigate to Wall
 const navigateToWall = () => {
   cy.get('#select2-gybselect-container').click({ force: true });
 
@@ -22,7 +21,7 @@ const navigateToWall = () => {
   cy.contains(':nth-child(8) > .dropdown > .dropdown-menu a', 'New Academy Dashboard')
     .click({ force: true });
 
-  cy.get('[href="/academy_wall"]')
+    cy.get('.lg\\:pl-6').eq(3)
     .scrollIntoView()
     .click({ force: true });
 
@@ -52,7 +51,7 @@ describe('WALL AUTOMATION TESTS', () => {
 
     cy.get('.group > .gap-2 > [type="submit"] > .rounded')
       .click({ force: true })
-      .wait(1000)
+      .wait(1000000000)
       .click({ force: true });
   });
 
