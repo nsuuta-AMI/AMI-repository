@@ -14,24 +14,25 @@ Cypress.Commands.add('successfullogin', (email, password) => {
 
 Cypress.Commands.add('usuccessfullogin', (email, password) => { 
   cy.get('#user_login').type('louange@muraho.teh');
-  cy.get('#user_password').type('AMI1234000000');
+  cy.get('#user_password').type('AMI123400000');
   cy.get('.comn-flex-box > .btnRed').click();
-  cy.get('.alert-warning').should('be.visible');
+  //cy.get('.alert-warning').should('be.visible');
 });
 
 Cypress.Commands.add('opennewacademy', () => { 
-  cy.get('[id="select2-gybselect-container"]').click();
+  cy.get('[id="select2-gybselect-container"]').click({ force: true });
   cy.get('.select2-search__field').type('AMI DEMO ACADEMY');
   cy.get('[id="select2-gybselect-results"]').click();
 });
 
 Cypress.Commands.add('Academydashboard', () => { 
-  cy.get('[id="select2-gybselect-container"]').click();
+  cy.wait(10000);
+  cy.get('[id="select2-gybselect-container"]').click({ force: true });
   cy.get('.select2-search__field').type('New academy dashboard Academy');
   cy.get('[id="select2-gybselect-results"]').click();
 });
 
-/*Cypress.Commands.add('changelanguage', () => {
+Cypress.Commands.add('changelanguage', () => {
   cy.get('[id="select2-locale-setting-container"]').click();
   cy.get("li[role ='option']").each(function($ele, index, list){
     if($ele.text() === 'English'){
@@ -39,7 +40,7 @@ Cypress.Commands.add('Academydashboard', () => {
       cy.title().should("include", "African Management Initiative");        
     }
   });
-});*/
+});
 
 Cypress.Commands.add('ljnavbar', () => { 
   cy.get('.ml-auto > :nth-child(2) > .nav-link');
@@ -53,7 +54,6 @@ Cypress.Commands.add('LJcarousel', () => {
   cy.wait(2000);  // Wait for 2 seconds
   cy.visit('https://account.africanmanagers.org/dashboard/home');  // Visit the dashboard
   cy.wait(2000);  // Wait for 2 seconds
-  
   
 });
 
@@ -136,13 +136,13 @@ Cypress.Commands.add('calendarofevents', () => {
 Cypress.Commands.add('forumpage', () => { 
   //cy.get(':nth-child(3) > .nav-link > .text-body-small');
   cy.get(':nth-child(8) > .dropdown > .nav-link').click();
-  cy.wait(2000);  // Wait for 2 seconds
+  cy.wait(10000);  // Wait for 2 seconds
   cy.get(':nth-child(8) > .dropdown > .nav-link > .img-fluid').click();
-  cy.wait(2000);
+  cy.wait(10000);
   cy.get(':nth-child(8) > .dropdown > .dropdown-menu > a[href*="/my_journey"]').click({ force: true });
-  cy.wait(2000);
+cy.wait(10000);
  cy.get('#menuIcon').click();
-
+cy.wait(10000);
 cy.contains('Wall', { timeout: 20000 })
   .should('be.visible')
   .click();

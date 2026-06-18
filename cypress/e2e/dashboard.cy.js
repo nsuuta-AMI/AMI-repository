@@ -4,7 +4,7 @@ describe('dashboard page', () => {
       cy.visit('https://account.africanmanagers.org/ami_auth/login')
       cy.successfullogin() 
     
-      cy.get('[id="select2-gybselect-container"]').click({force: true})
+      cy.get('[id="select2-gybselect-container"]').click()
       cy.get('.select2-search__field').type('AMI DEMO ACADEMY')
       cy.get("li[role='option']").each(function($ele,index,list){
     
@@ -21,11 +21,9 @@ describe('dashboard page', () => {
       }
     
       })
-     
+    })
     
-     })
-    
-    /*it('click on the language dropdown successfully', () => {
+    it('click on the language dropdown successfully', () => {
       cy.visit('https://account.africanmanagers.org/ami_auth/login')
       cy.successfullogin()
       //cy.get('[id="select2-locale-setting-container"]').trigger('mousemove').click()
@@ -56,7 +54,7 @@ describe('dashboard page', () => {
     
       })
     
-    })*/
+    })
       
     it('open page of selected academy', () => {
       cy.visit('https://account.africanmanagers.org/ami_auth/login')
