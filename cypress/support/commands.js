@@ -5,48 +5,47 @@ Cypress.Commands.add('clickImage', () => {
   });
 });
 
-Cypress.Commands.add('successfullogin', (email, password) => { 
+Cypress.Commands.add('successfullogin', (email, password) => {
   cy.get('#user_login').type('louange@muraho.tech');
-  cy.get('#user_password').type('AMI1234000000');
+  cy.get('#user_password').type('AMI12345000');
   cy.get('.comn-flex-box > .btnRed').click();
   cy.url({ timeout: 30000 }).should('include', '/dashboard');
 });
 
-Cypress.Commands.add('usuccessfullogin', (email, password) => { 
+Cypress.Commands.add('usuccessfullogin', (email, password) => {
   cy.get('#user_login').type('louange@muraho.teh');
-  cy.get('#user_password').type('AMI123400000');
+  cy.get('#user_password').type('AMi123450000');
   cy.get('.comn-flex-box > .btnRed').click();
   //cy.get('.alert-warning').should('be.visible');
 });
 
-Cypress.Commands.add('opennewacademy', () => { 
+Cypress.Commands.add('opennewacademy', () => {
   cy.get('[id="select2-gybselect-container"]').click({ force: true });
   cy.get('.select2-search__field').type('AMI DEMO ACADEMY');
   cy.get('[id="select2-gybselect-results"]').click();
 });
 
-Cypress.Commands.add('Academydashboard', () => { 
-  cy.wait(10000);
-  cy.get('[id="select2-gybselect-container"]').click({ force: true });
+Cypress.Commands.add('Academydashboard', () => {
+  cy.get('[id="select2-gybselect-container"]', { timeout: 30000 }).should('be.visible').click({ force: true });
   cy.get('.select2-search__field').type('New academy dashboard Academy');
   cy.get('[id="select2-gybselect-results"]').click();
 });
 
 Cypress.Commands.add('changelanguage', () => {
   cy.get('[id="select2-locale-setting-container"]').click();
-  cy.get("li[role ='option']").each(function($ele, index, list){
-    if($ele.text() === 'English'){
+  cy.get("li[role ='option']").each(function ($ele, index, list) {
+    if ($ele.text() === 'English') {
       cy.wrap($ele).click();
-      cy.title().should("include", "African Management Initiative");        
+      cy.title().should("include", "African Management Initiative");
     }
   });
 });
 
-Cypress.Commands.add('ljnavbar', () => { 
+Cypress.Commands.add('ljnavbar', () => {
   cy.get('.ml-auto > :nth-child(2) > .nav-link');
 });
 
-Cypress.Commands.add('wallnavbar', () => { 
+Cypress.Commands.add('wallnavbar', () => {
   cy.get(':nth-child(3) > .nav-link > .text-body-small');
 });
 
@@ -54,7 +53,7 @@ Cypress.Commands.add('LJcarousel', () => {
   cy.wait(2000);  // Wait for 2 seconds
   cy.visit('https://account.africanmanagers.org/dashboard/home');  // Visit the dashboard
   cy.wait(2000);  // Wait for 2 seconds
-  
+
 });
 
 Cypress.Commands.add('calendarofevents', () => {
@@ -67,19 +66,19 @@ Cypress.Commands.add('calendarofevents', () => {
   cy.get('#menuIcon').click();
   cy.wait(2000);
   cy.get('a[href="/calendar_of_events"]', { timeout: 10000 }) // wait up to 10s
-  .should('be.visible')   // ensure it's visible
-  .click({ force: true });
+    .should('be.visible')   // ensure it's visible
+    .click({ force: true });
   //cy.visit('https://account.africanmanagers.org/dashboard/home');  // Visit the dashboard
   cy.wait(2000);  // Wait for 2 seconds
-  
-   //it(' should click on a course and return', () => {
-    
+
+  //it(' should click on a course and return', () => {
+
   cy.get(':nth-child(2) > [colspan="7"] > .mb-1').click()
 
   cy.wait(3000);
 
   // Return to the calendar of events page
-  
+
   cy.get('.justify-end > .hidden').click();
   //cy.wait(30000);
   cy.get('[data-phx-id^="m38-phx-"] > .flex', { timeout: 10000 }).click();
@@ -122,38 +121,37 @@ Cypress.Commands.add('calendarofevents', () => {
   cy.wait(2000)
   cy.get('#dropdown-day-5 > [phx-value-type="toolkit"]').click()
   cy.wait(2000)
- cy.get('.justify-end > .hidden').click({ force: true });
- cy.wait(2000);
-
-    
-  });
+  cy.get('.justify-end > .hidden').click({ force: true });
+  cy.wait(2000);
 
 
-  //cy.wait(2000)
+});
+
+
+//cy.wait(2000)
 //cy.go('back');
 
 
-Cypress.Commands.add('forumpage', () => { 
+Cypress.Commands.add('forumpage', () => {
   //cy.get(':nth-child(3) > .nav-link > .text-body-small');
   cy.get(':nth-child(8) > .dropdown > .nav-link').click();
   cy.wait(10000);  // Wait for 2 seconds
   cy.get(':nth-child(8) > .dropdown > .nav-link > .img-fluid').click();
   cy.wait(10000);
-  cy.get(':nth-child(8) > .dropdown > .dropdown-menu > a[href*="/my_journey"]').click({ force: true });
-cy.wait(10000);
- cy.get('#menuIcon').click();
-cy.wait(10000);
-cy.contains('Wall', { timeout: 20000 })
-  .should('be.visible')
-  .click();
+  cy.get(':nth-child(8) > .dropdown > .dropdown-menu > a[href*="/my_journey"]')
+    .invoke('removeAttr', 'target')
+    .click({ force: true });
+  cy.wait(10000);
 
-/*cy.get('a[href="/academy_wall"]', { timeout: 20000 })
-  .should('be.visible')
-  .click();*/
+  cy.get('#menuIcon').click();
+  cy.wait(10000);
 
+  // Trying the alternative selector for Wall based on user input, using ^ (starts-with) for robust selection
+  cy.get('[data-phx-id^="m8-phx-"] > .lg\\:pl-6 > .flex > .w-full', { timeout: 20000 })
+    .click({ force: true });
 });
 
-  
+
 Cypress.Commands.add('OpenCoursescarousel', () => {
   // Interact with the carousel to go through open courses
   cy.get('.mrl-12.icon-next').click();  // Click to go to the next item in the carousel
@@ -174,7 +172,7 @@ Cypress.Commands.add('calendar', () => {
 Cypress.Commands.add('resourcesnavbar', () => {
   // Instead of relying on `.active`, find the "Resources" link directly
   return cy.contains('.nav-link .text-body-small', 'Resources', { timeout: 10000 })
-   .should('be.visible');
+    .should('be.visible');
 });
 
 

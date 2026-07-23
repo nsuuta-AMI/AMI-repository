@@ -32,7 +32,7 @@ describe('Test the Resources Page', () => {
     cy.get('#download_all').click();
     cy.wait(1000);
     cy.get('#closeIcon > span > .fas').click();
-
+    
 
   });
 
