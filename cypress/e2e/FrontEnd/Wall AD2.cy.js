@@ -1,161 +1,131 @@
-describe('WALL AUTOMATION TESTS', () => {
+cy.contains('.body-super-small', 'Reply').first().scrollIntoView().click();
+it('Opens reply section', () => {
+  cy.contains('.body-super-small', 'Reply')
+    .first()
+    .scrollIntoView()
+    .click({ force: true });
 
-    const login = () => {
-      cy.visit('https://account.africanmanagers.org/ami_auth/login');
-  
-      cy.get('input[name="user[login]"]')
-        .should('be.visible')
-        .type('stella@muraho.tech');
-  
-      cy.get('input[name="user[password]"]')
-        .should('be.visible')
-        .type('AMI123456789');
-  
-      cy.get('button[type="submit"]').click();
-    };
-  
-    const navigateToWall = () => {
-  
-      // Select Academy
-      cy.get('#select2-gybselect-container')
-        .should('be.visible')
-        .click({ force: true });
-  
-      cy.get('.select2-search__field')
-        .should('be.visible')
-        .type('New academy dashboard Academy');
-  
-      cy.contains(
-        '.select2-results__option',
-        'New academy dashboard Academy'
-      ).click({ force: true });
-  
-      // Open Academy Menu
-      cy.get(':nth-child(8) > .dropdown > .nav-link')
-        .click({ force: true });
-  
-      cy.contains(
-        ':nth-child(8) > .dropdown > .dropdown-menu a',
-        'New Academy Dashboard'
-      ).click({ force: true });
-  
-      // Wait for academy dashboard to load
-      cy.wait(3000);
-  
-      // Open Wall
-cy.contains('Wall')
-  .should('be.visible')
-  .click({ force: true });
+  cy.get('#comment-body').should('be.visible');
+});
 
-cy.wait(2000);
-  
-      cy.wait(1000);
-    };
-  
-    beforeEach(() => {
-      cy.viewport(1920, 1080);
-      login();
-      navigateToWall();
-    });
-  
-    it('Navigates to Wall successfully', () => {
-      cy.url().should('include', 'wall');
-    });
-  
-    it('Creates a new post', () => {
+it('adds a reply', () => {
+it('Adds a reply', () => {
+  const replyText = `Automated reply ${Date.now()}`;
+  cy.contains('.body-super-small', 'Reply').first().scrollIntoView().click();
+  cy.get('#comment-body').should('be.visible').type(replyText);
+  cy.get('.shadow-reply-create-shadow img').should('be.visible').click();
 
-        const postText = 'Test automation post';
-      
-        // Type into the post creation field
-        it('Creates a new post', () => {
+  cy.contains('.body-super-small', 'Reply')
+    .first()
+    .scrollIntoView()
+    .click({ force: true });
 
-            const postText = 'Test automation post';
-          
-            cy.get('.group > .flex-col > #post-body')
-              .should('be.visible')
-              .click()
-              .type(postText);
-          
-            cy.get('[type="submit"]')
-              .should('not.be.disabled')
-              .click();
-          
-          });
-        });
-    it('Opens reply section', () => {
-  
-      cy.contains('.body-super-small', 'Reply')
-        .first()
-        .scrollIntoView()
-        .click({ force: true });
-  
-      cy.get('#comment-body')
-        .should('be.visible');
-    });
-  
-    it('Adds a reply', () => {
-  
-      const replyText = `Automated reply ${Date.now()}`;
-  
-      cy.contains('.body-super-small', 'Reply')
-        .first()
-        .scrollIntoView()
-        .click({ force: true });
-  
-      cy.get('#comment-body')
-        .should('be.visible')
-        .type(replyText);
-  
-      cy.get('.shadow-reply-create-shadow img')
-        .click({ force: true });
-  
-      cy.contains(replyText, { timeout: 10000 })
-        .should('be.visible');
-    });
-  
-    it('Creates and likes a post', () => {
-  
-      const postText = `Like Test ${Date.now()}`;
-  
-      cy.get('#post-body')
-        .type(postText);
-  
-      cy.get('.group > .gap-2 > [type="submit"] > .rounded')
-        .click({ force: true });
-  
-      cy.contains(postText, { timeout: 10000 })
-        .should('be.visible')
-        .as('createdPost');
-  
-      cy.get('@createdPost')
-        .parents('[id^="posts-"]')
-        .find('img[alt="like"]')
-        .first()
-        .click({ force: true });
-    });
-  
-    it('Creates and pins a post', () => {
-  
-      const postText = `Pin Test ${Date.now()}`;
-  
-      cy.get('#post-body')
-        .type(postText);
-  
-      cy.get('.group > .gap-2 > [type="submit"] > .rounded')
-        .click({ force: true });
-  
-      cy.contains(postText, { timeout: 10000 })
-        .should('be.visible')
-        .as('createdPost');
-  
-      cy.get('@createdPost')
-        .parents('[id^="posts-"]')
-        .find('.cursor-pointer')
-        .first()
-        .click({ force: true });
-  
-      cy.contains('Pin post')
-        .click({ force: true });
-    });
-  
-  });
+  cy.get('#comment-body')
+    .should('be.visible')
+    .type(replyText);
+
+  cy.get('.shadow-reply-create-shadow img')
+    .click({ force: true });
+
+  cy.contains(replyText, { timeout: 10000 }).should('be.visible');
+});
+
+it('creates and likes a post', () => {
+it('Creates and likes a post', () => {
+  const postText = `Like Test ${Date.now()}`;
+  createPost(postText);
+  createdPost(postText).find('img[alt="like"]').first().should('be.visible').click();
+
+  cy.get('#post-body').type(postText);
+  cy.get('.group > .gap-2 > [type="submit"] > .rounded').click({ force: true });
+
+  cy.contains(postText, { timeout: 10000 })
+    .should('be.visible')
+    .as('createdPost');
+
+  cy.get('@createdPost')
+    .parents('[id^="posts-"]')
+    .find('img[alt="like"]')
+    .first()
+    .click({ force: true });
+});
+
+it('creates and pins a post', () => {
+it('Creates and pins a post', () => {
+  const postText = `Pin Test ${Date.now()}`;
+  createPost(postText);
+  openPostMenu(postText);
+  cy.contains('button, a, li', 'Pin post').should('be.visible').click();
+  createdPost(postText).should('contain.text', 'Pinned');
+
+  cy.get('#post-body').type(postText);
+  cy.get('.group > .gap-2 > [type="submit"] > .rounded').click({ force: true });
+
+  cy.contains(postText, { timeout: 10000 })
+    .should('be.visible')
+    .as('createdPost');
+
+  cy.get('@createdPost')
+    .parents('[id^="posts-"]')
+    .find('.cursor-pointer')
+    .first()
+    .click({ force: true });
+
+  cy.contains('Pin post').click({ force: true });
+  cy.get('@createdPost').should('contain.text', 'Pinned');
+});
+
+it('creates and edits a post', () => {
+it('Creates and edits a post', () => {
+  const postText = `Edit Test ${Date.now()}`;
+  const updatedPost = `${postText} - Edited`;
+  createPost(postText);
+  openPostMenu(postText);
+  cy.contains('button, a, li', 'Edit post').should('be.visible').click();
+  cy.get('#post-body').should('be.visible').clear().type(updatedPost);
+  cy.contains('button', /^Save$/).should('be.visible').click();
+  cy.contains(updatedPost, { timeout: 10000 }).should('be.visible');
+
+  cy.get('#post-body').type(postText);
+  cy.get('[type="submit"]').click({ force: true });
+
+  cy.contains(postText, { timeout: 10000 })
+    .should('be.visible')
+    .parents('[id^="posts-"]')
+    .as('post');
+
+  cy.get('@post').find('.cursor-pointer').first().click({ force: true });
+  cy.contains('Edit post').click({ force: true });
+
+  cy.get('#post-body').clear().type(updatedPost);
+  cy.contains('Save').click({ force: true });
+  cy.contains(updatedPost).should('be.visible');
+});
+
+it('creates and deletes a post', () => {
+it('Creates and deletes a post', () => {
+  const postText = `Delete Test ${Date.now()}`;
+  createPost(postText);
+  openPostMenu(postText);
+  cy.contains('button, a, li', 'Delete post').should('be.visible').click();
+  cy.contains('button', /^Delete$/).should('be.visible').click();
+  cy.contains(postText, { timeout: 10000 }).should('not.exist');
+
+  cy.get('#post-body').type(postText);
+  cy.get('[type="submit"]').click({ force: true });
+
+  cy.contains(postText, { timeout: 10000 })
+    .should('be.visible')
+    .parents('[id^="posts-"]')
+    .as('post');
+
+  cy.get('@post').find('.cursor-pointer').first().click({ force: true });
+  cy.contains('Delete post').click({ force: true });
+  cy.contains('Delete').click({ force: true });
+  cy.contains(postText).should('not.exist');
+});
+});
+});
+});
+});
+});

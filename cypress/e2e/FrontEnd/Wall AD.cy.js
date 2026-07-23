@@ -83,7 +83,7 @@ describe('WALL AUTOMATION TESTS', () => {
 
     cy.get('#comment-body')
       .should('be.visible')
-      .type('This is an automated reply from Cypress!', { delay: 30 });
+      .type('This is an automated reply!', { delay: 30 });
 
     // Send reply
     cy.get('.shadow-reply-create-shadow > .group > .gap-2 > [type="submit"] > .rounded > img')
