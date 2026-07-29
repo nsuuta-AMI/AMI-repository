@@ -8,8 +8,11 @@ describe('Forum Post Interactions', () => {
   });
 
  it('Should post on the wall', () => {
-    cy.get('.group > .flex-col > #post-body')
+    // Use just #post-body — the ID is unique, no need for fragile parent-chain selectors
+    cy.get('#post-body', { timeout: 15000 })
       .should('be.visible')
+      .click()
+      .clear()
       .type('This is my automated Post!');
 
     cy.get('#message-form [type="submit"]')
@@ -40,29 +43,35 @@ describe('Forum Post Interactions', () => {
   }); 
 
   it('should add a reply to a post', () => {
+    // Find the post dynamically — never hardcode post IDs as they change per session
     cy.contains('[id^="posts-"]', 'This is my automated Post!', { timeout: 30000 })
       .first()
-      .within(() => {
-        cy.contains(/reply/i, { timeout: 10000 }).click({ force: true });
-      });
+      .invoke('attr', 'id')
+      .then((id) => {
+        // Click the Reply button — confirmed selector uses .bg-leftbar-backgrond-color
+        cy.get(`#${id} > .relative > .overflow-x-hidden > .lg\\:pt-2\\.5 > .gap-2 > .bg-leftbar-backgrond-color > .body-super-small`)
+          .click({ force: true });
 
-    cy.get('.shadow-reply-shadow', { timeout: 10000 })
-      .should('be.visible')
-      .within(() => {
-        cy.get('textarea, input[type="text"]')
-          .first()
-          .should('be.visible')
+        // Type the reply in the comment input
+        cy.get('#comment-body', { timeout: 10000 })
+          .should('exist')
           .clear({ force: true })
-          .type('this is a reply', { force: true });
+          .type('this is a reply post', { force: true });
+
+        // Click the send button — once text is typed, the clickable element is .rounded > img
+        cy.get('#comment-form > .group > .gap-2 > [type="submit"] > .rounded > img')
+          .should('exist')
+          .click({ force: true });
+
+        // Wait for the server to process and render the reply
+        cy.wait(3000);
+
+        // Replies render outside the post div in a separate section —
+        // search the full page instead of scoping to #${id}
+        cy.contains('this is a reply post', { timeout: 30000 })
+          .should('exist');
       });
 
-    // Click the send button using the specific selector
-    cy.get('.lg\\:pt-6 > :nth-child(1) > #message-form > .group > .gap-2 > [type="submit"] > .rounded')
-      .should('be.visible')
-      .click({ force: true });
-
-    cy.contains('this is a reply', { timeout: 10000 })
-      .should('exist');
   });
 
   it('should Pin & Un Pin a post', () => {

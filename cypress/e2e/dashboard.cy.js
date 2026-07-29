@@ -59,7 +59,7 @@ describe('dashboard page', () => {
     it('open page of selected academy', () => {
       cy.visit('https://account.africanmanagers.org/ami_auth/login')
       cy.successfullogin() 
-      cy.changelanguageEng()
+      cy.changelanguage()
     
       cy.get('[id="select2-gybselect-container"]').click()
       cy.get('.select2-search__field').type('AMI DEMO ACADEMY')

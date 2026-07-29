@@ -28,14 +28,28 @@ describe('Test the Learning Journey tab', () => {
     const typeCheckboxIndexes = [3, 4, 5, 6];
     typeCheckboxIndexes.forEach(index => {
       const selector = `.type-section > .custom-checkbox:nth-child(${index}) > .sm-body-text-normal`;
-      cy.get(selector).click().wait(500).click();
+      cy.get(selector).then(($el) => {
+        $el[0].click();
+      });
+      cy.wait(500);
+      cy.get(selector).then(($el) => {
+        $el[0].click();
+      });
+      cy.wait(500);
     });
 
     // Toggle multiple options in progress-section
     const progressIndexes = [3, 4, 5];
     progressIndexes.forEach(index => {
       const selector = `.progress-section > :nth-child(${index}) > .sm-body-text-normal`;
-      cy.get(selector).click().wait(500).click();
+      cy.get(selector).then(($el) => {
+        $el[0].click();
+      });
+      cy.wait(500);
+      cy.get(selector).then(($el) => {
+        $el[0].click();
+      });
+      cy.wait(500);
     });
 
     // Toggle mandatory and not mandatory filters

@@ -6,16 +6,21 @@ describe('Testing profiles', () => {
         cy.opennewacademy()
       //cy.wait(2000)
         //cy.opennewacademy()
-        cy.get(':nth-child(8) > .dropdown > .nav-link > .img-fluid').click()
+        cy.get(':nth-child(8) > .dropdown > .nav-link').click()
         //cy.wait(2000)
         cy.get(':nth-child(8) > .dropdown > .dropdown-menu > [href="https://account.africanmanagers.org/ami_auth/userprofile/252129"]').click({ force: true })
-        cy.get('#foo_search_phrase').type('Louange')
+        cy.get('#foo_search_phrase', { timeout: 30000 }).should('be.visible').type('Louange')
         cy.reload()
         cy.wait(2000)
-        cy.get('.default-icon-primary-button-web-border > .fa').click()
-        //cy.get('.default-icon-primary-button-web-border')
-        cy.wait(2000)
-        cy.get('#user_name').type('Louange')
+        // Click the actual edit button container (not just the icon inside it) to trigger the phx-click event handler
+        cy.get('.default-icon-primary-button-web-border', { timeout: 15000 })
+          .should('be.visible')
+          .click({ force: true })
+        
+        // Wait for the edit profile modal to exist and animate open
+        cy.get('#editpropop', { timeout: 15000 }).should('be.visible')
+        
+        cy.get('#user_name', { timeout: 10000 }).should('be.visible').type('Louange')
         cy.get('#editpropop > .modal-dialog > .modal-content > form > .modal-footer > .default-text-primary-button-web').click({ force: true })
         cy.get('.summerybox > .dx > .icbtn').click({force: true})
         cy.wait(2000)
@@ -33,7 +38,7 @@ describe('Testing profiles', () => {
         
         cy.wait(20000)
         //update education
-        cy.get(':nth-child(4) > .dx > .icbtn').click()
+        cy.get(':nth-child(4) > .dx > .icbtn').click({ force: true })
         cy.get('#\\36 78asdf_institution').type('Chicago')
         //cy.get('#\\36 78asdf_institution').type('Chicago')
         cy.get('#\\36 78asdf_level').type('Master of Science in Information Technology')

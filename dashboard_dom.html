@@ -1,0 +1,1692 @@
+
+
+
+  <div id="notifications-area"></div>
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+<section class="headersec">
+  <nav class="navbar navbar-expand-lg bg-white fixed-top desktopmenu">
+    <div class="container" style="padding: 1.5px 0;">
+
+      <a class="navbar-brand" href="javascript:void(0)"><img height="40" src="/images/ami-logo-rgb.png" class="img-fluid" alt=""></a>
+      <button class="navbar-toggler navbar-toggler-right collapsed" type="button" aria-expanded="false">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navb">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <div class="form-group mb-0">
+              <form action="/dashboard/set_locale" method="POST" ujs-remote="" id="locale-form" class="mb-0">
+                <input type="hidden" name="_csrf_token" value="MwYqKyUlGBEzVh0OBiJSMxg1VjgnMSF_lSfNWoSXJ7HLDqaBnxcBKvo0">
+                <input type="hidden" name="redirect_to" value="/dashboard/home?">
+                <select name="locale" id="locale-setting" class="form-control select2 select2-hidden-accessible" data-select2-id="select2-data-locale-setting" tabindex="-1" aria-hidden="true">
+                  <option class="text-body-small" value="ar" false="">Arabic</option>
+                  <option class="text-body-small" value="en" selected="" data-select2-id="select2-data-2-wapl">English</option>
+                  <option class="text-body-small" value="fr" false="">French</option>
+                  <option class="text-body-small" value="rw" false="">Kinyarwanda</option>
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-1-gumy" style="width: 160px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-locale-setting-container" aria-controls="select2-locale-setting-container"><span class="select2-selection__rendered" id="select2-locale-setting-container" role="textbox" aria-readonly="true" title="English">English</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              </form>
+            </div>
+
+          </li>
+          <li class="nav-item">
+            <div class="form-group mb-0">
+              <div class="sicon">
+                <select name="gybselect" id="gybselect" class="form-control select2 select2-hidden-accessible" data-select2-id="select2-data-gybselect" tabindex="-1" aria-hidden="true">
+
+
+                    <option value="/dashboard/set_academy?academy_id=2697&amp;redirect_path=/dashboard/home">AMI Academy</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=215&amp;redirect_path=/dashboard/home">AMI Course Testing Community </option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=1896&amp;redirect_path=/dashboard/home">AMI DEMO ACADEMY - AUTOMATION 2026</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2190&amp;redirect_path=/dashboard/home">AMI Platform Walkthrough Academy </option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2869&amp;redirect_path=/dashboard/home">AMI Quality Assurance Academy - 2026</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2441&amp;redirect_path=/dashboard/home">AMI Quality Assurance Testing Academy </option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2526&amp;redirect_path=/dashboard/home">AMI Quality Assurance Testing Academy (2025)4444</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=922&amp;redirect_path=/dashboard/home">CALA Advanced Leadership Programme (2022)</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2405&amp;redirect_path=/dashboard/home">DWH Team Academy</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=1&amp;redirect_path=/dashboard/home">Getting started</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2178&amp;redirect_path=/dashboard/home">HA - Micro-Enterprise Accelerator - Cohort 30</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=1901&amp;redirect_path=/dashboard/home">JW Seagon Academy</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2567&amp;redirect_path=/dashboard/home">Kataza: Growth Guide Academy	</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2905&amp;redirect_path=/dashboard/home" selected="" data-select2-id="select2-data-4-457u">Kataza: Growth Guide Academy	2026</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2569&amp;redirect_path=/dashboard/home">New academy dashboard Academy</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2871&amp;redirect_path=/dashboard/home">New Academy Dashboard - Quality Assurance AMI - 2026</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2406&amp;redirect_path=/dashboard/home">Platform Team Academy</option>
+
+
+
+                    <option value="/dashboard/set_academy?academy_id=2071&amp;redirect_path=/dashboard/home">PSFU Test</option>
+
+
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-3-ivti" style="width: 203.484px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-gybselect-container" aria-controls="select2-gybselect-container"><span class="select2-selection__rendered" id="select2-gybselect-container" role="textbox" aria-readonly="true" title="Kataza: Growth Guide Academy	2026">Kataza: Growth Guide Academy	2026</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto top-menu">
+          <li class="nav-item active">
+<a class="nav-link bg-FEEEF0-ta-hover" href="/dashboard/home">
+
+              <img class="p-r-2" src="/images/home-icon.svg">
+
+</a>
+          </li>
+          <li class="nav-item ">
+
+<a class="nav-link bg-FEEEF0-ta-hover" href="https://account.africanmanagers.org/dashboard/my_journey">
+            <span class="text-body-small">Journey</span>
+</a>
+          </li>
+          <li class="nav-item ">
+<a class="nav-link bg-FEEEF0-ta-hover" href="https://account.africanmanagers.org/dashboard/my_academy_wall">
+            <span class="text-body-small">Wall</span>
+</a>
+          </li>
+          <li class="nav-item ">
+<a class="nav-link bg-FEEEF0-ta-hover" href="https://account.africanmanagers.org/dashboard/my_resources">
+            <span class="text-body-small">Resources</span>
+</a>
+          </li>
+          <li class="nav-item ">
+<a class="nav-link bg-FEEEF0-ta-hover" href="https://account.africanmanagers.org/dashboard/my_academy_courses">
+            <span class="text-body-small">Academy Courses</span>
+</a>
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown notifdrop ">
+              <a type="button" class="nav-link dropdown-toggle bg-FEEEF0-ta-hover" id="notifications-link" data-user-id="288832" data-toggle="">
+                <span>
+                <b id="notif-unread-dot"></b>
+                <img id="w-h-24" src="/images/Notification.svg"></span>
+              </a>
+              <div id="notification-dropdown-menu" class="dropdown-menu mr-12-per">
+                <div class="no-notif-drop" style="display: none;">
+                  <img class="no-notify-img" src="/images/NoNotifications.svg">
+                  <p class="no-new-notify">No new notifications</p>
+                  <p class="notify-para">You do not have new notifications. Tab the button below to view other notifications.</p>
+                  <a href="/dashboard/notifications" type="button"><p class="see-all-notify">See all notifications</p></a>
+                </div>
+                <div id="notifications-container">
+                  <h5 class="text-heading-6 text-color-light-teal-1">Notifications
+                    <a href="/dashboard/notifications" class="btn binf topbtn default-text-secondary-button-web" type="button">View All</a>
+                  </h5>
+                  <div class="notblk notifications-message-list" id="notifications-list">
+                    <ul class="notifications-list-items"><div class="notb notification_wrapper" data-notification_id="12875327">
+<img class="img-fluid" src="/images/Toolkit.svg">
+  <div class="notdet">
+    <a class="notif-title text-color-dark-1" id="all_notifications_link" href="https://account.africanmanagers.org/dashboard/notifications">
+      <div class="notdet-content">
+        <span class="notdet-title">New toolkit alert!</span>
+        <span class="notdet-timestamp">19 hours ago</span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="notb notification_wrapper" data-notification_id="12875215">
+<img class="img-fluid" src="https://ami-aws-s3.s3.us-west-2.amazonaws.com/uploads/profile/image/252129/thumb_Giraffe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWA6LUEX3ZYOASFV3%2F20260728%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260728T042746Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6c82ac1c868ebc1faf129fb2a1647b4a6dfd41b4609755cdbc07f08c4ce898c5">
+  <div class="notdet">
+    <a class="notif-title text-color-dark-1" id="all_notifications_link" href="https://account.africanmanagers.org/dashboard/set_academy?academy_id=1896&amp;amp;redirect_path=/dashboard/my_academy_wall/56456">
+      <div class="notdet-content">
+        <span class="notdet-title">New post in AMI DEMO ACADEMY - AUTOMATION 2026</span>
+        <span class="notdet-timestamp">19 hours ago</span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="notb notification_wrapper" data-notification_id="12874960">
+<img class="img-fluid" src="https://ami-aws-s3.s3.us-west-2.amazonaws.com/uploads/profile/image/252129/thumb_Giraffe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWA6LUEX3ZYOASFV3%2F20260728%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260728T042746Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6c82ac1c868ebc1faf129fb2a1647b4a6dfd41b4609755cdbc07f08c4ce898c5">
+  <div class="notdet">
+    <a class="notif-title text-color-dark-1" id="all_notifications_link" href="https://account.africanmanagers.org/dashboard/notifications">
+      <div class="notdet-content">
+        <span class="notdet-title">New post in New academy dashboard Academy</span>
+        <span class="notdet-timestamp">19 hours ago</span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="notb notification_wrapper" data-notification_id="12874715">
+<img class="img-fluid" src="https://ami-aws-s3.s3.us-west-2.amazonaws.com/uploads/profile/image/252129/thumb_Giraffe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWA6LUEX3ZYOASFV3%2F20260728%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260728T042746Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6c82ac1c868ebc1faf129fb2a1647b4a6dfd41b4609755cdbc07f08c4ce898c5">
+  <div class="notdet">
+    <a class="notif-title text-color-dark-1" id="all_notifications_link" href="https://account.africanmanagers.org/dashboard/set_academy?academy_id=1896&amp;amp;redirect_path=/dashboard/my_academy_wall/56454">
+      <div class="notdet-content">
+        <span class="notdet-title">New post in AMI DEMO ACADEMY - AUTOMATION 2026</span>
+        <span class="notdet-timestamp">21 hours ago</span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="notb notification_wrapper" data-notification_id="12874460">
+<img class="img-fluid" src="https://ami-aws-s3.s3.us-west-2.amazonaws.com/uploads/profile/image/252129/thumb_Giraffe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWA6LUEX3ZYOASFV3%2F20260728%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260728T042746Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6c82ac1c868ebc1faf129fb2a1647b4a6dfd41b4609755cdbc07f08c4ce898c5">
+  <div class="notdet">
+    <a class="notif-title text-color-dark-1" id="all_notifications_link" href="https://account.africanmanagers.org/dashboard/notifications">
+      <div class="notdet-content">
+        <span class="notdet-title">New post in New academy dashboard Academy</span>
+        <span class="notdet-timestamp">21 hours ago</span>
+      </div>
+    </a>
+  </div>
+</div>
+</ul>
+                  </div>
+                  <span class="text-body-super-small text-color-light-1 mx-4 my-2 counter-unread">3794 unread notifications</span>
+                  <a href="#" id="clear_all" class="btn binf default-text-secondary-button-web" type="button">Clear All</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="notifdrop">
+
+                <a href="/dashboard/messages" class="msg-view nav-link dropdown-toggle bg-FEEEF0-ta-hover" type="button">
+                  <span>  <b></b>  <img id="w-h-24" src="/images/Message.svg"></span>
+                </a>
+
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown profile_menu">
+              <a type="button" class="nav-link " data-toggle="dropdown">
+                <img src="https://ami-aws-s3.s3.us-west-2.amazonaws.com/uploads/profile/image/252129/thumb_Giraffe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWA6LUEX3ZYOASFV3%2F20260728%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260728T042621Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fe0b09dc573e322b695cf2ece4452fdd2e3e47cf244c0c9e56de0e70febf0671" class="img-fluid" alt="">
+              </a>
+              <div class="dropdown-menu dropdown-main">
+
+                <a class=" dropdown-item dropdown-main-list " href="http://account.africanmanagers.org/backend/administration/288832">Super Admin Panel</a>
+
+
+
+                <a class=" dropdown-item dropdown-main-list " href="https://reports.africanmanagers.org"> Reports </a>
+
+                <a class=" dropdown-item dropdown-main-list " href="https://account.africanmanagers.org/ami_auth/userprofile/252129">My Profile</a>
+
+
+                <a class=" dropdown-item dropdown-main-list " href="https://account.africanmanagers.org/dashboard/activation">Activation</a>
+                <a class=" dropdown-item dropdown-main-list " href="https://account.africanmanagers.org/dashboard/partnerships/add">Partner Account</a>
+
+                <a class=" dropdown-item dropdown-main-list " href="https://account.africanmanagers.org/ami_auth/user/288832/settings">Settings</a>
+
+
+                <a class=" dropdown-item dropdown-main-list" href="https://account.africanmanagers.org/dashboard/gg_dashboard">Growth Dashboard</a>
+
+                <a class="dropdown-item dropdown-main-list" href="https://account.africanmanagers.org/ami_auth/logout/288832">Logout</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobheader mobilemenu">
+    <div class="mlogb">
+      <a class="navbar-brand" href="javascript:void(0)"><img height="40" src="/images/ami-logo-rgb.png" class="img-fluid" alt=""></a>
+    </div>
+    <div class="mlogd">
+      <ul>
+        <li class="nav-item">
+          <div class="dropdown notifdrop">
+            <a type="button" class="nav-link dropdown-toggle" id="notifications-link" data-user-id="288832" data-toggle="dropdown" aria-expanded="true">
+              <span><b></b><img id="w-h-24" src="/images/Notification.svg"></span>
+            </a>
+            <div class="dropdown-menu">
+              <h5 class="text-heading-6 text-color-light-teal-1">Notifications
+                <a href="/dashboard/notifications" class="btn binf topbtn default-text-secondary-button-web" type="button">View All</a>
+              </h5>
+              <div class="notblk" id="notifications-list">
+                <ul class="notifications-list-items"><div class="notb notification_wrapper" data-notification_id="12875327">
+<img class="img-fluid" src="/images/Toolkit.svg">
+  <div class="notdet">
+    <a class="notif-title text-color-dark-1" id="all_notifications_link" href="https://account.africanmanagers.org/dashboard/notifications">
+      <div class="notdet-content">
+        <span class="notdet-title">New toolkit alert!</span>
+        <span class="notdet-timestamp">19 hours ago</span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="notb notification_wrapper" data-notification_id="12875215">
+<img class="img-fluid" src="https://ami-aws-s3.s3.us-west-2.amazonaws.com/uploads/profile/image/252129/thumb_Giraffe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWA6LUEX3ZYOASFV3%2F20260728%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260728T042746Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6c82ac1c868ebc1faf129fb2a1647b4a6dfd41b4609755cdbc07f08c4ce898c5">
+  <div class="notdet">
+    <a class="notif-title text-color-dark-1" id="all_notifications_link" href="https://account.africanmanagers.org/dashboard/set_academy?academy_id=1896&amp;amp;redirect_path=/dashboard/my_academy_wall/56456">
+      <div class="notdet-content">
+        <span class="notdet-title">New post in AMI DEMO ACADEMY - AUTOMATION 2026</span>
+        <span class="notdet-timestamp">19 hours ago</span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="notb notification_wrapper" data-notification_id="12874960">
+<img class="img-fluid" src="https://ami-aws-s3.s3.us-west-2.amazonaws.com/uploads/profile/image/252129/thumb_Giraffe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWA6LUEX3ZYOASFV3%2F20260728%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260728T042746Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6c82ac1c868ebc1faf129fb2a1647b4a6dfd41b4609755cdbc07f08c4ce898c5">
+  <div class="notdet">
+    <a class="notif-title text-color-dark-1" id="all_notifications_link" href="https://account.africanmanagers.org/dashboard/notifications">
+      <div class="notdet-content">
+        <span class="notdet-title">New post in New academy dashboard Academy</span>
+        <span class="notdet-timestamp">19 hours ago</span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="notb notification_wrapper" data-notification_id="12874715">
+<img class="img-fluid" src="https://ami-aws-s3.s3.us-west-2.amazonaws.com/uploads/profile/image/252129/thumb_Giraffe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWA6LUEX3ZYOASFV3%2F20260728%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260728T042746Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6c82ac1c868ebc1faf129fb2a1647b4a6dfd41b4609755cdbc07f08c4ce898c5">
+  <div class="notdet">
+    <a class="notif-title text-color-dark-1" id="all_notifications_link" href="https://account.africanmanagers.org/dashboard/set_academy?academy_id=1896&amp;amp;redirect_path=/dashboard/my_academy_wall/56454">
+      <div class="notdet-content">
+        <span class="notdet-title">New post in AMI DEMO ACADEMY - AUTOMATION 2026</span>
+        <span class="notdet-timestamp">21 hours ago</span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="notb notification_wrapper" data-notification_id="12874460">
+<img class="img-fluid" src="https://ami-aws-s3.s3.us-west-2.amazonaws.com/uploads/profile/image/252129/thumb_Giraffe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWA6LUEX3ZYOASFV3%2F20260728%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260728T042746Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6c82ac1c868ebc1faf129fb2a1647b4a6dfd41b4609755cdbc07f08c4ce898c5">
+  <div class="notdet">
+    <a class="notif-title text-color-dark-1" id="all_notifications_link" href="https://account.africanmanagers.org/dashboard/notifications">
+      <div class="notdet-content">
+        <span class="notdet-title">New post in New academy dashboard Academy</span>
+        <span class="notdet-timestamp">21 hours ago</span>
+      </div>
+    </a>
+  </div>
+</div>
+</ul>
+              </div>
+              <span class="text-body-super-small text-color-light-1 mx-4 my-2 counter-unread">3794 unread notifications</span>
+              <a href="#" id="clear_all" class="btn binf default-text-secondary-button-web" type="button"> Clear All</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown notifdrop">
+            <a type="button" class="nav-link dropdown-toggle" data-toggle="dropdown" id="messages-link" data-user-id="288832">
+              <span><b></b><img id="w-h-24" src="/images/Message.svg"></span>
+            </a>
+            <div class="dropdown-menu msg-dropdown">
+              <h5 class="p-3 ml-4">Your Messages </h5>
+              <a href="" class="btn binf topbtn w-75 p-3" type="button">Compose</a>
+              <div class="notblk" id="msg-list"></div>
+              <span class="counter-unread-m"></span>
+              <a href="/dashboard/messages" class="btn binf msg-view w-75 p-3" type="button">View all messages</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown profile_menu">
+            <a type="button" class="nav-link " data-toggle="dropdown">
+              <img src="https://ami-aws-s3.s3.us-west-2.amazonaws.com/uploads/profile/image/252129/thumb_Giraffe.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWA6LUEX3ZYOASFV3%2F20260728%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260728T042621Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fe0b09dc573e322b695cf2ece4452fdd2e3e47cf244c0c9e56de0e70febf0671" class="img-fluid" alt="">
+            </a>
+            <div id="profile-dropdown-menu" class="dropdown-menu">
+
+              <a class=" dropdown-item " href="http://account.africanmanagers.org/backend/administration/288832">Super Admin Panel</a>
+
+
+
+              <a class=" dropdown-item " href="https://reports.africanmanagers.org"> Reports </a>
+
+              <a class=" dropdown-item " href="https://account.africanmanagers.org/ami_auth/userprofile/252129">My Profile</a>
+
+
+              <a class=" dropdown-item " href="https://account.africanmanagers.org/dashboard/activation">Activation</a>
+              <a class=" dropdown-item " href="https://account.africanmanagers.org/dashboard/partnerships/add">Partner Account</a>
+
+              <a class=" dropdown-item " href="https://account.africanmanagers.org/ami_auth/user/288832/settings">Settings</a>
+
+
+              <a class=" dropdown-item dropdown-main-list" href="https://account.africanmanagers.org/dashboard/gg_dashboard">Growth Dashboard</a>
+
+              <a class="dropdown-item" href="https://account.africanmanagers.org/ami_auth/logout/288832">Logout</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#" id="mnavbtn"><i class="fa fa-bars"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mobilemenu mobilemn">
+    <div class="usefullinks">
+      <ul>
+        <li class="navlink active">
+<a href="/dashboard/home">
+
+            <img src="/images/home-icon.svg">
+
+</a>
+        </li>
+        <li class="navlink ">
+<a href="https://account.africanmanagers.org/dashboard/my_journey">
+          <span>Journey</span>
+</a>
+        </li>
+        <li class="navlink ">
+<a href="https://account.africanmanagers.org/dashboard/my_academy_wall">
+          <span>Wall</span>
+</a>
+        </li>
+        <li class="navlink ">
+<a href="https://account.africanmanagers.org/dashboard/my_resources">
+          <span>Resources</span>
+</a>
+        </li>
+        <li class="navlink ">
+<a href="https://account.africanmanagers.org/dashboard/my_academy_courses">
+          <span>Academy Courses</span>
+</a>
+        </li>
+      </ul>
+      <div class="slectblk">
+        <div class="container">
+          <div class="row">
+            <div class="slctbx col-lg-6 col-md-6 col-sm-12 col-12">
+              <form action="/dashboard/set_locale" method="POST" ujs-remote="" id="locale-form">
+                <input type="hidden" name="_csrf_token" value="MwYqKyUlGBEzVh0OBiJSMxg1VjgnMSF_lSfNWoSXJ7HLDqaBnxcBKvo0">
+                <input type="hidden" name="redirect_to" value="/dashboard/home?">
+                <select name="locale" id="locale-settings" class="form-control select2 select2-hidden-accessible" data-select2-id="select2-data-locale-settings" tabindex="-1" aria-hidden="true">
+                  <option value="ar" false="">Arabic</option>
+                  <option value="en" selected="" data-select2-id="select2-data-6-og1h">English</option>
+                  <option value="fr" false="">French</option>
+                  <option value="rw" false="">Kinyarwanda</option>
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-5-4ft6" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-locale-settings-container" aria-controls="select2-locale-settings-container"><span class="select2-selection__rendered" id="select2-locale-settings-container" role="textbox" aria-readonly="true" title="English">English</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              </form>
+            </div>
+            <div class="slctbx col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="sicon ml-0">
+                <select name="gybselects" id="gybselects" class="form-control select2 select2-hidden-accessible" data-select2-id="select2-data-gybselects" tabindex="-1" aria-hidden="true">
+
+                  <option value="/dashboard/set_academy?academy_id=2697&amp;redirect_path=/dashboard/home" false="">
+AMI Academy
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=215&amp;redirect_path=/dashboard/home" false="">
+AMI Course Testing Community 
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=1896&amp;redirect_path=/dashboard/home" false="">
+AMI DEMO ACADEMY - AUTOMATION 2026
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2190&amp;redirect_path=/dashboard/home" false="">
+AMI Platform Walkthrough Academy 
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2869&amp;redirect_path=/dashboard/home" false="">
+AMI Quality Assurance Academy - 2026
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2441&amp;redirect_path=/dashboard/home" false="">
+AMI Quality Assurance Testing Academy 
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2526&amp;redirect_path=/dashboard/home" false="">
+AMI Quality Assurance Testing Academy (2025)4444
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=922&amp;redirect_path=/dashboard/home" false="">
+CALA Advanced Leadership Programme (2022)
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2405&amp;redirect_path=/dashboard/home" false="">
+DWH Team Academy
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=1&amp;redirect_path=/dashboard/home" false="">
+Getting started
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2178&amp;redirect_path=/dashboard/home" false="">
+HA - Micro-Enterprise Accelerator - Cohort 30
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=1901&amp;redirect_path=/dashboard/home" false="">
+JW Seagon Academy
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2567&amp;redirect_path=/dashboard/home" false="">
+Kataza: Growth Guide Academy	
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2905&amp;redirect_path=/dashboard/home" selected="" data-select2-id="select2-data-8-w3d3">
+Kataza: Growth Guide Academy	2026
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2569&amp;redirect_path=/dashboard/home" false="">
+New academy dashboard Academy
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2871&amp;redirect_path=/dashboard/home" false="">
+New Academy Dashboard - Quality Assurance AMI - 2026
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2406&amp;redirect_path=/dashboard/home" false="">
+Platform Team Academy
+                  </option>
+
+                  <option value="/dashboard/set_academy?academy_id=2071&amp;redirect_path=/dashboard/home" false="">
+PSFU Test
+                  </option>
+
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-7-v4rm" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-gybselects-container" aria-controls="select2-gybselects-container"><span class="select2-selection__rendered" id="select2-gybselects-container" role="textbox" aria-readonly="true" title="
+Kataza: Growth Guide Academy	2026
+                  ">
+Kataza: Growth Guide Academy	2026
+                  </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function() {
+    $('#locale-setting').select2({
+      placeholder: "Choose language",
+      minimumResultsForSearch: -1
+    });
+    $('#gybselect').select2({
+      placeholder: "Choose Academy",
+      language: {
+        noResults: function() {
+          return "No results found";
+        }
+      }
+    });
+    $("#gybselect").on('select2:select', function(e) {
+      window.location = e.params.data.id;
+    });
+    $('#locale-settings').select2({
+      placeholder: "Choose language",
+      minimumResultsForSearch: -1
+    });
+    $('#gybselects').select2({
+      placeholder: "Choose Academy",
+      language: {
+        noResults: function() {
+          return "No results found";
+        }
+      }
+    });
+    $("#gybselects").on('select2:select', function(e) {
+      window.location = e.params.data.id;
+    });
+    $('#mnavbtn').click(function(e) {
+      e.preventDefault();
+      $('.mobilemn').slideToggle();
+      $(this).toggleClass("active");
+    });
+
+    const $notificationLink = $('#notifications-link');
+    const $notificationDropdown = $('#notification-dropdown-menu');
+    const $profileDropdown = $('#profile-dropdown-menu');
+
+    $notificationLink.on('click', function(e) {
+      e.preventDefault();
+      $profileDropdown.removeClass('show');
+      $notificationDropdown.toggleClass('show');
+    });
+
+    //  Mobile Menu
+
+    $('.usefullinks ul .navlink').on("click", function() {
+      var $speed = "400";
+      var $this = $(this);
+
+      $this.toggleClass('active')
+              .siblings()
+              .removeClass('active')
+              .end()
+              .children('ul')
+              .slideToggle($speed)
+              .parents('li.navlink').siblings().children('ul').slideUp();
+    });
+  });
+
+  const wrapper = document.querySelector(".wrapper-select");
+
+  if (wrapper) {
+    const selectBtn = wrapper.querySelector(".select-btn");
+    const searchInp = wrapper.querySelector("input");
+    const options = wrapper.querySelector(".options");
+    let countries = ["English", "African", "Arabic"];
+
+    function addItem(selectedItem) {
+      options.innerHTML = "";
+      countries.forEach((item) => {
+        let isSelected = item == selectedItem ? "selected" : "";
+        let li = `<li onclick="updateItem(this)" class="${isSelected}">${item}</li>`;
+        options.insertAdjacentHTML("beforeend", li);
+      });
+    }
+
+    addItem();
+
+    function updateItem(selectedLi) {
+      searchInp.value = "";
+      addItem(selectedLi.innerText);
+      wrapper.classList.remove("active");
+      selectBtn.firstElementChild.innerText = selectedLi.innerText;
+    }
+
+    searchInp.addEventListener("keyup", () => {
+      let arr = [];
+      let searchWord = searchInp.value.toLowerCase();
+      arr = countries
+        .filter((data) => {
+          return data.toLowerCase().startsWith(searchWord);
+        })
+        .map((data) => {
+          let isSelected =
+            data == selectBtn.firstElementChild.innerText ? "selected" : "";
+          return `<li onclick="updateItem(this)" class="${isSelected}">${data}</li>`;
+        })
+        .join("");
+      options.innerHTML = arr
+        ? arr
+        : `<p style="margin-top: 10px;">Oops! Item not found</p>`;
+    });
+    selectBtn.addEventListener("click", () => wrapper.classList.toggle("active"));
+  }
+
+  $('#gybselect').one('select2:open', function(e) {
+    $('input.select2-search__field').prop('placeholder', "Search for academy");
+  });
+
+  window.navigationTranslations = {"unread_notifications":"unread notifications"};
+</script>
+
+  <div id="content" class="content-block">
+
+
+
+  <div id="flash_messages" class="light-background">
+
+      <div class="flash alert alert-success" role="alert" style="display: none;">
+Welcome back LouangeM!
+      </div>
+
+  </div>
+
+    <input type="hidden" id="loading-text" value="Loading">
+<div data-phx-session="SFMyNTY.g2gDaAJhBHQAAAAHZAACaWRtAAAAFHBoeC1HTVpaa09jUUljSUVnbGJCZAAKcGFyZW50X3BpZGQAA25pbGQACHJvb3RfcGlkZAADbmlsZAAJcm9vdF92aWV3ZAAdRWxpeGlyLkFtaUF1dGhXZWIuQ2hhdEJveExpdmVkAAZyb3V0ZXJkAANuaWxkAAdzZXNzaW9udAAAAABkAAR2aWV3ZAAdRWxpeGlyLkFtaUF1dGhXZWIuQ2hhdEJveExpdmVuBgDSQvmmnwFiAAFRgA.6qQuxwaAwvzwJQ9GyYpgo3kBzFrWU0nJUOY52wofTAs" data-phx-static="SFMyNTY.g2gDaAJhBHQAAAADZAAKYXNzaWduX25ld2pkAAVmbGFzaHQAAAABbQAAAAdzdWNjZXNzbQAAABZXZWxjb21lIGJhY2sgTG91YW5nZU0hZAACaWRtAAAAFHBoeC1HTVpaa09jUUljSUVnbGJCbgYA00L5pp8BYgABUYA.WxQUO8vc2mrAoxs8aixm4otzlKHh9jaGYEVb7BpThic" data-phx-view="ChatBoxLive" id="phx-GMZZkOcQIcIEglbB" class="phx-connected" data-phx-root-id="phx-GMZZkOcQIcIEglbB"><!-- Chat Box -->
+
+<div class="chatbox">
+    <div class="chathead">
+        <a href="#">
+            <div class="chimg">
+                <img src="/images/profiles/usimg-50f828fb908cff361457f5cef8e595b5.svg?vsn=d" class="img-fluid" alt="">
+                <span class="online"></span>
+            </div>
+            <div class="chdet">
+                <h5 class="pl-1 text-body-normal-bold text-color-dark-4">Academy Contacts <span class="text-body-normal">(370)</span></h5>
+            </div>
+        </a>
+    </div>
+    <div class="chatdet" style="display: none">
+        <div class="sicon">
+<input class="form-control text-body-small text-color-dark-4" id="inputfieldid" name="foo[search_phrase]" phx-hook="SearchReplace" phx-keyup="chatSearch" placeholder="Start typing..." type="text" value="">
+        </div>
+        <div class="mychat pr-1" phx-hook="InfiniteScroll" id="chatbox-scroll" phx-update="append" data-page="{@page}"><div class="prest" id="33">
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu">
+<a class="text-body-normal-bold text-color-dark-4" data-phx-link="patch" data-phx-link-state="push" href="/ami_auth/userprofile/33" id="contact_link_wall">View profile</a>
+                    </div>
+                </div>
+                <div class="pimg">
+
+                    <img src="" class="img-fluid" alt="">
+
+                    <span class="away"></span>
+
+                </div>
+
+                <div class="pdet mr-1">
+
+
+                     <h5 class="text-body-small text-color-dark-4">Bronwen McConkey-Nwandu</h5>
+                    <p class="text-body-super-small text-color-light-1">Last logged in: 7 months, 1 week, 6 days, 14 hours <span class="text-body-super-small text-color-light-1"> ago</span> </p>
+
+                </div>
+            </div><div class="prest" id="8278">
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu">
+<a class="text-body-normal-bold text-color-dark-4" data-phx-link="patch" data-phx-link-state="push" href="/ami_auth/userprofile/8278" id="contact_link_wall">View profile</a>
+                    </div>
+                </div>
+                <div class="pimg">
+
+                    <img src="" class="img-fluid" alt="">
+
+                    <span class="away"></span>
+
+                </div>
+
+                <div class="pdet mr-1">
+
+
+                     <h5 class="text-body-small text-color-dark-4">Nathalie ROY</h5>
+                    <p class="text-body-super-small text-color-light-1">Last logged in: 18 hours <span class="text-body-super-small text-color-light-1"> ago</span> </p>
+
+                </div>
+            </div><div class="prest" id="61372">
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu">
+<a class="text-body-normal-bold text-color-dark-4" data-phx-link="patch" data-phx-link-state="push" href="/ami_auth/userprofile/61372" id="contact_link_wall">View profile</a>
+                    </div>
+                </div>
+                <div class="pimg">
+
+                    <img src="" class="img-fluid" alt="">
+
+                    <span class="away"></span>
+
+                </div>
+
+                <div class="pdet mr-1">
+
+
+                     <h5 class="text-body-small text-color-dark-4">Kirsty Tudhope</h5>
+                    <p class="text-body-super-small text-color-light-1">Last logged in: 4 weeks, 14 hours <span class="text-body-super-small text-color-light-1"> ago</span> </p>
+
+                </div>
+            </div><div class="prest" id="66744">
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu">
+<a class="text-body-normal-bold text-color-dark-4" data-phx-link="patch" data-phx-link-state="push" href="/ami_auth/userprofile/66744" id="contact_link_wall">View profile</a>
+                    </div>
+                </div>
+                <div class="pimg">
+
+                    <img src="" class="img-fluid" alt="">
+
+                    <span class="away"></span>
+
+                </div>
+
+                <div class="pdet mr-1">
+
+
+                     <h5 class="text-body-small text-color-dark-4">Rose Mutua</h5>
+                    <p class="text-body-super-small text-color-light-1">Last logged in: 14 hours <span class="text-body-super-small text-color-light-1"> ago</span> </p>
+
+                </div>
+            </div><div class="prest" id="221377">
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu">
+<a class="text-body-normal-bold text-color-dark-4" data-phx-link="patch" data-phx-link-state="push" href="/ami_auth/userprofile/221377" id="contact_link_wall">View profile</a>
+                    </div>
+                </div>
+                <div class="pimg">
+
+                    <img src="" class="img-fluid" alt="">
+
+                    <span class="away"></span>
+
+                </div>
+
+                <div class="pdet mr-1">
+
+
+                     <h5 class="text-body-small text-color-dark-4">Eric NKORERIMANA</h5>
+                    <p class="text-body-super-small text-color-light-1">Last logged in: 8 months, 3 days, 20 hours <span class="text-body-super-small text-color-light-1"> ago</span> </p>
+
+                </div>
+            </div><div class="prest" id="235334">
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu">
+<a class="text-body-normal-bold text-color-dark-4" data-phx-link="patch" data-phx-link-state="push" href="/ami_auth/userprofile/235334" id="contact_link_wall">View profile</a>
+                    </div>
+                </div>
+                <div class="pimg">
+
+                    <img src="" class="img-fluid" alt="">
+
+                    <span class="away"></span>
+
+                </div>
+
+                <div class="pdet mr-1">
+
+
+                     <h5 class="text-body-small text-color-dark-4">Nsuuta Mukama Nabunje</h5>
+                    <p class="text-body-super-small text-color-light-1">Last logged in: 14 hours <span class="text-body-super-small text-color-light-1"> ago</span> </p>
+
+                </div>
+            </div><div class="prest" id="237491">
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu">
+<a class="text-body-normal-bold text-color-dark-4" data-phx-link="patch" data-phx-link-state="push" href="/ami_auth/userprofile/237491" id="contact_link_wall">View profile</a>
+                    </div>
+                </div>
+                <div class="pimg">
+
+                    <img src="" class="img-fluid" alt="">
+
+                    <span class="away"></span>
+
+                </div>
+
+                <div class="pdet mr-1">
+
+
+                     <h5 class="text-body-small text-color-dark-4">Jean Rene Hakizimana</h5>
+                    <p class="text-body-super-small text-color-light-1">Last logged in: 1 week, 17 hours <span class="text-body-super-small text-color-light-1"> ago</span> </p>
+
+                </div>
+            </div><div class="prest" id="241171">
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu">
+<a class="text-body-normal-bold text-color-dark-4" data-phx-link="patch" data-phx-link-state="push" href="/ami_auth/userprofile/241171" id="contact_link_wall">View profile</a>
+                    </div>
+                </div>
+                <div class="pimg">
+
+                    <img src="" class="img-fluid" alt="">
+
+                    <span class="away"></span>
+
+                </div>
+
+                <div class="pdet mr-1">
+
+
+                     <h5 class="text-body-small text-color-dark-4">Solange Bayizere</h5>
+                    <p class="text-body-super-small text-color-light-1">Last logged in: 3 weeks, 6 days, 12 hours <span class="text-body-super-small text-color-light-1"> ago</span> </p>
+
+                </div>
+            </div><div class="prest" id="241305">
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu">
+<a class="text-body-normal-bold text-color-dark-4" data-phx-link="patch" data-phx-link-state="push" href="/ami_auth/userprofile/241305" id="contact_link_wall">View profile</a>
+                    </div>
+                </div>
+                <div class="pimg">
+
+                    <img src="" class="img-fluid" alt="">
+
+                    <span class="away"></span>
+
+                </div>
+
+                <div class="pdet mr-1">
+
+
+                     <h5 class="text-body-small text-color-dark-4">Martin MWAMARAKIZA</h5>
+                    <p class="text-body-super-small text-color-light-1">Last logged in: 2 months, 3 weeks, 15 hours <span class="text-body-super-small text-color-light-1"> ago</span> </p>
+
+                </div>
+            </div></div>
+    </div>
+</div>
+</div>
+<div data-phx-session="SFMyNTY.g2gDaAJhBHQAAAAHZAACaWRtAAAAFHBoeC1HTVpaa092N29Pb0VnaktDZAAKcGFyZW50X3BpZGQAA25pbGQACHJvb3RfcGlkZAADbmlsZAAJcm9vdF92aWV3ZAAmRWxpeGlyLkFtaVdlYi5NZXNzYWdlc05vdGlmaWNhdGlvbkxpdmVkAAZyb3V0ZXJkAANuaWxkAAdzZXNzaW9udAAAAAFtAAAADXNlbGVjdGVkX3BhZ2VtAAAACWRhc2hib2FyZGQABHZpZXdkACZFbGl4aXIuQW1pV2ViLk1lc3NhZ2VzTm90aWZpY2F0aW9uTGl2ZW4GANRC-aafAWIAAVGA.iH7yxbgpgs43x6drjeNUaZEJ_PenUaUrssqRcvQj6Yo" data-phx-static="SFMyNTY.g2gDaAJhBHQAAAADZAAKYXNzaWduX25ld2pkAAVmbGFzaHQAAAABbQAAAAdzdWNjZXNzbQAAABZXZWxjb21lIGJhY2sgTG91YW5nZU0hZAACaWRtAAAAFHBoeC1HTVpaa092N29Pb0VnaktDbgYA1EL5pp8BYgABUYA.Ln1mg5r4CSQaSORlJ7PpjXhXT5HiPoRzpKamQV_4mBg" data-phx-view="MessagesNotificationLive" id="phx-GMZZkOv7oOoEgjKC" class="phx-connected" data-phx-root-id="phx-GMZZkOv7oOoEgjKC"><div id="notifications-area">
+
+</div>
+</div>
+<div class="main-body-context mb-50 dashboard light-background" dir="ltr">
+  <input type="hidden" id="seachable_user_id" value="288832" data-user-id="288832">
+  <!-- Section Top Banner Start -->
+  <section class="top-banner-section">
+    <article class="container">
+    <div class="row">
+
+      <div class="col-sm-10 banner-text">
+        <h4 class="text-heading-6 text-white">Kataza: Growth Guide Academy	2026</h4>
+        <p class="text-body-small-headings text-white add-read-more show-less-content">Welcome to AMI's Kataza Academy, an exclusive community for Growth Guides (just like you!) who are saying "yes" to supporting MSMEs to identify their <span class="second-section">gaps and apply for finance as they keep going and growing! We're so glad you're here! This academy has been designed to support you as you support MSMEs. As part of this academy, you'll have access to practical content designed to help MSMEs grow, opportunities to engage with fellow Growth Guides and a chance to grow your own skills around supporting and empowering others.</span><span class="read-more" title="Click to Show More"> ...see more</span><span class="read-less" title="Click to Show Less"> see less</span></p>
+      </div>
+    </div>
+    </article>
+  </section>
+  <!-- Section Top Banner Closed -->
+
+
+
+  <!-- Journey Section Start -->
+
+<div data-phx-session="SFMyNTY.g2gDaAJhBHQAAAAHZAACaWRtAAAAFHBoeC1HTVpaa093SkwyWUVnakxDZAAKcGFyZW50X3BpZGQAA25pbGQACHJvb3RfcGlkZAADbmlsZAAJcm9vdF92aWV3ZAAzRWxpeGlyLkFtaVdlYi5EYXNoYm9hcmRMZWFybmluZ0pvdXJuZXlDb21wb25lbnRMaXZlZAAGcm91dGVyZAADbmlsZAAHc2Vzc2lvbnQAAAAGbQAAAAphY2FkZW15X2lkYgAAC1ltAAAADGFjdGl2ZV9sal9pZGIAABUNbQAAAAZsb2NhbGVtAAAAAmVubQAAAAxxdWVyeV9zdHJpbmdtAAAAAG0AAAAMcmVxdWVzdF9wYXRobQAAAA8vZGFzaGJvYXJkL2hvbWVtAAAAB3VzZXJfaWRiAARoQGQABHZpZXdkADNFbGl4aXIuQW1pV2ViLkRhc2hib2FyZExlYXJuaW5nSm91cm5leUNvbXBvbmVudExpdmVuBgDVQvmmnwFiAAFRgA.OSLcBfgxNNTXXcdZ3w8gZYmxx9o9GDs_MJp3lW1-y5s" data-phx-static="SFMyNTY.g2gDaAJhBHQAAAADZAAKYXNzaWduX25ld2pkAAVmbGFzaHQAAAABbQAAAAdzdWNjZXNzbQAAABZXZWxjb21lIGJhY2sgTG91YW5nZU0hZAACaWRtAAAAFHBoeC1HTVpaa093SkwyWUVnakxDbgYA1UL5pp8BYgABUYA.h3ri2ZL6ay4I4zKMTT50Kck5R1uWXK9Ocnp5ucJnjes" data-phx-view="DashboardLearningJourneyComponentLive" id="phx-GMZZkOwJL2YEgjLC" class="phx-connected" data-phx-root-id="phx-GMZZkOwJL2YEgjLC"><section class="journey-section">
+  <article class="container journey-article dashboard">
+    <!-- Card Start -->
+    <div class="d-flex">
+      <div class="card w-100 container left-border-radious-0">
+        <!-- Card-header Start -->
+        <div class="card-header row bg-transparent border-0">
+          <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 mtr-5 d-flex gap-12 justify-content-start text-color-dark-4 learning_journeys-head">
+            <span class="text-heading-6 text-color-dark-4 m-0">My Learning Journey</span>
+
+          </div>
+          <div class="col-xl-6 col-sm-12 col-xs-12 text-right mtr-5 see-all-container">
+            <a href="/dashboard/my_journey" class="text-body-normal-bold text-color-dark-teal see-all">See all journey <span class="ml-10">➝</span> </a>
+          </div>
+        </div>
+        <!-- Card-header Closed -->
+        <!-- Card-body Start -->
+        <div class="d-flex ml-21 learning_journeys_card-container">
+
+            <div class="d-flex phase-container" style="margin-right:20px;padding-top: 20px;padding-bottom: 20px;" id="phase-info">
+              <div class="phase-body">
+                <div id="phase-up-btn">
+                  <a type="button" phx-click="previous_phase" class="font-size-18"><i class="fas fa-chevron-up" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="text-color-dark-2 text-sub-title-bold mrb-12 main-title">
+                  Phase 2
+                </div>
+                <div class="text-color-dark-2 text-big-body mrb-8 phase-name">
+Access to Finance support
+                </div>
+                <div class="d-flex" id="phase-status-prog">
+                  <div class="text-label-tags status component-ongoing">
+Ongoing
+                  </div>
+                  <div class="courses-progress-bar">
+                    <div class="progress" data-percentage="50">
+                      <span class="progress-left">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <span class="progress-right">
+                        <span class="progress-bar"></span>
+                      </span>
+                      <div class="progress-value counter-numb">
+                        <span class="text-body-super-small">
+50%
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="phase-ends-on" class="text-body-small text-color-dark-4">
+Ends on 17/08/2026
+                </div>
+                <div id="phase-down-btn">
+                  <a type="button" phx-click="next_phase" class="font-size-18"><i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+
+          <div style="align-self:center;" class="w-75">
+
+              <div id="journey-carousel" class="owl-carousel owl-theme owl-loaded owl-drag" phx-hook="configureDashboardOwlCarouselJourneys" data-past-count="9" data-current-count="1">
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+
+                <!-- Empty card with no data -->
+                
+              <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3685px, 0px, 0px); transition: all 0s ease 0s; width: 4505px;"><div class="owl-item" style="width: 259.5px; margin-right: 150px;"><div id="course422" class="item searchable " phx-hook="OnclickAddClass" data-component-period-id="11687" data-phase-id="12758" data-programme-period-id="5389" data-component-id="422" data-type="course" data-locale="en">
+                    <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/icons/course/managing_self.jpg">
+                    <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title min-h-48">Shyira Ubucuruzi Bwawe Kuri Interineti</p>
+                    <p class="text-body-super-small text-color-dark-4 journey-card-description min-h-60">Imbuga mpuzambaga ni ibyifashishwa bikomeye mu imenyekanishabikorwa no mu kugani...</p>
+                    <div class="d-flex footer gap-10">
+                      <p class="component-past past-label">Past</p>
+
+                        <p class="color-097524A8 bgc-F0F6FF">Personal</p>
+
+
+                        <p class="color-1F75FE bgc-F0F6FF">Mandatory</p>
+
+                    </div>
+                    <div class="sider">
+                      <img src="/images/sider.png">
+                    </div>
+                  </div></div><div class="owl-item" style="width: 259.5px; margin-right: 150px;"><div id="course629" class="item searchable " phx-hook="OnclickAddClass" data-component-period-id="20897" data-phase-id="12758" data-programme-period-id="5389" data-component-id="629" data-type="course" data-locale="en">
+                    <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/icons/course/managing_self.jpg">
+                    <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title min-h-48">Business Integrity</p>
+                    <p class="text-body-super-small text-color-dark-4 journey-card-description min-h-60">“Corruption erodes trust, weakens democracy, hampers economic development and fu...</p>
+                    <div class="d-flex footer gap-10">
+                      <p class="component-past past-label">Past</p>
+
+                        <p class="color-097524A8 bgc-F0F6FF">Personal</p>
+
+
+                        <p class="color-1F75FE bgc-F0F6FF">Mandatory</p>
+
+                    </div>
+                    <div class="sider">
+                      <img src="/images/sider.png">
+                    </div>
+                  </div></div><div class="owl-item" style="width: 259.5px; margin-right: 150px;"><div id="event30080" class="item searchable " phx-hook="OnclickAddClass" data-component-period-id="39604" data-phase-id="12758" data-programme-period-id="5389" data-component-id="30080" data-type="event" data-locale="en">
+                    <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/workshop.svg">
+                    <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title min-h-48">Kataza: Virtual Learning Lab </p>
+                    <p class="text-body-super-small text-color-dark-4 journey-card-description min-h-60">Welcome to our second Learning Lab where we will deepen your ability to align di...</p>
+                    <div class="d-flex footer gap-10">
+                      <p class="component-past past-label">Past</p>
+
+
+                        <p class="color-1F75FE bgc-F0F6FF">Mandatory</p>
+
+                    </div>
+                    <div class="sider">
+                      <img src="/images/sider.png">
+                    </div>
+                  </div></div><div class="owl-item" style="width: 259.5px; margin-right: 150px;"><div id="toolkit1259" class="item searchable " phx-hook="OnclickAddClass" data-component-period-id="9359" data-phase-id="12758" data-programme-period-id="5389" data-component-id="1259" data-type="toolkit" data-locale="en">
+                    <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/Toolkit.svg">
+                    <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title min-h-48">Kataza Access to Finance Toolkit</p>
+                    <p class="text-body-super-small text-color-dark-4 journey-card-description min-h-60">A set of tools and templates that assist Kataza entrepreneurs in Rwanda in their...</p>
+                    <div class="d-flex footer gap-10">
+                      <p class="component-past past-label">Past</p>
+
+
+                        <p class="color-1F75FE bgc-F0F6FF">Mandatory</p>
+
+                    </div>
+                    <div class="sider">
+                      <img src="/images/sider.png">
+                    </div>
+                  </div></div><div class="owl-item" style="width: 259.5px; margin-right: 150px;"><div id="tool8645" class="item searchable " phx-hook="OnclickAddClass" data-component-period-id="45394" data-phase-id="12758" data-programme-period-id="5389" data-component-id="8645" data-type="tool" data-locale="en">
+                    <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/Tools.svg">
+                    <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title min-h-48">Agatabo k'ibyifashishwa bya Kataza</p>
+                    <p class="text-body-super-small text-color-dark-4 journey-card-description min-h-60">Aka gatabo karimo icyifashishwa bya Kataza.</p>
+                    <div class="d-flex footer gap-10">
+                      <p class="component-past past-label">Past</p>
+
+
+                    </div>
+                    <div class="sider">
+                      <img src="/images/sider.png">
+                    </div>
+                  </div></div><div class="owl-item" style="width: 259.5px; margin-right: 150px;"><div id="tool8643" class="item searchable " phx-hook="OnclickAddClass" data-component-period-id="45392" data-phase-id="12758" data-programme-period-id="5389" data-component-id="8643" data-type="tool" data-locale="en">
+                    <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/Tools.svg">
+                    <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title min-h-48">How to Guide (FieldPro)</p>
+                    <p class="text-body-super-small text-color-dark-4 journey-card-description min-h-60">This a video explaining how to navigate FieldPro. </p>
+                    <div class="d-flex footer gap-10">
+                      <p class="component-past past-label">Past</p>
+
+
+                    </div>
+                    <div class="sider">
+                      <img src="/images/sider.png">
+                    </div>
+                  </div></div><div class="owl-item" style="width: 259.5px; margin-right: 150px;"><div id="tool8643" class="item searchable " phx-hook="OnclickAddClass" data-component-period-id="45395" data-phase-id="12758" data-programme-period-id="5389" data-component-id="8643" data-type="tool" data-locale="en">
+                    <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/Tools.svg">
+                    <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title min-h-48">How to Guide (FieldPro)</p>
+                    <p class="text-body-super-small text-color-dark-4 journey-card-description min-h-60">This a video explaining how to navigate FieldPro. </p>
+                    <div class="d-flex footer gap-10">
+                      <p class="component-past past-label">Past</p>
+
+
+                    </div>
+                    <div class="sider">
+                      <img src="/images/sider.png">
+                    </div>
+                  </div></div><div class="owl-item" style="width: 259.5px; margin-right: 150px;"><div id="tool8622" class="item searchable " phx-hook="OnclickAddClass" data-component-period-id="45496" data-phase-id="12758" data-programme-period-id="5389" data-component-id="8622" data-type="tool" data-locale="en">
+                    <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/Tools.svg">
+                    <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title min-h-48">Tool - Step by Step Finance Application Guide</p>
+                    <p class="text-body-super-small text-color-dark-4 journey-card-description min-h-60">This is a step by step finance application guide for Kataza.</p>
+                    <div class="d-flex footer gap-10">
+                      <p class="component-past past-label">Past</p>
+
+
+                    </div>
+                    <div class="sider">
+                      <img src="/images/sider.png">
+                    </div>
+                  </div></div><div class="owl-item" style="width: 259.5px; margin-right: 150px;"><div id="tool8608" class="item searchable " phx-hook="OnclickAddClass" data-component-period-id="45393" data-phase-id="12758" data-programme-period-id="5389" data-component-id="8608" data-type="tool" data-locale="en">
+                    <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/Tools.svg">
+                    <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title min-h-48">Tool - Business Operations Guide (KATAZA)</p>
+                    <p class="text-body-super-small text-color-dark-4 journey-card-description min-h-60">This is the Business Operations Guide for Kataza.</p>
+                    <div class="d-flex footer gap-10">
+                      <p class="component-past past-label">Past</p>
+
+
+                    </div>
+                    <div class="sider">
+                      <img src="/images/sider.png">
+                    </div>
+                  </div></div><div class="owl-item active" style="width: 259.5px; margin-right: 150px;"><div id="event33193" class="item searchable active-component" phx-hook="OnclickAddClass" data-component-period-id="42710" data-phase-id="12758" data-programme-period-id="5389" data-component-id="33193" data-type="event" data-locale="en">
+                    <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/survey.svg">
+                    <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title min-h-48">Pulse Check</p>
+                    <p class="text-body-super-small text-color-dark-4 journey-card-description min-h-60">What a journey it has been so far. As we move through the program together, we w...</p>
+                    <div class="d-flex footer gap-10">
+                      <p class="component-ongoing past-label">Ongoing</p>
+
+
+                        <p class="color-1F75FE bgc-F0F6FF">Mandatory</p>
+
+                    </div>
+                    <div class="sider">
+                      <img src="/images/sider.png">
+                    </div>
+                  </div></div><div class="owl-item active" style="width: 259.5px; margin-right: 150px;"><div style="min-height: 269px;"></div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+              <div class="slider_nav enable-sider_nav">
+                <a type="button" role="presentation" class="font-size-18 prev-icon prev-icon-img" disabled=""><img src="/images/left.svg" aria-hidden="true"></a>
+                <a type="button" role="presentation" class="mrl-12 mrr-12 font-size-18 prev-icon nav-bottons">Previous</a>
+                <a type="button" role="presentation" class="mrl-12 mrr-12 font-size-18 nav-bottons current-icon disable_current_button(@learning_journeys)">Current</a>
+                <a type="button" role="presentation" class="mrl-12 mrr-12 font-size-18 next-icon nav-bottons">Next</a>
+                <a type="button" role="presentation" class="font-size-18 next-icon next-icon-img"><img src="/images/right.svg" aria-hidden="true"></a>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+</div>
+
+
+<div data-phx-session="SFMyNTY.g2gDaAJhBHQAAAAHZAACaWRtAAAAFHBoeC1HTVpaa093UFFtUUVnakxpZAAKcGFyZW50X3BpZGQAA25pbGQACHJvb3RfcGlkZAADbmlsZAAJcm9vdF92aWV3ZAA1RWxpeGlyLkFtaVdlYi5EYXNoYm9hcmRVbmVucm9sbGVkQ291cnNlc0NvbXBvbmVudExpdmVkAAZyb3V0ZXJkAANuaWxkAAdzZXNzaW9udAAAAAJtAAAADmNvdXJzZV9wZXJpb2RzbAAAAAd0AAAAImQACmFjYWRlbXlfaWRiAAALWWQACF9fbWV0YV9fdAAAAAZkAApfX3N0cnVjdF9fZAAbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhZAAHY29udGV4dGQAA25pbGQABnByZWZpeGQAA25pbGQABnNjaGVtYWQAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAGc291cmNlbQAAAA5jb3Vyc2VfcGVyaW9kc2QABXN0YXRlZAAGbG9hZGVkZAAOZW5yb2xsbWVudF9lbmR0AAAABWQACl9fc3RydWN0X19kAAtFbGl4aXIuRGF0ZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEYZAAFbW9udGhhBGQABHllYXJiAAAH6mQADWFjYWRlbXlfdGl0bGVkAANuaWxkAAtlbnJvbGxtZW50c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAC2Vucm9sbG1lbnRzZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAGY291cnNldAAAADNkABJtaWdyYXRpb25fZmluaXNoZWRkAAR0cnVlZAAIX19tZXRhX190AAAABmQACl9fc3RydWN0X19kABtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGFkAAdjb250ZXh0ZAADbmlsZAAGcHJlZml4ZAADbmlsZAAGc2NoZW1hZAARRWxpeGlyLkFtaS5Db3Vyc2VkAAZzb3VyY2VtAAAAB2NvdXJzZXNkAAVzdGF0ZWQABmxvYWRlZGQAEnRlYXNlcl9iYW5uZXJfdGV4dG0AAADHPC9iPjwvcD48Rk9OVCBTSVpFPSI0IiBDT0xPUj0jMjI3ODc2PkRvZXMgeW91ciBidXNpbmVzcyBvZnRlbiBydW4gb3V0IG9mIG1vbmV5PzwvRk9OVD48L2I-PC9wPg0KPHA-TGVhcm4gaG93IHRvIHN0YXkgb24gdG9wIG9mIHlvdXIgY2FzaCBmbG93IGluIG9yZGVyIHRvIGJlIGFibGUgdG8gbWFrZSBiZXR0ZXIgYnVzaW5lc3MgZGVjaXNpb25zLjxwPmQAB3F1aXp6ZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAdxdWl6emVzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAFaW1hZ2VkAANuaWxkAA9jb3Vyc2VfYWRtaW5faWRkAANuaWxkAA1tYXJraW5nX2d1aWRldAAAAAJkAAlmaWxlX25hbWVtAAAAIk1hcmtpbmcgR3VpZGVfRmluYWwgQXNzaWdubWVudC5wZGZkAAp1cGRhdGVkX2F0dAAAAAlkAApfX3N0cnVjdF9fZAAURWxpeGlyLk5haXZlRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhCGQABGhvdXJhBmQAC21pY3Jvc2Vjb25kaAJhAGEAZAAGbWludXRlYRFkAAVtb250aGEJZAAGc2Vjb25kYTNkAAR5ZWFyYgAAB-VkAA9oaWRlX2NvbXBvbmVudHNkAAVmYWxzZWQABm9uX2FpcmQABHRydWVkAAtmcmVlX2NvdXJzZWQABWZhbHNlZAAUcmVzb3VyY2VfYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABRyZXNvdXJjZV9hdHRhY2htZW50c2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAF3RodW1iX2ltYWdlX2F0dGFjaG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAXdGh1bWJfaW1hZ2VfYXR0YWNobWVudHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAxhY2Nlc3NfcHJpY2VkAAR0cnVlZAAaYWZmaWxpYXRlX2xvZ29fYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABphZmZpbGlhdGVfbG9nb19hdHRhY2htZW50c2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAAmlkYWVkAAVsZXZlbGEAZAALdG90YWxfaG91cnNhCmQABXByaWNlYRRkABZwcmVfYXNzZXNzbWVudF9xdWl6X2lkYgAAAxBkAA9zZXF1ZW50aWFsX3RhZ3NkAANuaWxkAAxjb3Vyc2VfYWRtaW50AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QADGNvdXJzZV9hZG1pbmQACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACGFyY2hpdmVkZAAFZmFsc2VkAAVsaWtlc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABWxpa2VzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAEdGFnc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABHRhZ3NkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABh0ZWFzZXJfaW1hZ2VfYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABh0ZWFzZXJfaW1hZ2VfYXR0YWNobWVudHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAApjb21wb25lbnRzbQAAAONDYXNoIGZsb3cgaXMgdGhlIGJsb29kIHRoYXQga2VlcHMgdGhlIGhlYXJ0IG9mIHRoZSBidXNpbmVzcyBwdW1waW5nLldpdGhvdXQgYSBzdHJvbmcgY2FzaCBmbG93LCB5b3UgbWF5IG5vdCBiZSBhYmxlIHRvIG1ha2UgdGhlIGludmVzdG1lbnRzIHlvdSBuZWVkIHRvIGNvbXBldGUsIG9yIG1heSBoYXZlIHRvIHRha2UgZXhwZW5zaXZlIGxvYW5zIHRvIGtlZXAgeW91ciBidXNpbmVzcyBhZmxvYXQuIGQABXVuaXRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAFdW5pdHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAtpbnN0cnVjdG9yc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAC2luc3RydWN0b3JzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAFdGl0bGVtAAAAF0Nhc2ggTWFuYWdlbWVudCBCYXNpY3MgZAARY291cnNlc19yZXNvdXJjZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABFjb3Vyc2VzX3Jlc291cmNlc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEGFjY2VwdGFuY2Vfc2NvcmVhN2QAC2Rlc2NyaXB0aW9ubQAAAONDYXNoIGZsb3cgaXMgdGhlIGJsb29kIHRoYXQga2VlcHMgdGhlIGhlYXJ0IG9mIHRoZSBidXNpbmVzcyBwdW1waW5nLldpdGhvdXQgYSBzdHJvbmcgY2FzaCBmbG93LCB5b3UgbWF5IG5vdCBiZSBhYmxlIHRvIG1ha2UgdGhlIGludmVzdG1lbnRzIHlvdSBuZWVkIHRvIGNvbXBldGUsIG9yIG1heSBoYXZlIHRvIHRha2UgZXhwZW5zaXZlIGxvYW5zIHRvIGtlZXAgeW91ciBidXNpbmVzcyBhZmxvYXQuIGQABHNvcnRhAGQAB2xlc3NvbnN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAdsZXNzb25zZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAASdGVhc2VyX2Rlc2NyaXB0aW9ubQAAAONDYXNoIGZsb3cgaXMgdGhlIGJsb29kIHRoYXQga2VlcHMgdGhlIGhlYXJ0IG9mIHRoZSBidXNpbmVzcyBwdW1waW5nLldpdGhvdXQgYSBzdHJvbmcgY2FzaCBmbG93LCB5b3UgbWF5IG5vdCBiZSBhYmxlIHRvIG1ha2UgdGhlIGludmVzdG1lbnRzIHlvdSBuZWVkIHRvIGNvbXBldGUsIG9yIG1heSBoYXZlIHRvIHRha2UgZXhwZW5zaXZlIGxvYW5zIHRvIGtlZXAgeW91ciBidXNpbmVzcyBhZmxvYXQuIGQADnByaWNlX2N1cnJlbmN5bQAAAANVU0RkAA5jb3Vyc2VfcGVyaW9kc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QADmNvdXJzZV9wZXJpb2RzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAPd2h5X3Rha2VfY291cnNlbQAAAYxBIGhlYWx0aHkgY2FzaCBmbG93IGlzIGFuIGVzc2VudGlhbCBwYXJ0IG9mIGFueSBzdWNjZXNzZnVsIGJ1c2luZXNzLiBZb3UgbWF5IGhhdmUgdGhlIGJlc3QgcHJvZHVjdHMgYW5kIHNlcnZpY2VzIGJ1dCBpZiB5b3UgZG9uJ3QgaGF2ZSBlbm91Z2ggY2FzaCB0byBwYXkgeW91ciBzdXBwbGllcnMsIGNyZWRpdG9ycyBvciBlbXBsb3llZXMsIHlvdSBtaWdodCBoYXZlIHRvIGNsb3NlIHlvdXIgYnVzaW5lc3MuDQpCeSB0aGUgZW5kIG9mIHRoaXMgY291cnNlIHlvdSB3aWxsIGJlIGFibGUgdG8gZGV0ZXJtaW5lIHlvdXIgY2FzaCBwb3NpdGlvbiBhbmQgdGhlIHN0ZXBzIHlvdSBuZWVkIHRvIHRha2UgdG8gbWFuYWdlIHlvdXIgY2FzaCBtb3JlIGVmZmljaWVudGx5IGFuZCBwcm9maXRhYmx5Lg0KDQpkABFtaWdyYXRpb25fc3RhcnRlZGQABHRydWVkAApfX3N0cnVjdF9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkABFjZXJ0aWZpY2F0ZV9wcmljZWQABWZhbHNlZAALaW5zZXJ0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhEGQABGhvdXJhA2QAC21pY3Jvc2Vjb25kaAJiAACnt2EGZAAGbWludXRlYS9kAAVtb250aGEEZAAGc2Vjb25kYQ5kAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-RkAAl6b25lX2FiYnJtAAAAA1VUQ2QACmluc3RydWN0b3JtAAAAIlNhcnVubnkgU2FpYnVsbCAsIFRyYWluaW5nIE1hbmFnZXJkAARzbHVnbQAAABZjYXNoLW1hbmFnZW1lbnQtYmFzaWNzZAATcHJlX2Fzc2Vzc21lbnRfcXVpenQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAATcHJlX2Fzc2Vzc21lbnRfcXVpemQACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAC2lzX2ZlYXR1cmVkZAAFZmFsc2VkABRpbmFjdGl2ZV90ZWFzZXJfbGlua20AAAAAZAAGdmlkZW9zdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAGdmlkZW9zZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAIc3VidGl0bGVkAANuaWxkABBoaWRlX2Fzc2Vzc21lbnRzZAAFZmFsc2VkAAp1cGRhdGVkX2F0dAAAAA1kAApfX3N0cnVjdF9fZAAPRWxpeGlyLkRhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YQhkAARob3VyYQZkAAttaWNyb3NlY29uZGgCYgAHEZthBmQABm1pbnV0ZWERZAAFbW9udGhhCWQABnNlY29uZGExZAAKc3RkX29mZnNldGEAZAAJdGltZV96b25lbQAAAAdFdGMvVVRDZAAKdXRjX29mZnNldGEAZAAEeWVhcmIAAAflZAAJem9uZV9hYmJybQAAAANVVENkAAJpZGIAAGeXZAALaXNfZXh0ZXJuYWxkAAVmYWxzZWQAEW9uZV9mb3JfYWxsX2VtYWlsZAADbmlsZAAMcHJvZ3JhbW1lX2lkZAADbmlsZAATcHJvZ3JhbW1lX3BlcmlvZF9pZGQAA25pbGQAEXBhY2thZ2VfcGVyaW9kX2lkZAADbmlsZAAQcHJvZ3JhbW1lX3BlcmlvZHQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAQcHJvZ3JhbW1lX3BlcmlvZGQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQADG9uZWZvcmFsbF9pZGQAA25pbGQACGFyY2hpdmVkZAAFZmFsc2VkAA9vbmVmb3JhbGxfYnVkZHl0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAD29uZWZvcmFsbF9idWRkeWQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQADGN1c3RvbWl6YWJsZWQABWZhbHNlZAAHZW5kc19vbnQAAAAFZAAKX19zdHJ1Y3RfX2QAC0VsaXhpci5EYXRlZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YR9kAAVtb250aGEMZAAEeWVhcmIAAAfqZAAWcHJvZ3JhbW1lX3BlcmlvZF9waGFzZXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAWcHJvZ3JhbW1lX3BlcmlvZF9waGFzZWQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACmJ1ZGR5X3R5cGVhAGQAB2FjYWRlbXl0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAB2FjYWRlbXlkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAA5wYWNrYWdlX3BlcmlvZHQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAOcGFja2FnZV9wZXJpb2RkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAhwb3NpdGlvbmQAA25pbGQAF21hbnVhbF9idWRkeV9ub21pbmF0aW9uZAAFZmFsc2VkAA9pc19sZWFybmluZ19sYWJkAAVmYWxzZWQABnNjb3Jlc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABnNjb3Jlc2QACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACWNvdXJzZV9pZGFlZAAKX19zdHJ1Y3RfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAALaW5zZXJ0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhGGQABGhvdXJhCWQAC21pY3Jvc2Vjb25kaAJiAA1dzWEGZAAGbWludXRlYQhkAAVtb250aGEDZAAGc2Vjb25kYQlkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-pkAAl6b25lX2FiYnJtAAAAA1VUQ2QACXByb2dyYW1tZXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAJcHJvZ3JhbW1lZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAJbWFuZGF0b3J5ZAAEdHJ1ZWQAGXByb2dyYW1tZV9wZXJpb2RfcGhhc2VfaWRkAANuaWxkAAp1cGRhdGVkX2F0dAAAAA1kAApfX3N0cnVjdF9fZAAPRWxpeGlyLkRhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRhkAARob3VyYQlkAAttaWNyb3NlY29uZGgCYgANXdVhBmQABm1pbnV0ZWEIZAAFbW9udGhhA2QABnNlY29uZGEJZAAKc3RkX29mZnNldGEAZAAJdGltZV96b25lbQAAAAdFdGMvVVRDZAAKdXRjX29mZnNldGEAZAAEeWVhcmIAAAfqZAAJem9uZV9hYmJybQAAAANVVENkAAlzdGFydHNfb250AAAABWQACl9fc3RydWN0X19kAAtFbGl4aXIuRGF0ZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEMZAAFbW9udGhhBWQABHllYXJiAAAH6nQAAAAiZAAKYWNhZGVteV9pZGIAAAtZZAAIX19tZXRhX190AAAABmQACl9fc3RydWN0X19kABtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGFkAAdjb250ZXh0ZAADbmlsZAAGcHJlZml4ZAADbmlsZAAGc2NoZW1hZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAAZzb3VyY2VtAAAADmNvdXJzZV9wZXJpb2RzZAAFc3RhdGVkAAZsb2FkZWRkAA5lbnJvbGxtZW50X2VuZHQAAAAFZAAKX19zdHJ1Y3RfX2QAC0VsaXhpci5EYXRlZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YR9kAAVtb250aGEMZAAEeWVhcmIAAAfqZAANYWNhZGVteV90aXRsZWQAA25pbGQAC2Vucm9sbG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAALZW5yb2xsbWVudHNkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAZjb3Vyc2V0AAAAM2QAEm1pZ3JhdGlvbl9maW5pc2hlZGQABHRydWVkAAhfX21ldGFfX3QAAAAGZAAKX19zdHJ1Y3RfX2QAG0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YWQAB2NvbnRleHRkAANuaWxkAAZwcmVmaXhkAANuaWxkAAZzY2hlbWFkABFFbGl4aXIuQW1pLkNvdXJzZWQABnNvdXJjZW0AAAAHY291cnNlc2QABXN0YXRlZAAGbG9hZGVkZAASdGVhc2VyX2Jhbm5lcl90ZXh0bQAAAKc8aDM-SXMgeW91ciB0ZWFtIHByb2FjdGl2ZSBvciByZWFjdGl2ZT88L2gzPg0KPHA-TGVhcm4ga2V5IHByb2JsZW0gc29sdmluZyBza2lsbHMgdG8gaGVscCB5b3UgbG9vayBvdXQgZm9yIHByb2JsZW1zIGFuZCBvcHBvcnR1bml0aWVzIHRvIHN0YXkgYWhlYWQgb2YgY29tcGV0aXRpb24hPC9wPmQAB3F1aXp6ZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAdxdWl6emVzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAFaW1hZ2VkAANuaWxkAA9jb3Vyc2VfYWRtaW5faWRkAANuaWxkAA1tYXJraW5nX2d1aWRldAAAAAJkAAlmaWxlX25hbWVtAAAAIk1hcmtpbmcgR3VpZGVfRmluYWwgQXNzaWdubWVudC5wZGZkAAp1cGRhdGVkX2F0dAAAAAlkAApfX3N0cnVjdF9fZAAURWxpeGlyLk5haXZlRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhC2QABGhvdXJhCWQAC21pY3Jvc2Vjb25kaAJhAGEAZAAGbWludXRlYQlkAAVtb250aGEFZAAGc2Vjb25kYQJkAAR5ZWFyYgAAB-RkAA9oaWRlX2NvbXBvbmVudHNkAAVmYWxzZWQABm9uX2FpcmQABHRydWVkAAtmcmVlX2NvdXJzZWQABWZhbHNlZAAUcmVzb3VyY2VfYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABRyZXNvdXJjZV9hdHRhY2htZW50c2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAF3RodW1iX2ltYWdlX2F0dGFjaG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAXdGh1bWJfaW1hZ2VfYXR0YWNobWVudHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAxhY2Nlc3NfcHJpY2VkAAR0cnVlZAAaYWZmaWxpYXRlX2xvZ29fYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABphZmZpbGlhdGVfbG9nb19hdHRhY2htZW50c2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAAmlkYVlkAAVsZXZlbGEAZAALdG90YWxfaG91cnNhCmQABXByaWNlYRRkABZwcmVfYXNzZXNzbWVudF9xdWl6X2lkYgAAAsNkAA9zZXF1ZW50aWFsX3RhZ3NkAANuaWxkAAxjb3Vyc2VfYWRtaW50AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QADGNvdXJzZV9hZG1pbmQACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACGFyY2hpdmVkZAAFZmFsc2VkAAVsaWtlc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABWxpa2VzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAEdGFnc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABHRhZ3NkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABh0ZWFzZXJfaW1hZ2VfYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABh0ZWFzZXJfaW1hZ2VfYXR0YWNobWVudHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAApjb21wb25lbnRzbQAAAJ83IHZpZGVvIGJhc2VkIGxlc3NvbnMuIDEgYXVkaW8gY2FzZSBzdHVkeS4gNiBkb3dubG9hZGFibGUgdG9vbHMuIDEgY291cnNlIG1lbnRvci9idWRkeS4gNSBwcmFjdGljZSBhY3Rpdml0aWVzLiA1IFVuaXRzIHRlc3RzLiAxIGZpbmFsIGV4YW0uIDEgZmluYWwgYXNzaWdubWVudC5kAAV1bml0c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABXVuaXRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAALaW5zdHJ1Y3RvcnN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAtpbnN0cnVjdG9yc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABXRpdGxlbQAAABBQcm9ibGVtIFNvbHZpbmcgZAARY291cnNlc19yZXNvdXJjZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABFjb3Vyc2VzX3Jlc291cmNlc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEGFjY2VwdGFuY2Vfc2NvcmVhN2QAC2Rlc2NyaXB0aW9ubQAAAXhEZWFsaW5nIHdpdGggcHJvYmxlbXMgaXMgYXQgdGhlIGNlbnRyZSBvZiB3aGF0IG1hbnkgcGVvcGxlIGRvIGF0IHdvcmsgZXZlcnkgZGF5LiANCkFsdGhvdWdoIHByb2JsZW1zIGNhbiBmZWVsIGZydXN0cmF0aW5nLCB0aGV5IGFsc28gcHJlc2VudCBvcHBvcnR1bml0aWVzIGZvciBwZW9wbGUgYW5kIG9yZ2FuaXNhdGlvbnMgdG8gaW1wcm92ZSB3aGF0IHRoZXkgZG8g4oCTIHNlcnZpbmcgdGhlaXIgY3VzdG9tZXJzIGJldHRlciwgYW5kIHdvcmtpbmcgbW9yZSBlZmZpY2llbnRseSBkYXktdG8tZGF5LiAgVGhpcyBoZWxwcyBvcmdhbmlzYXRpb25zIHN0YXkgYWhlYWQgb2YgdGhlaXIgY29tcGV0aXRvcnMgYW5kIGlubm92YXRlIG9uIHRoZWlyIG9mZmVyaW5nLg0KZAAEc29ydGEAZAAHbGVzc29uc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAB2xlc3NvbnNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABJ0ZWFzZXJfZGVzY3JpcHRpb25tAAABeERlYWxpbmcgd2l0aCBwcm9ibGVtcyBpcyBhdCB0aGUgY2VudHJlIG9mIHdoYXQgbWFueSBwZW9wbGUgZG8gYXQgd29yayBldmVyeSBkYXkuIA0KQWx0aG91Z2ggcHJvYmxlbXMgY2FuIGZlZWwgZnJ1c3RyYXRpbmcsIHRoZXkgYWxzbyBwcmVzZW50IG9wcG9ydHVuaXRpZXMgZm9yIHBlb3BsZSBhbmQgb3JnYW5pc2F0aW9ucyB0byBpbXByb3ZlIHdoYXQgdGhleSBkbyDigJMgc2VydmluZyB0aGVpciBjdXN0b21lcnMgYmV0dGVyLCBhbmQgd29ya2luZyBtb3JlIGVmZmljaWVudGx5IGRheS10by1kYXkuICBUaGlzIGhlbHBzIG9yZ2FuaXNhdGlvbnMgc3RheSBhaGVhZCBvZiB0aGVpciBjb21wZXRpdG9ycyBhbmQgaW5ub3ZhdGUgb24gdGhlaXIgb2ZmZXJpbmcuDQpkAA5wcmljZV9jdXJyZW5jeW0AAAADVVNEZAAOY291cnNlX3BlcmlvZHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAA5jb3Vyc2VfcGVyaW9kc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAD3doeV90YWtlX2NvdXJzZW0AAAGRVGhpcyBjb3Vyc2Ugd2lsbCB3YWxrIHlvdSB0aHJvdWdoIGVhY2ggb2YgdGhlIDUgc3RhZ2VzIG9mIHByb2JsZW0gc29sdmluZyBpLmUuIGlkZW50aWZ5aW5nIGEgcHJvYmxlbSwgdW5kZXJzdGFuZGluZyBpdCwgZ2VuZXJhdGluZyBwb3NzaWJsZSBzb2x1dGlvbiwgZXZhbHVhdGluZyBhbmQgc2VsZWN0aW5nIHRoZSBiZXN0IHNvbHV0aW9uIGFuZCBpbXBsZW1lbnRpbmcgdGhlIHNvbHV0aW9uLiBGb3IgZWFjaCBvZiB0aGUgc3RhZ2VzIHlvdSB3aWxsIGJlIGludHJvZHVjZWQgdG8gc2ltcGxlIHRvb2xzIHRvIGhlbHAgeW91IHNvbHZlIHRoZSBwcm9ibGVtcyBzeXN0ZW1hdGljYWxseSBhbmQgbW9yZSBpbXBvcnRhbnRseSBlbnN1cmUgeW91IGdldCB0byB0aGUgcm9vdCBjYXVzZSBvZiB0aGUgcHJvYmxlbS5kABFtaWdyYXRpb25fc3RhcnRlZGQABHRydWVkAApfX3N0cnVjdF9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkABFjZXJ0aWZpY2F0ZV9wcmljZWQABWZhbHNlZAALaW5zZXJ0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhH2QABGhvdXJhBmQAC21pY3Jvc2Vjb25kaAJiAAON7GEGZAAGbWludXRlYQ1kAAVtb250aGEFZAAGc2Vjb25kYQJkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-RkAAl6b25lX2FiYnJtAAAAA1VUQ2QACmluc3RydWN0b3JtAAAAAGQABHNsdWdtAAAAHHByb2JsZW0tc29sdmluZy1mb3ItbWFuYWdlcnNkABNwcmVfYXNzZXNzbWVudF9xdWl6dAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABNwcmVfYXNzZXNzbWVudF9xdWl6ZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAALaXNfZmVhdHVyZWRkAAVmYWxzZWQAFGluYWN0aXZlX3RlYXNlcl9saW5rbQAAAABkAAZ2aWRlb3N0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAZ2aWRlb3NkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAhzdWJ0aXRsZWQAA25pbGQAEGhpZGVfYXNzZXNzbWVudHNkAAVmYWxzZWQACnVwZGF0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhE2QABGhvdXJhBmQAC21pY3Jvc2Vjb25kaAJiAACRTGEGZAAGbWludXRlYTVkAAVtb250aGECZAAGc2Vjb25kYTdkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-VkAAl6b25lX2FiYnJtAAAAA1VUQ2QAAmlkYgAAZsBkAAtpc19leHRlcm5hbGQABWZhbHNlZAARb25lX2Zvcl9hbGxfZW1haWxkAANuaWxkAAxwcm9ncmFtbWVfaWRkAANuaWxkABNwcm9ncmFtbWVfcGVyaW9kX2lkZAADbmlsZAARcGFja2FnZV9wZXJpb2RfaWRkAANuaWxkABBwcm9ncmFtbWVfcGVyaW9kdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABBwcm9ncmFtbWVfcGVyaW9kZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAMb25lZm9yYWxsX2lkZAADbmlsZAAIYXJjaGl2ZWRkAAVmYWxzZWQAD29uZWZvcmFsbF9idWRkeXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAPb25lZm9yYWxsX2J1ZGR5ZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAMY3VzdG9taXphYmxlZAAFZmFsc2VkAAdlbmRzX29udAAAAAVkAApfX3N0cnVjdF9fZAALRWxpeGlyLkRhdGVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhH2QABW1vbnRoYQxkAAR5ZWFyYgAAB-pkABZwcm9ncmFtbWVfcGVyaW9kX3BoYXNldAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABZwcm9ncmFtbWVfcGVyaW9kX3BoYXNlZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAKYnVkZHlfdHlwZWEAZAAHYWNhZGVteXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAHYWNhZGVteWQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQADnBhY2thZ2VfcGVyaW9kdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAA5wYWNrYWdlX3BlcmlvZGQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACHBvc2l0aW9uZAADbmlsZAAXbWFudWFsX2J1ZGR5X25vbWluYXRpb25kAAVmYWxzZWQAD2lzX2xlYXJuaW5nX2xhYmQABWZhbHNlZAAGc2NvcmVzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAGc2NvcmVzZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAJY291cnNlX2lkYVlkAApfX3N0cnVjdF9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAAtpbnNlcnRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEZZAAEaG91cmEMZAALbWljcm9zZWNvbmRoAmIACqryYQZkAAZtaW51dGVhBmQABW1vbnRoYQJkAAZzZWNvbmRhKmQACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH6mQACXpvbmVfYWJicm0AAAADVVRDZAAJcHJvZ3JhbW1ldAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAAlwcm9ncmFtbWVkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAltYW5kYXRvcnlkAAR0cnVlZAAZcHJvZ3JhbW1lX3BlcmlvZF9waGFzZV9pZGQAA25pbGQACnVwZGF0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhGWQABGhvdXJhDGQAC21pY3Jvc2Vjb25kaAJiAAqq-2EGZAAGbWludXRlYQZkAAVtb250aGECZAAGc2Vjb25kYSpkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-pkAAl6b25lX2FiYnJtAAAAA1VUQ2QACXN0YXJ0c19vbnQAAAAFZAAKX19zdHJ1Y3RfX2QAC0VsaXhpci5EYXRlZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRlkAAVtb250aGECZAAEeWVhcmIAAAfqdAAAACJkAAphY2FkZW15X2lkYgAAC1lkAAhfX21ldGFfX3QAAAAGZAAKX19zdHJ1Y3RfX2QAG0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YWQAB2NvbnRleHRkAANuaWxkAAZwcmVmaXhkAANuaWxkAAZzY2hlbWFkABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQABnNvdXJjZW0AAAAOY291cnNlX3BlcmlvZHNkAAVzdGF0ZWQABmxvYWRlZGQADmVucm9sbG1lbnRfZW5kdAAAAAVkAApfX3N0cnVjdF9fZAALRWxpeGlyLkRhdGVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhH2QABW1vbnRoYQxkAAR5ZWFyYgAAB-tkAA1hY2FkZW15X3RpdGxlZAADbmlsZAALZW5yb2xsbWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAtlbnJvbGxtZW50c2QACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABmNvdXJzZXQAAAAzZAASbWlncmF0aW9uX2ZpbmlzaGVkZAAEdHJ1ZWQACF9fbWV0YV9fdAAAAAZkAApfX3N0cnVjdF9fZAAbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhZAAHY29udGV4dGQAA25pbGQABnByZWZpeGQAA25pbGQABnNjaGVtYWQAEUVsaXhpci5BbWkuQ291cnNlZAAGc291cmNlbQAAAAdjb3Vyc2VzZAAFc3RhdGVkAAZsb2FkZWRkABJ0ZWFzZXJfYmFubmVyX3RleHRtAAAAxzwvYj48L3A-PEZPTlQgU0laRT0iNCIgQ09MT1I9IzIyNzg3Nj5Eb2VzIHlvdXIgYnVzaW5lc3Mgb2Z0ZW4gcnVuIG91dCBvZiBtb25leT88L0ZPTlQ-PC9iPjwvcD4NCjxwPkxlYXJuIGhvdyB0byBzdGF5IG9uIHRvcCBvZiB5b3VyIGNhc2ggZmxvdyBpbiBvcmRlciB0byBiZSBhYmxlIHRvIG1ha2UgYmV0dGVyIGJ1c2luZXNzIGRlY2lzaW9ucy48cD5kAAdxdWl6emVzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAHcXVpenplc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABWltYWdlZAADbmlsZAAPY291cnNlX2FkbWluX2lkZAADbmlsZAANbWFya2luZ19ndWlkZXQAAAACZAAJZmlsZV9uYW1lbQAAACJNYXJraW5nIEd1aWRlX0ZpbmFsIEFzc2lnbm1lbnQucGRmZAAKdXBkYXRlZF9hdHQAAAAJZAAKX19zdHJ1Y3RfX2QAFEVsaXhpci5OYWl2ZURhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YQhkAARob3VyYQZkAAttaWNyb3NlY29uZGgCYQBhAGQABm1pbnV0ZWERZAAFbW9udGhhCWQABnNlY29uZGEzZAAEeWVhcmIAAAflZAAPaGlkZV9jb21wb25lbnRzZAAFZmFsc2VkAAZvbl9haXJkAAR0cnVlZAALZnJlZV9jb3Vyc2VkAAVmYWxzZWQAFHJlc291cmNlX2F0dGFjaG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAUcmVzb3VyY2VfYXR0YWNobWVudHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABd0aHVtYl9pbWFnZV9hdHRhY2htZW50c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAF3RodW1iX2ltYWdlX2F0dGFjaG1lbnRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAMYWNjZXNzX3ByaWNlZAAEdHJ1ZWQAGmFmZmlsaWF0ZV9sb2dvX2F0dGFjaG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAaYWZmaWxpYXRlX2xvZ29fYXR0YWNobWVudHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAJpZGFlZAAFbGV2ZWxhAGQAC3RvdGFsX2hvdXJzYQpkAAVwcmljZWEUZAAWcHJlX2Fzc2Vzc21lbnRfcXVpel9pZGIAAAMQZAAPc2VxdWVudGlhbF90YWdzZAADbmlsZAAMY291cnNlX2FkbWludAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAAxjb3Vyc2VfYWRtaW5kAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAhhcmNoaXZlZGQABWZhbHNlZAAFbGlrZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAVsaWtlc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABHRhZ3N0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAR0YWdzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAYdGVhc2VyX2ltYWdlX2F0dGFjaG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAYdGVhc2VyX2ltYWdlX2F0dGFjaG1lbnRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAKY29tcG9uZW50c20AAADjQ2FzaCBmbG93IGlzIHRoZSBibG9vZCB0aGF0IGtlZXBzIHRoZSBoZWFydCBvZiB0aGUgYnVzaW5lc3MgcHVtcGluZy5XaXRob3V0IGEgc3Ryb25nIGNhc2ggZmxvdywgeW91IG1heSBub3QgYmUgYWJsZSB0byBtYWtlIHRoZSBpbnZlc3RtZW50cyB5b3UgbmVlZCB0byBjb21wZXRlLCBvciBtYXkgaGF2ZSB0byB0YWtlIGV4cGVuc2l2ZSBsb2FucyB0byBrZWVwIHlvdXIgYnVzaW5lc3MgYWZsb2F0LiBkAAV1bml0c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABXVuaXRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAALaW5zdHJ1Y3RvcnN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAtpbnN0cnVjdG9yc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABXRpdGxlbQAAABdDYXNoIE1hbmFnZW1lbnQgQmFzaWNzIGQAEWNvdXJzZXNfcmVzb3VyY2VzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAARY291cnNlc19yZXNvdXJjZXNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABBhY2NlcHRhbmNlX3Njb3JlYTdkAAtkZXNjcmlwdGlvbm0AAADjQ2FzaCBmbG93IGlzIHRoZSBibG9vZCB0aGF0IGtlZXBzIHRoZSBoZWFydCBvZiB0aGUgYnVzaW5lc3MgcHVtcGluZy5XaXRob3V0IGEgc3Ryb25nIGNhc2ggZmxvdywgeW91IG1heSBub3QgYmUgYWJsZSB0byBtYWtlIHRoZSBpbnZlc3RtZW50cyB5b3UgbmVlZCB0byBjb21wZXRlLCBvciBtYXkgaGF2ZSB0byB0YWtlIGV4cGVuc2l2ZSBsb2FucyB0byBrZWVwIHlvdXIgYnVzaW5lc3MgYWZsb2F0LiBkAARzb3J0YQBkAAdsZXNzb25zdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAHbGVzc29uc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEnRlYXNlcl9kZXNjcmlwdGlvbm0AAADjQ2FzaCBmbG93IGlzIHRoZSBibG9vZCB0aGF0IGtlZXBzIHRoZSBoZWFydCBvZiB0aGUgYnVzaW5lc3MgcHVtcGluZy5XaXRob3V0IGEgc3Ryb25nIGNhc2ggZmxvdywgeW91IG1heSBub3QgYmUgYWJsZSB0byBtYWtlIHRoZSBpbnZlc3RtZW50cyB5b3UgbmVlZCB0byBjb21wZXRlLCBvciBtYXkgaGF2ZSB0byB0YWtlIGV4cGVuc2l2ZSBsb2FucyB0byBrZWVwIHlvdXIgYnVzaW5lc3MgYWZsb2F0LiBkAA5wcmljZV9jdXJyZW5jeW0AAAADVVNEZAAOY291cnNlX3BlcmlvZHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAA5jb3Vyc2VfcGVyaW9kc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAD3doeV90YWtlX2NvdXJzZW0AAAGMQSBoZWFsdGh5IGNhc2ggZmxvdyBpcyBhbiBlc3NlbnRpYWwgcGFydCBvZiBhbnkgc3VjY2Vzc2Z1bCBidXNpbmVzcy4gWW91IG1heSBoYXZlIHRoZSBiZXN0IHByb2R1Y3RzIGFuZCBzZXJ2aWNlcyBidXQgaWYgeW91IGRvbid0IGhhdmUgZW5vdWdoIGNhc2ggdG8gcGF5IHlvdXIgc3VwcGxpZXJzLCBjcmVkaXRvcnMgb3IgZW1wbG95ZWVzLCB5b3UgbWlnaHQgaGF2ZSB0byBjbG9zZSB5b3VyIGJ1c2luZXNzLg0KQnkgdGhlIGVuZCBvZiB0aGlzIGNvdXJzZSB5b3Ugd2lsbCBiZSBhYmxlIHRvIGRldGVybWluZSB5b3VyIGNhc2ggcG9zaXRpb24gYW5kIHRoZSBzdGVwcyB5b3UgbmVlZCB0byB0YWtlIHRvIG1hbmFnZSB5b3VyIGNhc2ggbW9yZSBlZmZpY2llbnRseSBhbmQgcHJvZml0YWJseS4NCg0KZAARbWlncmF0aW9uX3N0YXJ0ZWRkAAR0cnVlZAAKX19zdHJ1Y3RfX2QAEUVsaXhpci5BbWkuQ291cnNlZAARY2VydGlmaWNhdGVfcHJpY2VkAAVmYWxzZWQAC2luc2VydGVkX2F0dAAAAA1kAApfX3N0cnVjdF9fZAAPRWxpeGlyLkRhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRBkAARob3VyYQNkAAttaWNyb3NlY29uZGgCYgAAp7dhBmQABm1pbnV0ZWEvZAAFbW9udGhhBGQABnNlY29uZGEOZAAKc3RkX29mZnNldGEAZAAJdGltZV96b25lbQAAAAdFdGMvVVRDZAAKdXRjX29mZnNldGEAZAAEeWVhcmIAAAfkZAAJem9uZV9hYmJybQAAAANVVENkAAppbnN0cnVjdG9ybQAAACJTYXJ1bm55IFNhaWJ1bGwgLCBUcmFpbmluZyBNYW5hZ2VyZAAEc2x1Z20AAAAWY2FzaC1tYW5hZ2VtZW50LWJhc2ljc2QAE3ByZV9hc3Nlc3NtZW50X3F1aXp0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAE3ByZV9hc3Nlc3NtZW50X3F1aXpkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAtpc19mZWF0dXJlZGQABWZhbHNlZAAUaW5hY3RpdmVfdGVhc2VyX2xpbmttAAAAAGQABnZpZGVvc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABnZpZGVvc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACHN1YnRpdGxlZAADbmlsZAAQaGlkZV9hc3Nlc3NtZW50c2QABWZhbHNlZAAKdXBkYXRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEIZAAEaG91cmEGZAALbWljcm9zZWNvbmRoAmIABxGbYQZkAAZtaW51dGVhEWQABW1vbnRoYQlkAAZzZWNvbmRhMWQACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH5WQACXpvbmVfYWJicm0AAAADVVRDZAACaWRiAABmwWQAC2lzX2V4dGVybmFsZAAFZmFsc2VkABFvbmVfZm9yX2FsbF9lbWFpbGQAA25pbGQADHByb2dyYW1tZV9pZGQAA25pbGQAE3Byb2dyYW1tZV9wZXJpb2RfaWRkAANuaWxkABFwYWNrYWdlX3BlcmlvZF9pZGQAA25pbGQAEHByb2dyYW1tZV9wZXJpb2R0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAEHByb2dyYW1tZV9wZXJpb2RkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAxvbmVmb3JhbGxfaWRkAANuaWxkAAhhcmNoaXZlZGQABWZhbHNlZAAPb25lZm9yYWxsX2J1ZGR5dAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAA9vbmVmb3JhbGxfYnVkZHlkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAxjdXN0b21pemFibGVkAAVmYWxzZWQAB2VuZHNfb250AAAABWQACl9fc3RydWN0X19kAAtFbGl4aXIuRGF0ZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEfZAAFbW9udGhhDGQABHllYXJiAAAH62QAFnByb2dyYW1tZV9wZXJpb2RfcGhhc2V0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAFnByb2dyYW1tZV9wZXJpb2RfcGhhc2VkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAApidWRkeV90eXBlYQBkAAdhY2FkZW15dAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAAdhY2FkZW15ZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAOcGFja2FnZV9wZXJpb2R0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QADnBhY2thZ2VfcGVyaW9kZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAIcG9zaXRpb25kAANuaWxkABdtYW51YWxfYnVkZHlfbm9taW5hdGlvbmQABWZhbHNlZAAPaXNfbGVhcm5pbmdfbGFiZAAFZmFsc2VkAAZzY29yZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAZzY29yZXNkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAljb3Vyc2VfaWRhZWQACl9fc3RydWN0X19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQAC2luc2VydGVkX2F0dAAAAA1kAApfX3N0cnVjdF9fZAAPRWxpeGlyLkRhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRlkAARob3VyYQxkAAttaWNyb3NlY29uZGgCYgAGwlxhBmQABm1pbnV0ZWEzZAAFbW9udGhhAmQABnNlY29uZGEeZAAKc3RkX29mZnNldGEAZAAJdGltZV96b25lbQAAAAdFdGMvVVRDZAAKdXRjX29mZnNldGEAZAAEeWVhcmIAAAfqZAAJem9uZV9hYmJybQAAAANVVENkAAlwcm9ncmFtbWV0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QACXByb2dyYW1tZWQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACW1hbmRhdG9yeWQABHRydWVkABlwcm9ncmFtbWVfcGVyaW9kX3BoYXNlX2lkZAADbmlsZAAKdXBkYXRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEZZAAEaG91cmEMZAALbWljcm9zZWNvbmRoAmIABsJjYQZkAAZtaW51dGVhM2QABW1vbnRoYQJkAAZzZWNvbmRhHmQACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH6mQACXpvbmVfYWJicm0AAAADVVRDZAAJc3RhcnRzX29udAAAAAVkAApfX3N0cnVjdF9fZAALRWxpeGlyLkRhdGVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhGWQABW1vbnRoYQJkAAR5ZWFyYgAAB-p0AAAAImQACmFjYWRlbXlfaWRiAAALWWQACF9fbWV0YV9fdAAAAAZkAApfX3N0cnVjdF9fZAAbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhZAAHY29udGV4dGQAA25pbGQABnByZWZpeGQAA25pbGQABnNjaGVtYWQAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAGc291cmNlbQAAAA5jb3Vyc2VfcGVyaW9kc2QABXN0YXRlZAAGbG9hZGVkZAAOZW5yb2xsbWVudF9lbmR0AAAABWQACl9fc3RydWN0X19kAAtFbGl4aXIuRGF0ZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEfZAAFbW9udGhhDGQABHllYXJiAAAH6mQADWFjYWRlbXlfdGl0bGVkAANuaWxkAAtlbnJvbGxtZW50c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAC2Vucm9sbG1lbnRzZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAGY291cnNldAAAADNkABJtaWdyYXRpb25fZmluaXNoZWRkAAR0cnVlZAAIX19tZXRhX190AAAABmQACl9fc3RydWN0X19kABtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGFkAAdjb250ZXh0ZAADbmlsZAAGcHJlZml4ZAADbmlsZAAGc2NoZW1hZAARRWxpeGlyLkFtaS5Db3Vyc2VkAAZzb3VyY2VtAAAAB2NvdXJzZXNkAAVzdGF0ZWQABmxvYWRlZGQAEnRlYXNlcl9iYW5uZXJfdGV4dG0AAADAPGgzPklzIHlvdXIgYnVzaW5lc3MgcmVhZHkgZm9yIGEgYmFuayBsb2FuPzwvaDM-DQo8cD5UYWtlIEFNSeKAmXMgcHJhY3RpY2FsIG9ubGluZSBjb3Vyc2UgZm9yIGEgc3RlcC1ieS1zdGVwIGd1aWRlIG9uIGhvdyB0byBzdWJtaXQgYSBzdWNjZXNzZnVsIGJhbmsgbG9hbiBhcHBsaWNhdGlvbiBmb3IgYSBzbWFsbCBidXNpbmVzcy48L3A-ZAAHcXVpenplc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAB3F1aXp6ZXNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAVpbWFnZWQAA25pbGQAD2NvdXJzZV9hZG1pbl9pZGQAA25pbGQADW1hcmtpbmdfZ3VpZGV0AAAAAmQACWZpbGVfbmFtZW0AAAAiTWFya2luZyBHdWlkZV9GaW5hbCBBc3NpZ25tZW50LnBkZmQACnVwZGF0ZWRfYXR0AAAACWQACl9fc3RydWN0X19kABRFbGl4aXIuTmFpdmVEYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWERZAAEaG91cmEMZAALbWljcm9zZWNvbmRoAmEAYQBkAAZtaW51dGVhH2QABW1vbnRoYQJkAAZzZWNvbmRhLmQABHllYXJiAAAH5GQAD2hpZGVfY29tcG9uZW50c2QABWZhbHNlZAAGb25fYWlyZAAEdHJ1ZWQAC2ZyZWVfY291cnNlZAAFZmFsc2VkABRyZXNvdXJjZV9hdHRhY2htZW50c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAFHJlc291cmNlX2F0dGFjaG1lbnRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAXdGh1bWJfaW1hZ2VfYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABd0aHVtYl9pbWFnZV9hdHRhY2htZW50c2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQADGFjY2Vzc19wcmljZWQABHRydWVkABphZmZpbGlhdGVfbG9nb19hdHRhY2htZW50c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAGmFmZmlsaWF0ZV9sb2dvX2F0dGFjaG1lbnRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAACaWRhOmQABWxldmVsYQBkAAt0b3RhbF9ob3Vyc2EPZAAFcHJpY2VhFGQAFnByZV9hc3Nlc3NtZW50X3F1aXpfaWRiAAABImQAD3NlcXVlbnRpYWxfdGFnc2QAA25pbGQADGNvdXJzZV9hZG1pbnQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAMY291cnNlX2FkbWluZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAIYXJjaGl2ZWRkAAVmYWxzZWQABWxpa2VzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAFbGlrZXNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAR0YWdzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAEdGFnc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAGHRlYXNlcl9pbWFnZV9hdHRhY2htZW50c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAGHRlYXNlcl9pbWFnZV9hdHRhY2htZW50c2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACmNvbXBvbmVudHNtAAAAnDYgdmlkZW8gYmFzZWQgbGVzc29ucywxMCBkb3dubG9hZGFibGUgdG9vbHMsIDQgcHJhY3RpY2UgYWN0aXZpdGllcywgMSBmaW5hbCBleGFtLCAxIGNvdXJzZSBtZW50b3IvYnVkZHksIFNob3J0IGNhc2Ugc3R1ZHksIDQgVW5pdHMgdGVzdHMsIDEgZmluYWwgYXNzaWdubWVudGQABXVuaXRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAFdW5pdHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAtpbnN0cnVjdG9yc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAC2luc3RydWN0b3JzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAFdGl0bGVtAAAAHEFwcGx5aW5nIGZvciBhIEJ1c2luZXNzIExvYW5kABFjb3Vyc2VzX3Jlc291cmNlc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAEWNvdXJzZXNfcmVzb3VyY2VzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAQYWNjZXB0YW5jZV9zY29yZWE3ZAALZGVzY3JpcHRpb25tAAABgVRoaXMgY291cnNlIHdpbGwgaGVscCBzbWFsbCBidXNpbmVzcyBvd25lcnMgbWFuYWdlIHRoZSBkYXVudGluZyBwcm9jZXNzIG9mIGFwcGx5aW5nIGZvciBhIGJhbmsgbG9hbiB0byBleHBhbmQgdGhlaXIgYnVzaW5lc3MuIFRoZSBjb3Vyc2UgaXMgaW50ZW5zZWx5IHByYWN0aWNhbCBhbmQgd2lsbCB3YWxrIHBhcnRpY2lwYW50cyB0aHJvdWdoIGVhY2ggc3RhZ2Ugb2YgdGhlIGFwcGxpY2F0aW9uIHByb2NlZHVyZSwgd2l0aCByZWFsIGNhc2Ugc3R1ZHkgZXhhbXBsZXMgYW5kIGFjdGl2aXRpZXMuIEl0IHdpbGwgYWxzbyBjb3ZlciB0eXBpY2FsIHJlcXVpcmVtZW50cyBmcm9tIGJhbmtzLCBhbmQgcHJvdmlkZSBwcmFjdGljYWwgdGlwcyBvbiBob3cgdG8gbWFuYWdlIGEgbG9hbi5kAARzb3J0YQBkAAdsZXNzb25zdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAHbGVzc29uc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEnRlYXNlcl9kZXNjcmlwdGlvbm0AAAB4VGhpcyBjb3Vyc2Ugd2lsbCB3YWxrIHlvdSB0aHJvdWdoIGVhY2ggc3RhZ2Ugb2YgdGhlIGFwcGxpY2F0aW9uIHByb2NlZHVyZSwgd2l0aCByZWFsIGNhc2Ugc3R1ZHkgZXhhbXBsZXMgYW5kIGFjdGl2aXRpZXMuZAAOcHJpY2VfY3VycmVuY3ltAAAAA1VTRGQADmNvdXJzZV9wZXJpb2RzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAOY291cnNlX3BlcmlvZHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAA93aHlfdGFrZV9jb3Vyc2VtAAAB5VRoaXMgY291cnNlIGlzIGRlc2lnbmVkIHNwZWNpZmljYWxseSBmb3Igc21hbGwgYnVzaW5lc3Mgb3duZXJzIGFuZCBtYW5hZ2VycyBpbiBBZnJpY2Egd2hvIHdhbnQgdG8gYXBwbHkgZm9yIGEgYnVzaW5lc3MgbG9hbiB0byBhIGJhbmssIGJ1dCBkb27igJl0IGtub3cgd2hlcmUgdG8gc3RhcnQuIEJ5IHRoZSBlbmQgb2YgdGhlIGNvdXJzZSwgeW91IHdpbGwgaGF2ZSB0aGUgcHJhY3RpY2FsIGtub3ctaG93IGFuZCBjb25maWRlbmNlIHRvIHByZXBhcmUgeW91ciBvd24gYmFuayBsb2FuIGFwcGxpY2F0aW9uLiBUaGlzIGNvdXJzZSBpcyBhIGdyZWF0IGZvbGxvdy11cCB0byBvdXIgb3RoZXIgQWNjZXNzIHRvIEZpbmFuY2UgY291cnNlcyDigJMg4oCYSXMgeW91ciBCdXNpbmVzcyByZWFkeSBmb3IgRnVuZGluZ-KAmT8gYW5kIOKAmEFjY2Vzc2luZyBGaW5hbmNlIGZvciB5b3VyIEJ1c2luZXNz4oCZIOKAkyBidXQgY2FuIGFsc28gYmUgdGFrZW4gYWxvbmUuZAARbWlncmF0aW9uX3N0YXJ0ZWRkAAR0cnVlZAAKX19zdHJ1Y3RfX2QAEUVsaXhpci5BbWkuQ291cnNlZAARY2VydGlmaWNhdGVfcHJpY2VkAAVmYWxzZWQAC2luc2VydGVkX2F0dAAAAA1kAApfX3N0cnVjdF9fZAAPRWxpeGlyLkRhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRBkAARob3VyYQZkAAttaWNyb3NlY29uZGgCYgAMRfNhBmQABm1pbnV0ZWETZAAFbW9udGhhBGQABnNlY29uZGEHZAAKc3RkX29mZnNldGEAZAAJdGltZV96b25lbQAAAAdFdGMvVVRDZAAKdXRjX29mZnNldGEAZAAEeWVhcmIAAAfkZAAJem9uZV9hYmJybQAAAANVVENkAAppbnN0cnVjdG9ybQAAADJOb2t3YXppIE16b2JlLCBHSUJTIEVudGVycHJpc2UgRGV2ZWxvcG1lbnQgQWNhZGVteWQABHNsdWdtAAAAHGFwcGx5aW5nLWZvci1hLWJ1c2luZXNzLWxvYW5kABNwcmVfYXNzZXNzbWVudF9xdWl6dAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABNwcmVfYXNzZXNzbWVudF9xdWl6ZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAALaXNfZmVhdHVyZWRkAAVmYWxzZWQAFGluYWN0aXZlX3RlYXNlcl9saW5rbQAAAABkAAZ2aWRlb3N0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAZ2aWRlb3NkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAhzdWJ0aXRsZWQAA25pbGQAEGhpZGVfYXNzZXNzbWVudHNkAAVmYWxzZWQACnVwZGF0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhAWQABGhvdXJhC2QAC21pY3Jvc2Vjb25kaAJiAApwNGEGZAAGbWludXRlYSNkAAVtb250aGEJZAAGc2Vjb25kYSdkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-VkAAl6b25lX2FiYnJtAAAAA1VUQ2QAAmlkYgAAZsNkAAtpc19leHRlcm5hbGQABWZhbHNlZAARb25lX2Zvcl9hbGxfZW1haWxkAANuaWxkAAxwcm9ncmFtbWVfaWRkAANuaWxkABNwcm9ncmFtbWVfcGVyaW9kX2lkZAADbmlsZAARcGFja2FnZV9wZXJpb2RfaWRkAANuaWxkABBwcm9ncmFtbWVfcGVyaW9kdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABBwcm9ncmFtbWVfcGVyaW9kZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAMb25lZm9yYWxsX2lkZAADbmlsZAAIYXJjaGl2ZWRkAAVmYWxzZWQAD29uZWZvcmFsbF9idWRkeXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAPb25lZm9yYWxsX2J1ZGR5ZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAMY3VzdG9taXphYmxlZAAFZmFsc2VkAAdlbmRzX29udAAAAAVkAApfX3N0cnVjdF9fZAALRWxpeGlyLkRhdGVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhH2QABW1vbnRoYQxkAAR5ZWFyYgAAB-pkABZwcm9ncmFtbWVfcGVyaW9kX3BoYXNldAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABZwcm9ncmFtbWVfcGVyaW9kX3BoYXNlZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAKYnVkZHlfdHlwZWEAZAAHYWNhZGVteXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAHYWNhZGVteWQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQADnBhY2thZ2VfcGVyaW9kdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAA5wYWNrYWdlX3BlcmlvZGQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACHBvc2l0aW9uZAADbmlsZAAXbWFudWFsX2J1ZGR5X25vbWluYXRpb25kAAVmYWxzZWQAD2lzX2xlYXJuaW5nX2xhYmQABWZhbHNlZAAGc2NvcmVzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAGc2NvcmVzZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAJY291cnNlX2lkYTpkAApfX3N0cnVjdF9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAAtpbnNlcnRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEZZAAEaG91cmEMZAALbWljcm9zZWNvbmRoAmIADPfPYQZkAAZtaW51dGVhNGQABW1vbnRoYQJkAAZzZWNvbmRhKWQACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH6mQACXpvbmVfYWJicm0AAAADVVRDZAAJcHJvZ3JhbW1ldAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAAlwcm9ncmFtbWVkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAltYW5kYXRvcnlkAAR0cnVlZAAZcHJvZ3JhbW1lX3BlcmlvZF9waGFzZV9pZGQAA25pbGQACnVwZGF0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhGWQABGhvdXJhDGQAC21pY3Jvc2Vjb25kaAJiAAz32WEGZAAGbWludXRlYTRkAAVtb250aGECZAAGc2Vjb25kYSlkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-pkAAl6b25lX2FiYnJtAAAAA1VUQ2QACXN0YXJ0c19vbnQAAAAFZAAKX19zdHJ1Y3RfX2QAC0VsaXhpci5EYXRlZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRlkAAVtb250aGECZAAEeWVhcmIAAAfqdAAAACJkAAphY2FkZW15X2lkYgAAC1lkAAhfX21ldGFfX3QAAAAGZAAKX19zdHJ1Y3RfX2QAG0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YWQAB2NvbnRleHRkAANuaWxkAAZwcmVmaXhkAANuaWxkAAZzY2hlbWFkABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQABnNvdXJjZW0AAAAOY291cnNlX3BlcmlvZHNkAAVzdGF0ZWQABmxvYWRlZGQADmVucm9sbG1lbnRfZW5kdAAAAAVkAApfX3N0cnVjdF9fZAALRWxpeGlyLkRhdGVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhH2QABW1vbnRoYQxkAAR5ZWFyYgAAB-pkAA1hY2FkZW15X3RpdGxlZAADbmlsZAALZW5yb2xsbWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAtlbnJvbGxtZW50c2QACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABmNvdXJzZXQAAAAzZAASbWlncmF0aW9uX2ZpbmlzaGVkZAAFZmFsc2VkAAhfX21ldGFfX3QAAAAGZAAKX19zdHJ1Y3RfX2QAG0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YWQAB2NvbnRleHRkAANuaWxkAAZwcmVmaXhkAANuaWxkAAZzY2hlbWFkABFFbGl4aXIuQW1pLkNvdXJzZWQABnNvdXJjZW0AAAAHY291cnNlc2QABXN0YXRlZAAGbG9hZGVkZAASdGVhc2VyX2Jhbm5lcl90ZXh0bQAAAYs8cD48Yj48Rk9OVCBTSVpFPSI1IiBDT0xPUj0jOUYzNjRGPiBEbyB5b3Ugc29tZXRpbWVzIGZlZWwgbGlrZSB5b3UgaGF2ZSBubyBjb250cm9sIG92ZXIgeW91ciBsaWZlIGFuZCB3b3JrPyA8L0ZPTlQ-PC9iPjwvcD4NCjxwPkFyZSB0aGVyZSB0aW1lcyB3aGVuIHRoZSBkZW1hbmRzIG9mIGxpZmUgZmVlbCBvdmVyd2hlbG1pbmc_IDxwPg0KPHA-PGI-PEZPTlQgQ09MT1I9IzMwMzAzMD5MZWFybiBob3cgdG8gYmVjb21lIGhhcHBpZXIgYW5kIGhlYWx0aGllciBieSBiYWxhbmNpbmcgdGhlIGRlbWFuZHMgb2Ygd29yayBhbmQgdGhlIHJlc3Qgb2YgeW91ciBsaWZlIHdpdGggQU1J4oCZcyBjZXJ0aWZpZWQgb25saW5lIGNvdXJzZSBpbiBzZWxmLW1hbmFnZW1lbnQuPC9GT05UPjwvYj48L3A-DQoNCmQAB3F1aXp6ZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAdxdWl6emVzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAFaW1hZ2VkAANuaWxkAA9jb3Vyc2VfYWRtaW5faWRhIWQADW1hcmtpbmdfZ3VpZGV0AAAAAmQACWZpbGVfbmFtZW0AAAAiTWFya2luZyBHdWlkZV9GaW5hbCBBc3NpZ25tZW50LnBkZmQACnVwZGF0ZWRfYXR0AAAACWQACl9fc3RydWN0X19kABRFbGl4aXIuTmFpdmVEYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWESZAAEaG91cmELZAALbWljcm9zZWNvbmRoAmEAYQBkAAZtaW51dGVhG2QABW1vbnRoYQNkAAZzZWNvbmRhDmQABHllYXJiAAAH5GQAD2hpZGVfY29tcG9uZW50c2QABWZhbHNlZAAGb25fYWlyZAAEdHJ1ZWQAC2ZyZWVfY291cnNlZAAFZmFsc2VkABRyZXNvdXJjZV9hdHRhY2htZW50c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAFHJlc291cmNlX2F0dGFjaG1lbnRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAXdGh1bWJfaW1hZ2VfYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABd0aHVtYl9pbWFnZV9hdHRhY2htZW50c2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQADGFjY2Vzc19wcmljZWQABHRydWVkABphZmZpbGlhdGVfbG9nb19hdHRhY2htZW50c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAGmFmZmlsaWF0ZV9sb2dvX2F0dGFjaG1lbnRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAACaWRhmGQABWxldmVsYQBkAAt0b3RhbF9ob3Vyc2EIZAAFcHJpY2VhFGQAFnByZV9hc3Nlc3NtZW50X3F1aXpfaWRkAANuaWxkAA9zZXF1ZW50aWFsX3RhZ3NkAANuaWxkAAxjb3Vyc2VfYWRtaW50AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QADGNvdXJzZV9hZG1pbmQACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACGFyY2hpdmVkZAAFZmFsc2VkAAVsaWtlc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABWxpa2VzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAEdGFnc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABHRhZ3NkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABh0ZWFzZXJfaW1hZ2VfYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABh0ZWFzZXJfaW1hZ2VfYXR0YWNobWVudHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAApjb21wb25lbnRzbQAAAKI2IHZpZGVvLWJhc2VkIGxlc3NvbnMuIDEgZGV0YWlsZWQgY2FzZSBzdHVkeS4gNyBkb3dubG9hZGFibGUgdG9vbHMuIDEgY291cnNlIG1lbnRvci9idWRkeS4gIDQgcHJhY3RpY2UgYWN0aXZpdGllcy4gNCB1bml0IHRlc3RzLiAgMSBmaW5hbCBleGFtLiAxIGZpbmFsIGFzc2lnbm1lbnRkAAV1bml0c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABXVuaXRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAALaW5zdHJ1Y3RvcnN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAtpbnN0cnVjdG9yc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABXRpdGxlbQAAABBTZWxmLU1hbmFnZW1lbnQgZAARY291cnNlc19yZXNvdXJjZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABFjb3Vyc2VzX3Jlc291cmNlc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEGFjY2VwdGFuY2Vfc2NvcmVhN2QAC2Rlc2NyaXB0aW9ubQAAARZEbyB5b3Ugc29tZXRpbWVzIGZlZWwgbGlrZSB5b3UgaGF2ZSBubyBjb250cm9sIG92ZXIgeW91ciBsaWZlIGFuZCB3b3JrPyBBcmUgdGhlcmUgdGltZXMgd2hlbiB0aGUgZGVtYW5kcyBvZiBsaWZlIGZlZWwgb3ZlcndoZWxtaW5nPw0KVGhpcyBjb3Vyc2UgaXMgZGVzaWduZWQgdG8gaGVscCB5b3UgbGl2ZSBhIGhhcHBpZXIgYW5kIGhlYWx0aGllciBsaWZlIGJ5IGxlYXJuaW5nIGhvdyB0byBiYWxhbmNlIHRoZSBkZW1hbmRzIG9mIHdvcmsgYW5kIHRoZSByZXN0IG9mIHlvdXIgbGlmZS4NCmQABHNvcnRhAGQAB2xlc3NvbnN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAdsZXNzb25zZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAASdGVhc2VyX2Rlc2NyaXB0aW9ubQAAAyk8L0ZPTlQ-PC9iPjwvcD5BbGwgZ3JlYXQgbGVhZGVycyBhcmUgZXhwZXJ0cyBhdCBzZWxmLW1hbmFnZW1lbnQuIFRoaXMgY291cnNlIGlzIGRlc2lnbmVkIGZvciBpbnNwaXJpbmcgYW5kIGN1cnJlbnQgbGVhZGVycy4gIEFzIGEgbGVhZGVyIHlvdSBhcmUgaW4gYSBwb3NpdGlvbiBvZiBhdXRob3JpdHkgYW5kIGFyZSByZXNwb25zaWJsZSBmb3Igb3RoZXJzLCB0aGlzIHJlcXVpcmVzIHlvdSB0byBiZSBhYmxlIHRvIG1hbmFnZSB5b3Vyc2VsZiwgYmVmb3JlIG1hbmFnaW5nIG90aGVycy4gSWYgeW91IGNhbiBtYXN0ZXIgdGhlIGFydCBvZiBzZWxmLSBtYW5hZ2VtZW50LCB5b3Ugd2lsbCBiZSBvbiB0cmFjayB0byBhIGhhcHB5IGFuZCBzdWNjZXNzZnVsIGxpZmUgYm90aCBwZXJzb25hbGx5IGFuZCBwcm9mZXNzaW9uYWxseS48L3A-DQoNCjxwPlRoaXMgY291cnNlIGlzIGRlc2lnbmVkIHRvIGhlbHAgeW91IGxpdmUgYSBoYXBwaWVyIGFuZCBoZWFsdGhpZXIgbGlmZSBieSBsZWFybmluZyBob3cgdG8gYmFsYW5jZSB0aGUgZGVtYW5kcyBvZiB3b3JrIGFuZCB0aGUgcmVzdCBvZiB5b3VyIGxpZmUsIGxlYXJuaW5nIGhvdyB0byBhdm9pZCBhbmQgbWFuYWdlIHN0cmVzcywgcHJhY3Rpc2luZyBob3cgdG8gZGVhbCB3aXRoIHlvdXIgd2Vha25lc3NlcyBhbmQgYmVpbmcgdGhlIGJlc3QgdmVyc2lvbiBvZiB5b3Vyc2VsZiB0aGF0IHlvdSBjYW4gYmUuIERldmVsb3AgeW91ciBzZWxmLWF3YXJlbmVzcyBza2lsbHMgYnkgbGVhcm5pbmcgYWJvdXQgeW91cnNlbGYgYW5kIGRpc2NvdmVyIHlvdXIgdHJ1ZSBwb3RlbnRpYWwuIDwvcD4NCmQADnByaWNlX2N1cnJlbmN5bQAAAANVU0RkAA5jb3Vyc2VfcGVyaW9kc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QADmNvdXJzZV9wZXJpb2RzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAPd2h5X3Rha2VfY291cnNlZAADbmlsZAARbWlncmF0aW9uX3N0YXJ0ZWRkAAVmYWxzZWQACl9fc3RydWN0X19kABFFbGl4aXIuQW1pLkNvdXJzZWQAEWNlcnRpZmljYXRlX3ByaWNlZAAFZmFsc2VkAAtpbnNlcnRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEQZAAEaG91cmEFZAALbWljcm9zZWNvbmRoAmIAC6gYYQZkAAZtaW51dGVhIWQABW1vbnRoYQRkAAZzZWNvbmRhN2QACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH5GQACXpvbmVfYWJicm0AAAADVVRDZAAKaW5zdHJ1Y3RvcmQAA25pbGQABHNsdWdkAANuaWxkABNwcmVfYXNzZXNzbWVudF9xdWl6dAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABNwcmVfYXNzZXNzbWVudF9xdWl6ZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAALaXNfZmVhdHVyZWRkAAVmYWxzZWQAFGluYWN0aXZlX3RlYXNlcl9saW5rZAADbmlsZAAGdmlkZW9zdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAGdmlkZW9zZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAIc3VidGl0bGVkAANuaWxkABBoaWRlX2Fzc2Vzc21lbnRzZAAFZmFsc2VkAAp1cGRhdGVkX2F0dAAAAA1kAApfX3N0cnVjdF9fZAAPRWxpeGlyLkRhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YQFkAARob3VyYQlkAAttaWNyb3NlY29uZGgCYgACTqdhBmQABm1pbnV0ZWEEZAAFbW9udGhhBGQABnNlY29uZGECZAAKc3RkX29mZnNldGEAZAAJdGltZV96b25lbQAAAAdFdGMvVVRDZAAKdXRjX29mZnNldGEAZAAEeWVhcmIAAAflZAAJem9uZV9hYmJybQAAAANVVENkAAJpZGIAAGbGZAALaXNfZXh0ZXJuYWxkAAVmYWxzZWQAEW9uZV9mb3JfYWxsX2VtYWlsZAADbmlsZAAMcHJvZ3JhbW1lX2lkZAADbmlsZAATcHJvZ3JhbW1lX3BlcmlvZF9pZGQAA25pbGQAEXBhY2thZ2VfcGVyaW9kX2lkZAADbmlsZAAQcHJvZ3JhbW1lX3BlcmlvZHQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAQcHJvZ3JhbW1lX3BlcmlvZGQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQADG9uZWZvcmFsbF9pZGQAA25pbGQACGFyY2hpdmVkZAAFZmFsc2VkAA9vbmVmb3JhbGxfYnVkZHl0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAD29uZWZvcmFsbF9idWRkeWQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQADGN1c3RvbWl6YWJsZWQABWZhbHNlZAAHZW5kc19vbnQAAAAFZAAKX19zdHJ1Y3RfX2QAC0VsaXhpci5EYXRlZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YR9kAAVtb250aGEMZAAEeWVhcmIAAAfqZAAWcHJvZ3JhbW1lX3BlcmlvZF9waGFzZXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAWcHJvZ3JhbW1lX3BlcmlvZF9waGFzZWQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACmJ1ZGR5X3R5cGVhAGQAB2FjYWRlbXl0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAB2FjYWRlbXlkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAA5wYWNrYWdlX3BlcmlvZHQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAOcGFja2FnZV9wZXJpb2RkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAhwb3NpdGlvbmQAA25pbGQAF21hbnVhbF9idWRkeV9ub21pbmF0aW9uZAAFZmFsc2VkAA9pc19sZWFybmluZ19sYWJkAAVmYWxzZWQABnNjb3Jlc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABnNjb3Jlc2QACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACWNvdXJzZV9pZGGYZAAKX19zdHJ1Y3RfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAALaW5zZXJ0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhGWQABGhvdXJhDGQAC21pY3Jvc2Vjb25kaAJiAAFHlGEGZAAGbWludXRlYTZkAAVtb250aGECZAAGc2Vjb25kYQJkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-pkAAl6b25lX2FiYnJtAAAAA1VUQ2QACXByb2dyYW1tZXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAJcHJvZ3JhbW1lZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAJbWFuZGF0b3J5ZAAEdHJ1ZWQAGXByb2dyYW1tZV9wZXJpb2RfcGhhc2VfaWRkAANuaWxkAAp1cGRhdGVkX2F0dAAAAA1kAApfX3N0cnVjdF9fZAAPRWxpeGlyLkRhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRlkAARob3VyYQxkAAttaWNyb3NlY29uZGgCYgABR5xhBmQABm1pbnV0ZWE2ZAAFbW9udGhhAmQABnNlY29uZGECZAAKc3RkX29mZnNldGEAZAAJdGltZV96b25lbQAAAAdFdGMvVVRDZAAKdXRjX29mZnNldGEAZAAEeWVhcmIAAAfqZAAJem9uZV9hYmJybQAAAANVVENkAAlzdGFydHNfb250AAAABWQACl9fc3RydWN0X19kAAtFbGl4aXIuRGF0ZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEZZAAFbW9udGhhAmQABHllYXJiAAAH6nQAAAAiZAAKYWNhZGVteV9pZGIAAAtZZAAIX19tZXRhX190AAAABmQACl9fc3RydWN0X19kABtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGFkAAdjb250ZXh0ZAADbmlsZAAGcHJlZml4ZAADbmlsZAAGc2NoZW1hZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAAZzb3VyY2VtAAAADmNvdXJzZV9wZXJpb2RzZAAFc3RhdGVkAAZsb2FkZWRkAA5lbnJvbGxtZW50X2VuZHQAAAAFZAAKX19zdHJ1Y3RfX2QAC0VsaXhpci5EYXRlZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YR9kAAVtb250aGEMZAAEeWVhcmIAAAfqZAANYWNhZGVteV90aXRsZWQAA25pbGQAC2Vucm9sbG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAALZW5yb2xsbWVudHNkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAZjb3Vyc2V0AAAAM2QAEm1pZ3JhdGlvbl9maW5pc2hlZGQABHRydWVkAAhfX21ldGFfX3QAAAAGZAAKX19zdHJ1Y3RfX2QAG0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YWQAB2NvbnRleHRkAANuaWxkAAZwcmVmaXhkAANuaWxkAAZzY2hlbWFkABFFbGl4aXIuQW1pLkNvdXJzZWQABnNvdXJjZW0AAAAHY291cnNlc2QABXN0YXRlZAAGbG9hZGVkZAASdGVhc2VyX2Jhbm5lcl90ZXh0bQAAAZs8L2I-PC9wPjxGT05UIFNJWkU9IjQiIENPTE9SPSMyMjc4NzY-V2hhdCBpcyBhIGNyZWRpdCBzY29yZSBhbmQgd2h5IGlzIGl0IGltcG9ydGFudD8gSG93IGRvZXMgeW91ciBidXNpbmVzcyBjcmVkaXQgc2NvcmUgYWZmZWN0IHlvdXIgYWJpbGl0eSB0byBncm93IHlvdXIgYnVzaW5lc3M_IDwvRk9OVD48L2I-PC9wPg0KPHA-WW91ciBidXNpbmVzc-KAmSBjcmVkaXQgcHJvZmlsZSBjYW4gYWZmZWN0IGhvdyBjdXN0b21lcnMsIHBvdGVudGlhbCBsZW5kZXJzIGFuZCBidXNpbmVzcyBwYXJ0bmVycyBzZWUgeW91ciBidXNpbmVzcy4gTGVhcm4gd2hlcmUgdG8gZ2V0IGluZm9ybWF0aW9uIG9uIHlvdXIgY3JlZGl0IHNjb3JlLCBob3cgaXTigJlzIGNhbGN1bGF0ZWQgYW5kIGl0cyBpbXBhY3Qgb24geW91ciBidXNpbmVzcy48cD5kAAdxdWl6emVzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAHcXVpenplc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABWltYWdlZAADbmlsZAAPY291cnNlX2FkbWluX2lkZAADbmlsZAANbWFya2luZ19ndWlkZXQAAAACZAAJZmlsZV9uYW1lbQAAACJNYXJraW5nIEd1aWRlX0ZpbmFsIEFzc2lnbm1lbnQucGRmZAAKdXBkYXRlZF9hdHQAAAAJZAAKX19zdHJ1Y3RfX2QAFEVsaXhpci5OYWl2ZURhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YQFkAARob3VyYQpkAAttaWNyb3NlY29uZGgCYQBhAGQABm1pbnV0ZWEDZAAFbW9udGhhCWQABnNlY29uZGELZAAEeWVhcmIAAAflZAAPaGlkZV9jb21wb25lbnRzZAAFZmFsc2VkAAZvbl9haXJkAAR0cnVlZAALZnJlZV9jb3Vyc2VkAAVmYWxzZWQAFHJlc291cmNlX2F0dGFjaG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAUcmVzb3VyY2VfYXR0YWNobWVudHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABd0aHVtYl9pbWFnZV9hdHRhY2htZW50c3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAF3RodW1iX2ltYWdlX2F0dGFjaG1lbnRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAMYWNjZXNzX3ByaWNlZAAEdHJ1ZWQAGmFmZmlsaWF0ZV9sb2dvX2F0dGFjaG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAaYWZmaWxpYXRlX2xvZ29fYXR0YWNobWVudHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAJpZGFcZAAFbGV2ZWxhAGQAC3RvdGFsX2hvdXJzYQpkAAVwcmljZWEUZAAWcHJlX2Fzc2Vzc21lbnRfcXVpel9pZGIAAALRZAAPc2VxdWVudGlhbF90YWdzZAADbmlsZAAMY291cnNlX2FkbWludAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAAxjb3Vyc2VfYWRtaW5kAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAhhcmNoaXZlZGQABWZhbHNlZAAFbGlrZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAVsaWtlc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABHRhZ3N0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAR0YWdzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAYdGVhc2VyX2ltYWdlX2F0dGFjaG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAYdGVhc2VyX2ltYWdlX2F0dGFjaG1lbnRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAKY29tcG9uZW50c20AAACjNSB2aWRlbyBiYXNlZCBsZXNzb25zLiAxIGRldGFpbGVkIGNhc2Ugc3R1ZHkuIDcgZG93bmxvYWRhYmxlIHRvb2xzLiAxIGNvdXJzZSBtZW50b3IvYnVkZHkuIDQgcHJhY3RpY2UgYWN0aXZpdGllcy4gMyB1bml0cyB0ZXN0cy4gMSBmaW5hbCBleGFtLiAxIGZpbmFsIGFzc2lnbm1lbnQuIGQABXVuaXRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAFdW5pdHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAtpbnN0cnVjdG9yc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAC2luc3RydWN0b3JzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAFdGl0bGVtAAAAI0NyZWRpdCBTY29yZXMgYW5kIExvYW4gQXBwbGljYXRpb25zZAARY291cnNlc19yZXNvdXJjZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABFjb3Vyc2VzX3Jlc291cmNlc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEGFjY2VwdGFuY2Vfc2NvcmVhN2QAC2Rlc2NyaXB0aW9ubQAAAP9XaGV0aGVyIHlvdeKAmXJlIGFwcGx5aW5nIGZvciBsb2FuIHdpdGggYSBiYW5rIG9yIGFza2luZyBmb3IgY3JlZGl0IGZyb20gYSBzdXBwbGllciwgeW91ciBidXNpbmVzcyBjcmVkaXQgc2NvcmUgd2lsbCBwbGF5IGEgY3JpdGljYWwgcm9sZS4gQSBoaWdoIHNjb3JlIGltcHJvdmVzIHlvdXIgY2hhbmNlcyBvZiBnZXR0aW5nIHRoZSBtdWNoIG5lZWRlZCBjYXBpdGFsIHRvIHRha2UgeW91ciBidXNpbmVzcyB0byB0aGUgbmV4dCBsZXZlbC4gDQogDQpkAARzb3J0YQBkAAdsZXNzb25zdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAHbGVzc29uc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEnRlYXNlcl9kZXNjcmlwdGlvbm0AAAD_V2hldGhlciB5b3XigJlyZSBhcHBseWluZyBmb3IgbG9hbiB3aXRoIGEgYmFuayBvciBhc2tpbmcgZm9yIGNyZWRpdCBmcm9tIGEgc3VwcGxpZXIsIHlvdXIgYnVzaW5lc3MgY3JlZGl0IHNjb3JlIHdpbGwgcGxheSBhIGNyaXRpY2FsIHJvbGUuIEEgaGlnaCBzY29yZSBpbXByb3ZlcyB5b3VyIGNoYW5jZXMgb2YgZ2V0dGluZyB0aGUgbXVjaCBuZWVkZWQgY2FwaXRhbCB0byB0YWtlIHlvdXIgYnVzaW5lc3MgdG8gdGhlIG5leHQgbGV2ZWwuIA0KIA0KZAAOcHJpY2VfY3VycmVuY3ltAAAAA1VTRGQADmNvdXJzZV9wZXJpb2RzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAOY291cnNlX3BlcmlvZHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAA93aHlfdGFrZV9jb3Vyc2VtAAABSklnbm9yaW5nIHlvdXIgYnVzaW5lc3MgY3JlZGl0IHNjb3JlIGNvdWxkIGRlbnkgeW91IHRoZSBjaGFuY2UgdG8gZ3JvdyB5b3VyIGJ1c2luZXNzLiBZb3VyIGJ1c2luZXNzIGNyZWRpdCByZXBvcnQgY291bGQgYWZmZWN0IHdoZXRoZXIgeW91ciBsb2FuIGFwcGxpY2F0aW9uIGlzIHN1Y2Nlc3NmdWwgYW5kIHRoZSB0ZXJtcyBvZmZlcmVkLiANCkJ5IHRoZSBlbmQgb2YgdGhpcyBjb3Vyc2UgeW91IGJlIGFibGUgdG8gY2FsY3VsYXRlIHlvdXIgYnVzaW5lc3MgY3JlZGl0IHNjb3JlIGFuZCB0YWtlIHRoZSBuZWNlc3Nhcnkgc3RlcHMgdG8gbWFpbnRhaW4gb3IgaW1wcm92ZSBpdC4NCmQAEW1pZ3JhdGlvbl9zdGFydGVkZAAEdHJ1ZWQACl9fc3RydWN0X19kABFFbGl4aXIuQW1pLkNvdXJzZWQAEWNlcnRpZmljYXRlX3ByaWNlZAAFZmFsc2VkAAtpbnNlcnRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEQZAAEaG91cmEGZAALbWljcm9zZWNvbmRoAmIABm66YQZkAAZtaW51dGVhBmQABW1vbnRoYQRkAAZzZWNvbmRhD2QACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH5GQACXpvbmVfYWJicm0AAAADVVRDZAAKaW5zdHJ1Y3Rvcm0AAAAAZAAEc2x1Z20AAAAvdW5kZXJzdGFuZGluZy1jcmVkaXQtc2NvcmUtYW5kLWxvYW4tYXBwbGljYXRpb25kABNwcmVfYXNzZXNzbWVudF9xdWl6dAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABNwcmVfYXNzZXNzbWVudF9xdWl6ZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAALaXNfZmVhdHVyZWRkAAVmYWxzZWQAFGluYWN0aXZlX3RlYXNlcl9saW5rbQAAAABkAAZ2aWRlb3N0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAZ2aWRlb3NkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAhzdWJ0aXRsZWQAA25pbGQAEGhpZGVfYXNzZXNzbWVudHNkAAVmYWxzZWQACnVwZGF0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhAWQABGhvdXJhCmQAC21pY3Jvc2Vjb25kaAJiAAehvWEGZAAGbWludXRlYQNkAAVtb250aGEJZAAGc2Vjb25kYQlkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-VkAAl6b25lX2FiYnJtAAAAA1VUQ2QAAmlkYgAAZsRkAAtpc19leHRlcm5hbGQABWZhbHNlZAARb25lX2Zvcl9hbGxfZW1haWxkAANuaWxkAAxwcm9ncmFtbWVfaWRkAANuaWxkABNwcm9ncmFtbWVfcGVyaW9kX2lkZAADbmlsZAARcGFja2FnZV9wZXJpb2RfaWRkAANuaWxkABBwcm9ncmFtbWVfcGVyaW9kdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABBwcm9ncmFtbWVfcGVyaW9kZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAMb25lZm9yYWxsX2lkZAADbmlsZAAIYXJjaGl2ZWRkAAVmYWxzZWQAD29uZWZvcmFsbF9idWRkeXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAPb25lZm9yYWxsX2J1ZGR5ZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAMY3VzdG9taXphYmxlZAAFZmFsc2VkAAdlbmRzX29udAAAAAVkAApfX3N0cnVjdF9fZAALRWxpeGlyLkRhdGVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhH2QABW1vbnRoYQxkAAR5ZWFyYgAAB-pkABZwcm9ncmFtbWVfcGVyaW9kX3BoYXNldAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABZwcm9ncmFtbWVfcGVyaW9kX3BoYXNlZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAKYnVkZHlfdHlwZWEAZAAHYWNhZGVteXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAHYWNhZGVteWQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQADnBhY2thZ2VfcGVyaW9kdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAA5wYWNrYWdlX3BlcmlvZGQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACHBvc2l0aW9uZAADbmlsZAAXbWFudWFsX2J1ZGR5X25vbWluYXRpb25kAAVmYWxzZWQAD2lzX2xlYXJuaW5nX2xhYmQABWZhbHNlZAAGc2NvcmVzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAGc2NvcmVzZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAJY291cnNlX2lkYVxkAApfX3N0cnVjdF9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAAtpbnNlcnRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEZZAAEaG91cmEMZAALbWljcm9zZWNvbmRoAmIACEt5YQZkAAZtaW51dGVhNWQABW1vbnRoYQJkAAZzZWNvbmRhBWQACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH6mQACXpvbmVfYWJicm0AAAADVVRDZAAJcHJvZ3JhbW1ldAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAAlwcm9ncmFtbWVkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAltYW5kYXRvcnlkAAR0cnVlZAAZcHJvZ3JhbW1lX3BlcmlvZF9waGFzZV9pZGQAA25pbGQACnVwZGF0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhGWQABGhvdXJhDGQAC21pY3Jvc2Vjb25kaAJiAAhLgWEGZAAGbWludXRlYTVkAAVtb250aGECZAAGc2Vjb25kYQVkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-pkAAl6b25lX2FiYnJtAAAAA1VUQ2QACXN0YXJ0c19vbnQAAAAFZAAKX19zdHJ1Y3RfX2QAC0VsaXhpci5EYXRlZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRlkAAVtb250aGECZAAEeWVhcmIAAAfqdAAAACJkAAphY2FkZW15X2lkYgAAC1lkAAhfX21ldGFfX3QAAAAGZAAKX19zdHJ1Y3RfX2QAG0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YWQAB2NvbnRleHRkAANuaWxkAAZwcmVmaXhkAANuaWxkAAZzY2hlbWFkABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQABnNvdXJjZW0AAAAOY291cnNlX3BlcmlvZHNkAAVzdGF0ZWQABmxvYWRlZGQADmVucm9sbG1lbnRfZW5kdAAAAAVkAApfX3N0cnVjdF9fZAALRWxpeGlyLkRhdGVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhH2QABW1vbnRoYQxkAAR5ZWFyYgAAB-pkAA1hY2FkZW15X3RpdGxlZAADbmlsZAALZW5yb2xsbWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAtlbnJvbGxtZW50c2QACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABmNvdXJzZXQAAAAzZAASbWlncmF0aW9uX2ZpbmlzaGVkZAAFZmFsc2VkAAhfX21ldGFfX3QAAAAGZAAKX19zdHJ1Y3RfX2QAG0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YWQAB2NvbnRleHRkAANuaWxkAAZwcmVmaXhkAANuaWxkAAZzY2hlbWFkABFFbGl4aXIuQW1pLkNvdXJzZWQABnNvdXJjZW0AAAAHY291cnNlc2QABXN0YXRlZAAGbG9hZGVkZAASdGVhc2VyX2Jhbm5lcl90ZXh0bQAAAfU8cD5BcmUgeW91IGFuIGFzcGlyaW5nIGVudHJlcHJlbmV1cj8gRG8geW91IGhhdmUgd2hhdCBpdCB0YWtlcyB0byBnZW5lcmF0ZSBhbmQgaW1wbGVtZW50IGdyZWF0IGJ1c2luZXNzIGlkZWE_PC9wPg0KPHA-SW1wcm92ZSB5b3VyIGVudHJlcHJlbmV1cmlhbCBza2lsbHMgYnkgbGVhcm5pbmcgaG93IHRoZSBkaWZmZXJlbnQgZWxlbWVudHMgb2YgYSBidXNpbmVzcyBtb2RlbCByZWxhdGUgdG8gZWFjaCBvdGhlciBhbmQgaG93IHlvdSBjYW4gdXNlIHNvbWUgc2ltcGxlIHRvb2xzIHRvIHJlZmluZSB0aGUgY29yZSBlbGVtZW50cyBvZiB5b3VyIEJ1c2luZXNzIE1vZGVsIENhbnZhcy4gSW4gdGhpcyBjb3Vyc2UsIHlvdSB3aWxsIGxlYXJuIGhvdyB0byB1c2Ugc29tZSBzaW1wbGUgYW5kIHByYWN0aWNhbCB0b29scyB0byBtYXAgb3V0IGFuZCB0ZXN0IHlvdXIgYnVzaW5lc3MgY29uY2VwdCwgZGVmaW5lIHRoZSBidXNpbmVzcyBtb2RlbCBhbmQgc3RhcnQgYSBidXNpbmVzcy48L3A-DQpkAAdxdWl6emVzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAHcXVpenplc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABWltYWdlZAADbmlsZAAPY291cnNlX2FkbWluX2lkYSFkAA1tYXJraW5nX2d1aWRldAAAAAJkAAlmaWxlX25hbWVtAAAAIk1hcmtpbmcgR3VpZGVfRmluYWwgQXNzaWdubWVudC5wZGZkAAp1cGRhdGVkX2F0dAAAAAlkAApfX3N0cnVjdF9fZAAURWxpeGlyLk5haXZlRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhEWQABGhvdXJhDGQAC21pY3Jvc2Vjb25kaAJhAGEAZAAGbWludXRlYQ5kAAVtb250aGECZAAGc2Vjb25kYQZkAAR5ZWFyYgAAB-RkAA9oaWRlX2NvbXBvbmVudHNkAAVmYWxzZWQABm9uX2FpcmQABHRydWVkAAtmcmVlX2NvdXJzZWQABWZhbHNlZAAUcmVzb3VyY2VfYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABRyZXNvdXJjZV9hdHRhY2htZW50c2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAF3RodW1iX2ltYWdlX2F0dGFjaG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAXdGh1bWJfaW1hZ2VfYXR0YWNobWVudHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAxhY2Nlc3NfcHJpY2VkAAR0cnVlZAAaYWZmaWxpYXRlX2xvZ29fYXR0YWNobWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABphZmZpbGlhdGVfbG9nb19hdHRhY2htZW50c2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAAmlkYbtkAAVsZXZlbGEAZAALdG90YWxfaG91cnNhFGQABXByaWNlYRRkABZwcmVfYXNzZXNzbWVudF9xdWl6X2lkZAADbmlsZAAPc2VxdWVudGlhbF90YWdzZAADbmlsZAAMY291cnNlX2FkbWludAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAAxjb3Vyc2VfYWRtaW5kAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAhhcmNoaXZlZGQABWZhbHNlZAAFbGlrZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAVsaWtlc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABHRhZ3N0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAR0YWdzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAYdGVhc2VyX2ltYWdlX2F0dGFjaG1lbnRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAYdGVhc2VyX2ltYWdlX2F0dGFjaG1lbnRzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAKY29tcG9uZW50c2QAA25pbGQABXVuaXRzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAFdW5pdHNkAAlfX293bmVyX19kABFFbGl4aXIuQW1pLkNvdXJzZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAtpbnN0cnVjdG9yc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAC2luc3RydWN0b3JzZAAJX19vd25lcl9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAFdGl0bGVtAAAAJiBFbnRyZXByZW5ldXJzaGlwOiBGcm9tIElkZWEgdG8gQWN0aW9uZAARY291cnNlc19yZXNvdXJjZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABFjb3Vyc2VzX3Jlc291cmNlc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEGFjY2VwdGFuY2Vfc2NvcmVhN2QAC2Rlc2NyaXB0aW9ubQAAARpIb3cgZG8geW91IGdlbmVyYXRlIGEgZ3JlYXQgYnVzaW5lc3MgaWRlYT8gV2hpY2gga2V5IGFjdGl2aXRpZXMgc2hvdWxkIHlvdSBmb2N1cyBvbj8gV2hhdCBjb3N0cyBhcmUgaW52b2x2ZWQsIGFuZCBob3cgY2FuIHlvdSByYWlzZSBjYXBpdGFsPyBUaGlzIGNvdXJzZSB3aWxsIGhlbHAgeW91IGFydGljdWxhdGUgeW91ciBidXNpbmVzcyBpZGVhIHNvIHRoYXQgaXQgaXMgYmV0dGVyIHVuZGVyc3Rvb2QgYnkgeW91cnNlbGYsIHlvdXIgdGVhbSBhbmQgcG90ZW50aWFsIGludmVzdG9ycy48L3A-DQpkAARzb3J0YQBkAAdsZXNzb25zdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAHbGVzc29uc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEnRlYXNlcl9kZXNjcmlwdGlvbm0AAALMPHA-SG93IGRvIHlvdSBkZWZpbmUgeW91ciBidXNpbmVzcyBtb2RlbCBhbmQgdXNlIGN1c3RvbWVyIHJlc2VhcmNoIHRvIHRlc3QgaXQ_IFdoaWNoIGtleSBhY3Rpdml0aWVzIHNob3VsZCB5b3UgZm9jdXMgb24_IFdoYXQgY29zdHMgYXJlIGludm9sdmVkLCBhbmQgaG93IGNhbiB5b3UgcmFpc2UgY2FwaXRhbD8gVGhpcyBjb3Vyc2Ugd2lsbCBoZWxwIHlvdSBhcnRpY3VsYXRlIHlvdXIgYnVzaW5lc3MgaWRlYSBzbyB0aGF0IGl0IGlzIGJldHRlciB1bmRlcnN0b29kIGJ5IHlvdXJzZWxmLCB5b3VyIHRlYW0gYW5kIHBvdGVudGlhbCBpbnZlc3RvcnMuPHA-DQo8cD4gVGhpcyBjb3Vyc2UgaXMgZGVzaWduZWQgdG8gaGVscCBlbnRyZXByZW5ldXJzIChhbmQgYXNwaXJpbmcgZW50cmVwcmVuZXVycykgZ2FpbiB0aGUga25vd2xlZGdlIGFuZCBwcmFjdGljYWwgc2tpbGxzIG5lZWRlZCB0byBkZXZlbG9wIHZpYWJsZSBidXNpbmVzcyBpZGVhKHMpIGFuZCBkZWZpbmUgd2hhdCBpcyByZXF1aXJlZCB0byBzdWNjZXNzZnVsbHkgc3RhcnQgYSBidXNpbmVzcy4gDQpCeSB0aGUgZW5kIG9mIHRoZSBjb3Vyc2UsIHlvdeKAmWxsIGJlIGFibGUgdG8gbWFwIG91dCB5b3VyIGlkZWEgdXNpbmcgdGhlIEJ1c2luZXNzIE1vZGVsIENhbnZhcyBhbmQgcGl0Y2ggdGhlIGlkZWEgdG8gcG90ZW50aWFsIGludmVzdG9ycyB1c2luZyBhIHNvbGlkIEJ1c2luZXNzIFBsYW4uPC9wPg0KDQpkAA5wcmljZV9jdXJyZW5jeW0AAAADVVNEZAAOY291cnNlX3BlcmlvZHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAA5jb3Vyc2VfcGVyaW9kc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAD3doeV90YWtlX2NvdXJzZWQAA25pbGQAEW1pZ3JhdGlvbl9zdGFydGVkZAAFZmFsc2VkAApfX3N0cnVjdF9fZAARRWxpeGlyLkFtaS5Db3Vyc2VkABFjZXJ0aWZpY2F0ZV9wcmljZWQABWZhbHNlZAALaW5zZXJ0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhCmQABGhvdXJhCGQAC21pY3Jvc2Vjb25kaAJiAAZPgWEGZAAGbWludXRlYQ9kAAVtb250aGEMZAAGc2Vjb25kYRFkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-VkAAl6b25lX2FiYnJtAAAAA1VUQ2QACmluc3RydWN0b3JkAANuaWxkAARzbHVnZAADbmlsZAATcHJlX2Fzc2Vzc21lbnRfcXVpenQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAATcHJlX2Fzc2Vzc21lbnRfcXVpemQACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAC2lzX2ZlYXR1cmVkZAAFZmFsc2VkABRpbmFjdGl2ZV90ZWFzZXJfbGlua2QAA25pbGQABnZpZGVvc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QABnZpZGVvc2QACV9fb3duZXJfX2QAEUVsaXhpci5BbWkuQ291cnNlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACHN1YnRpdGxlZAADbmlsZAAQaGlkZV9hc3Nlc3NtZW50c2QABWZhbHNlZAAKdXBkYXRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEKZAAEaG91cmEIZAALbWljcm9zZWNvbmRoAmIABk-GYQZkAAZtaW51dGVhD2QABW1vbnRoYQxkAAZzZWNvbmRhEWQACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH5WQACXpvbmVfYWJicm0AAAADVVRDZAACaWRiAABmxWQAC2lzX2V4dGVybmFsZAAFZmFsc2VkABFvbmVfZm9yX2FsbF9lbWFpbGQAA25pbGQADHByb2dyYW1tZV9pZGQAA25pbGQAE3Byb2dyYW1tZV9wZXJpb2RfaWRkAANuaWxkABFwYWNrYWdlX3BlcmlvZF9pZGQAA25pbGQAEHByb2dyYW1tZV9wZXJpb2R0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAEHByb2dyYW1tZV9wZXJpb2RkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAxvbmVmb3JhbGxfaWRkAANuaWxkAAhhcmNoaXZlZGQABWZhbHNlZAAPb25lZm9yYWxsX2J1ZGR5dAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAA9vbmVmb3JhbGxfYnVkZHlkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAxjdXN0b21pemFibGVkAAVmYWxzZWQAB2VuZHNfb250AAAABWQACl9fc3RydWN0X19kAAtFbGl4aXIuRGF0ZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEfZAAFbW9udGhhDGQABHllYXJiAAAH6mQAFnByb2dyYW1tZV9wZXJpb2RfcGhhc2V0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAFnByb2dyYW1tZV9wZXJpb2RfcGhhc2VkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAApidWRkeV90eXBlYQBkAAdhY2FkZW15dAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kAAdhY2FkZW15ZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAOcGFja2FnZV9wZXJpb2R0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QADnBhY2thZ2VfcGVyaW9kZAAJX19vd25lcl9fZAAXRWxpeGlyLkFtaS5Db3Vyc2VQZXJpb2RkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAIcG9zaXRpb25kAANuaWxkABdtYW51YWxfYnVkZHlfbm9taW5hdGlvbmQABWZhbHNlZAAPaXNfbGVhcm5pbmdfbGFiZAAFZmFsc2VkAAZzY29yZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAZzY29yZXNkAAlfX293bmVyX19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAljb3Vyc2VfaWRhu2QACl9fc3RydWN0X19kABdFbGl4aXIuQW1pLkNvdXJzZVBlcmlvZGQAC2luc2VydGVkX2F0dAAAAA1kAApfX3N0cnVjdF9fZAAPRWxpeGlyLkRhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRlkAARob3VyYQxkAAttaWNyb3NlY29uZGgCYgAFaGdhBmQABm1pbnV0ZWE1ZAAFbW9udGhhAmQABnNlY29uZGEnZAAKc3RkX29mZnNldGEAZAAJdGltZV96b25lbQAAAAdFdGMvVVRDZAAKdXRjX29mZnNldGEAZAAEeWVhcmIAAAfqZAAJem9uZV9hYmJybQAAAANVVENkAAlwcm9ncmFtbWV0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QACXByb2dyYW1tZWQACV9fb3duZXJfX2QAF0VsaXhpci5BbWkuQ291cnNlUGVyaW9kZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACW1hbmRhdG9yeWQABHRydWVkABlwcm9ncmFtbWVfcGVyaW9kX3BoYXNlX2lkZAADbmlsZAAKdXBkYXRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEZZAAEaG91cmEMZAALbWljcm9zZWNvbmRoAmIABWhuYQZkAAZtaW51dGVhNWQABW1vbnRoYQJkAAZzZWNvbmRhJ2QACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH6mQACXpvbmVfYWJicm0AAAADVVRDZAAJc3RhcnRzX29udAAAAAVkAApfX3N0cnVjdF9fZAALRWxpeGlyLkRhdGVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhGWQABW1vbnRoYQJkAAR5ZWFyYgAAB-pqbQAAAAxjdXJyZW50X3VzZXJ0AAAAZmQACF9fbWV0YV9fdAAAAAZkAApfX3N0cnVjdF9fZAAbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhZAAHY29udGV4dGQAA25pbGQABnByZWZpeGQAA25pbGQABnNjaGVtYWQAD0VsaXhpci5BbWkuVXNlcmQABnNvdXJjZW0AAAAFdXNlcnNkAAVzdGF0ZWQABmxvYWRlZGQAFmludml0YXRpb25fYWNjZXB0ZWRfYXRkAANuaWxkAAVhZG1pbmQABWZhbHNlZAALaXNfdmVyaWZpZWRkAAR0cnVlZAAIcGFzc3dvcmRkAANuaWxkAAhvd25lcl9pZGQAA25pbGQAE21vYmlsZV9zZXNzaW9uX2xvZ3N0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABNtb2JpbGVfc2Vzc2lvbl9sb2dzZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEGFjdGl2YXRpb25fY29kZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABBhY3RpdmF0aW9uX2NvZGVzZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAB2NvbXBhbnl0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAB2NvbXBhbnlkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAJY29tcGFuaWVzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAJY29tcGFuaWVzZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAFGRvd25sb2FkZWRfcmVzb3VyY2VzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAUZG93bmxvYWRlZF9yZXNvdXJjZXNkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAALZW5yb2xsbWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAtlbnJvbGxtZW50c2QACV9fb3duZXJfX2QAD0VsaXhpci5BbWkuVXNlcmQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABJjb25maXJtYXRpb25fdG9rZW5kAANuaWxkAA9sYXN0X3NpZ25faW5fYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhHGQABGhvdXJhBGQAC21pY3Jvc2Vjb25kaAJiAANP9mEGZAAGbWludXRlYRpkAAVtb250aGEHZAAGc2Vjb25kYRRkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-pkAAl6b25lX2FiYnJtAAAAA1VUQ2QAEGN1cnJlbnRfcGFzc3dvcmRkAANuaWxkAAdwcm9maWxldAAAACZkAAhfX21ldGFfX3QAAAAGZAAKX19zdHJ1Y3RfX2QAG0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YWQAB2NvbnRleHRkAANuaWxkAAZwcmVmaXhkAANuaWxkAAZzY2hlbWFkABJFbGl4aXIuQW1pLlByb2ZpbGVkAAZzb3VyY2VtAAAACHByb2ZpbGVzZAAFc3RhdGVkAAZsb2FkZWRkAAVpbWFnZXQAAAACZAAJZmlsZV9uYW1lbQAAAAtHaXJhZmZlLmpwZ2QACnVwZGF0ZWRfYXR0AAAACWQACl9fc3RydWN0X19kABRFbGl4aXIuTmFpdmVEYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEeZAAEaG91cmESZAALbWljcm9zZWNvbmRoAmEAYQBkAAZtaW51dGVhH2QABW1vbnRoYQZkAAZzZWNvbmRhHWQABHllYXJiAAAH6mQABGpvYnN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAARqb2JzZAAJX19vd25lcl9fZAASRWxpeGlyLkFtaS5Qcm9maWxlZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQACWNvbXBsZXRlZGQABWZhbHNlZAAIZmFjZWJvb2tkAANuaWxkAAp2aWV3X2NvdW50YQBkAAd0d2l0dGVyZAADbmlsZAAJYmlvZ3JhcGh5ZAADbmlsZAALZ29vZ2xlX3BsdXNkAANuaWxkAAJpZGIAA9jhZAAGZ2VuZGVyZAADbmlsZAAFc2t5cGVkAANuaWxkAAZza2lsbHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAZza2lsbHNkAAlfX293bmVyX19kABJFbGl4aXIuQW1pLlByb2ZpbGVkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAHY291bnRyeXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAHY291bnRyeWQACV9fb3duZXJfX2QAEkVsaXhpci5BbWkuUHJvZmlsZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAVwaG9uZW0AAAAJNzgzNzM4MDA5ZAAJZGV2aWNlX2lkZAADbmlsZAAHdXNlcl9pZGIABGhAZAAIcGhvbmVfY2NtAAAAAzI1MGQAEXNlcXVlbnRpYWxfc2tpbGxzZAADbmlsZAADYWdlZAADbmlsZAAEY2l0eXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAEY2l0eWQACV9fb3duZXJfX2QAEkVsaXhpci5BbWkuUHJvZmlsZWQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAJjdmQAA25pbGQAB2NpdHlfaWRiAAAKi2QACGxpbmtlZGluZAADbmlsZAALY292ZXJfcGhvdG9kAANuaWxkAAlsYXN0X25hbWVtAAAABkJ1dGF0dWQABHVzZXJ0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QABHVzZXJkAAlfX293bmVyX19kABJFbGl4aXIuQW1pLlByb2ZpbGVkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAVdW5zdWJzY3JpYmVkX2Zyb21fYWxsZAAFZmFsc2VkAApfX3N0cnVjdF9fZAASRWxpeGlyLkFtaS5Qcm9maWxlZAAKem9vbV9lbWFpbG0AAAATbG91YW5nZUBtdXJhaG8udGVjaGQACHNldHRpbmdzdAAAAAFtAAAAC3NoYXJpbmdfbHZsbQAAAAExZAARYWx0ZXJuYXRpdmVfZW1haWxkAANuaWxkAAtpbnNlcnRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWESZAAEaG91cmEKZAALbWljcm9zZWNvbmRoAmIADCbnYQZkAAZtaW51dGVhMmQABW1vbnRoYQRkAAZzZWNvbmRhF2QACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH52QACXpvbmVfYWJicm0AAAADVVRDZAAKZmlyc3RfbmFtZW0AAAAITG91YW5nZWVkAAZsb2NhbGVtAAAAAmVuZAAKY291bnRyeV9pZGHBZAAKZWR1Y2F0aW9uc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QACmVkdWNhdGlvbnNkAAlfX293bmVyX19kABJFbGl4aXIuQW1pLlByb2ZpbGVkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAKdXBkYXRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEOZAAEaG91cmEIZAALbWljcm9zZWNvbmRoAmEAYQZkAAZtaW51dGVhOGQABW1vbnRoYQdkAAZzZWNvbmRhCWQACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH6mQACXpvbmVfYWJicm0AAAADVVRDZAAKaXNfZG9ybWFudGQABWZhbHNlZAALdXNlcl9waG9uZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAt1c2VyX3Bob25lc2QACV9fb3duZXJfX2QAD0VsaXhpci5BbWkuVXNlcmQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABphY2NvdW50aWJpbGl0eV9wYXJ0bmVyX2ZvcmQAA25pbGQACnJvbGVzX21hc2thAWQABWVtYWlsbQAAABNsb3VhbmdlQG11cmFoby50ZWNoZAAUdXNlcl9hY3RpdmF0aW9uX2NvZGV0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAFHVzZXJfYWN0aXZhdGlvbl9jb2RlZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAAmlkYgAEaEBkAAtwYXJ0bmVyc2hpcHQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAALcGFydG5lcnNoaXBkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAEdXVpZGQAA25pbGQAFHJlc2V0X3Bhc3N3b3JkX3Rva2VubQAAAFJTRk15TlRZLmcyZ0RZZ0FFYUVCdUJnQ2ticW1ObndGaUFBRlJnQS5ObC1sTTJ3ZGZsZU5SamUybklLTGdLLXhIQ3o3QXBZbkRGWkdCXzlBWmUwZAAiYnVsa191cGxvYWRfbG9naW5fdG9rZW5fZXhwaXJlc19hdGQAA25pbGQADnNpZ25faW5fc3RyZWFrYQBkABdwcm9ncmFtbWVfcGVyaW9kc191c2Vyc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAF3Byb2dyYW1tZV9wZXJpb2RzX3VzZXJzZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAB2NvdXJzZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAdjb3Vyc2VzZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABHJvbGVkAANuaWxkAAxmY21fcHJvZmlsZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAxmY21fcHJvZmlsZXNkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAScG9wX3VwX3ZpZGVvX2NvdW50YQNkAARuYW1lbQAAAAhMb3VhbmdlTWQAFWludml0YXRpb25fY3JlYXRlZF9hdGQAA25pbGQAEWludml0YXRpb25zX2NvdW50YQBkAA5yZW5ld2FibGVfZGF0ZWQAA25pbGQAFGNvbmZpcm1hdGlvbl9zZW50X2F0ZAADbmlsZAATYWRtaW5pc3RlcmVkX2NvdXJzZXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAATYWRtaW5pc3RlcmVkX2NvdXJzZWQACV9fb3duZXJfX2QAD0VsaXhpci5BbWkuVXNlcmQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAA5kb3JtYW50X3JlYXNvbmQAA25pbGQAFmRvd25sb2FkZWRfdG9vbHNfY291bnRkAANuaWxkAANqd3RtAAABmGV5SmhiR2NpT2lKSVV6VXhNaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpoZFdRaU9pSmhiV2tpTENKbGVIQWlPakUzT0RjMk16RTVPREFzSW1saGRDSTZNVGM0TlRJeE1qYzRNQ3dpYVhOeklqb2lZVzFwSWl3aWFuUnBJam9pWldSaU9ERmtObUl0TURFME1DMDBaVGhrTFRoak56SXRZV1ppWlRrelpXTTVZV0U0SWl3aWJtSm1Jam94TnpnMU1qRXlOemM1TENKeVpXWmxjbVZ5SWpvaWFIUjBjRG92TDJGalkyOTFiblF1WVdaeWFXTmhibTFoYm1GblpYSnpMbTl5Wnk5aGJXbGZZWFYwYUM5c2IyZHBiaUlzSW5OMVlpSTZJakk0T0Rnek1pSXNJblI1Y0NJNkltRmpZMlZ6Y3lKOS43YnFScWtFczBWNlNRLUM0ZWhMaXNzNlVqWTNMeGZfVHh3QmhoOVdxN1FhQS1ORkJ0MHZfeGlvU1BDbjVoUFprNHNiejBXTUtZd0NMWmIydHUxakN3UWQACHByb3ZpZGVyZAADbmlsZAAPaW52aXRlZF9ieV90eXBlZAADbmlsZAAVcGFzc3dvcmRfY29uZmlybWF0aW9uZAADbmlsZAAUbG9uZ2l0dWRpbmFsX3N1cnZleXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABRsb25naXR1ZGluYWxfc3VydmV5c2QACV9fb3duZXJfX2QAD0VsaXhpci5BbWkuVXNlcmQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAN0b3NkAAR0cnVlZAARem9vbV9ldmVudF9ndWVzdHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABF6b29tX2V2ZW50X2d1ZXN0c2QACV9fb3duZXJfX2QAD0VsaXhpci5BbWkuVXNlcmQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABJjdXJyZW50X3NpZ25faW5faXBtAAAADjE5Ny4xNTcuMTg0LjYwZAAUaW52ZXJzZV9wYXJ0bmVyc2hpcHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABRpbnZlcnNlX3BhcnRuZXJzaGlwc2QACV9fb3duZXJfX2QAD0VsaXhpci5BbWkuVXNlcmQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkABZyZXNldF9wYXNzd29yZF9zZW50X2F0ZAADbmlsZAANYWNhZGVteV91c2Vyc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QADWFjYWRlbXlfdXNlcnNkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAGc3RhdHVzYQFkAA9sYXN0X3NpZ25faW5faXBtAAAADjE5Ny4xNTcuMTg0LjYwZAAMam9iX21hdGNoaW5nZAAFZmFsc2VkAA12aXNpdGVkX2xqX2F0dAAAAA1kAApfX3N0cnVjdF9fZAAPRWxpeGlyLkRhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRNkAARob3VyYQdkAAttaWNyb3NlY29uZGgCYgAEhzphBmQABm1pbnV0ZWETZAAFbW9udGhhBGQABnNlY29uZGEgZAAKc3RkX29mZnNldGEAZAAJdGltZV96b25lbQAAAAdFdGMvVVRDZAAKdXRjX29mZnNldGEAZAAEeWVhcmIAAAfnZAAJem9uZV9hYmJybQAAAANVVENkABJlbmNyeXB0ZWRfcGFzc3dvcmRtAAAAYiRhcmdvbjJpZCR2PTE5JG09MTMxMDcyLHQ9OCxwPTQkVUpTMjcrK2Vza0FmRTY1V0hYU2hyUSQyT25MeXZlc0I4UjE5dFFSQjNtUFZuU0ZIcVJUK2JKVlJ6UERxZTJwTUhBZAAOd2hhdHNhcHBfdXNlcnN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAA53aGF0c2FwcF91c2Vyc2QACV9fb3duZXJfX2QAD0VsaXhpci5BbWkuVXNlcmQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAApjcmVhdGVkX2J5ZAADbmlsZAATcGFzc3dvcmRfdXBkYXRlZF9hdHQAAAAFZAAKX19zdHJ1Y3RfX2QAC0VsaXhpci5EYXRlZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRdkAAVtb250aGEHZAAEeWVhcmIAAAfqZAAIY29tbWVudHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kAAhjb21tZW50c2QACV9fb3duZXJfX2QAD0VsaXhpci5BbWkuVXNlcmQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAAl1c2VyX3JvbGVtAAAAC3RlYW1fbWVtYmVyZAAMY29uZmlybWVkX2F0dAAAAA1kAApfX3N0cnVjdF9fZAAPRWxpeGlyLkRhdGVUaW1lZAAIY2FsZW5kYXJkABNFbGl4aXIuQ2FsZW5kYXIuSVNPZAADZGF5YRxkAARob3VyYQ5kAAttaWNyb3NlY29uZGgCYQBhBmQABm1pbnV0ZWEaZAAFbW9udGhhA2QABnNlY29uZGELZAAKc3RkX29mZnNldGEAZAAJdGltZV96b25lbQAAAAdFdGMvVVRDZAAKdXRjX29mZnNldGEAZAAEeWVhcmIAAAfoZAAJem9uZV9hYmJybQAAAANVVENkABRtb2RlcmF0ZWRfb2NfYWNhZGVteXQAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAADb25lZAAJX19maWVsZF9fZAAUbW9kZXJhdGVkX29jX2FjYWRlbXlkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAKY29tcGFueV9pZGIAAAdtZAARdW5jb25maXJtZWRfZW1haWxkAANuaWxkABBkZXZlbG9wbWVudF9wbGFudAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAANvbmVkAAlfX2ZpZWxkX19kABBkZXZlbG9wbWVudF9wbGFuZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEGludml0YXRpb25fbGltaXRkAANuaWxkABV3aXRoX3VwZGF0ZWRfcGFzc3dvcmRkAAR0cnVlZAANZXZlbnRfcGVyaW9kc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QADWV2ZW50X3BlcmlvZHNkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAARcmVjZW50X2FjdGl2aXRpZXN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABFyZWNlbnRfYWN0aXZpdGllc2QACV9fb3duZXJfX2QAD0VsaXhpci5BbWkuVXNlcmQACl9fc3RydWN0X19kACFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWRkAA5jb3Vyc2VfcGVyaW9kc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QADmNvdXJzZV9wZXJpb2RzZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAFmFjY291bnRhYmlsaXR5X3BhcnRuZXJ0AAAABGQAD19fY2FyZGluYWxpdHlfX2QAA29uZWQACV9fZmllbGRfX2QAFmFjY291bnRhYmlsaXR5X3BhcnRuZXJkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAfYnVsa191cGxvYWRfbG9naW5fdG9rZW5fdXNlZF9hdGQAA25pbGQADWludml0ZWRfYnlfaWRkAANuaWxkAAhhcGlfdXNlcmQABWZhbHNlZAAfaW52ZXJzZV9hY2NvdW50YWJpbGl0eV9wYXJ0bmVyc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAH2ludmVyc2VfYWNjb3VudGFiaWxpdHlfcGFydG5lcnNkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAATbW9kZXJhdGVkX2FjYWRlbWllc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAE21vZGVyYXRlZF9hY2FkZW1pZXNkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAGc2NvcmVzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAGc2NvcmVzZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAGmRvd25sb2FkZWRfcmVzb3VyY2VzX2NvdW50ZAADbmlsZAATYXNzaWduZWRfYnVkZHlzaGlwc3QAAAAEZAAPX19jYXJkaW5hbGl0eV9fZAAEbWFueWQACV9fZmllbGRfX2QAE2Fzc2lnbmVkX2J1ZGR5c2hpcHNkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAQaW52aXRhdGlvbl90b2tlbmQAA25pbGQACl9fc3RydWN0X19kAA9FbGl4aXIuQW1pLlVzZXJkABJjdXJyZW50X3NpZ25faW5fYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhHGQABGhvdXJhBGQAC21pY3Jvc2Vjb25kaAJiAABkKGEGZAAGbWludXRlYRpkAAVtb250aGEHZAAGc2Vjb25kYRRkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-pkAAl6b25lX2FiYnJtAAAAA1VUQ2QAGXN1cnZleV9tb25rZXlfcmVzcG9uc2VfaWRkAANuaWxkAAtpbnNlcnRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWESZAAEaG91cmEKZAALbWljcm9zZWNvbmRoAmIAC0hEYQZkAAZtaW51dGVhMmQABW1vbnRoYQRkAAZzZWNvbmRhF2QACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH52QACXpvbmVfYWJicm0AAAADVVRDZAATcmVtZW1iZXJfY3JlYXRlZF9hdGQAA25pbGQAEmludml0YXRpb25fc2VudF9hdGQAA25pbGQAEHRlbXBsYXRlX3Jlc3VsdHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABB0ZW1wbGF0ZV9yZXN1bHRzZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAC2dyb3VwX2xhYmVsZAADbmlsZAASc3VydmV5X21vbmtleV9pbmZvdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAASc3VydmV5X21vbmtleV9pbmZvZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAC3VzZXJfZW1haWxzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAALdXNlcl9lbWFpbHNkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAKc2Vzc2lvbl9pZGQAA25pbGQAEGRvd25sb2FkZWRfdG9vbHN0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABBkb3dubG9hZGVkX3Rvb2xzZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQAEHdlYl9zZXNzaW9uX2xvZ3N0AAAABGQAD19fY2FyZGluYWxpdHlfX2QABG1hbnlkAAlfX2ZpZWxkX19kABB3ZWJfc2Vzc2lvbl9sb2dzZAAJX19vd25lcl9fZAAPRWxpeGlyLkFtaS5Vc2VyZAAKX19zdHJ1Y3RfX2QAIUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZGQABXBvc3RzdAAAAARkAA9fX2NhcmRpbmFsaXR5X19kAARtYW55ZAAJX19maWVsZF9fZAAFcG9zdHNkAAlfX293bmVyX19kAA9FbGl4aXIuQW1pLlVzZXJkAApfX3N0cnVjdF9fZAAhRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkZAAKcmVzdG9yZV9pZGQAA25pbGQAF2J1bGtfdXBsb2FkX2xvZ2luX3Rva2VuZAADbmlsZAAPeWFsaWVfYXV0aHRva2VuZAADbmlsZAAKdXBkYXRlZF9hdHQAAAANZAAKX19zdHJ1Y3RfX2QAD0VsaXhpci5EYXRlVGltZWQACGNhbGVuZGFyZAATRWxpeGlyLkNhbGVuZGFyLklTT2QAA2RheWEcZAAEaG91cmEEZAALbWljcm9zZWNvbmRoAmIAA1BsYQZkAAZtaW51dGVhGmQABW1vbnRoYQdkAAZzZWNvbmRhFGQACnN0ZF9vZmZzZXRhAGQACXRpbWVfem9uZW0AAAAHRXRjL1VUQ2QACnV0Y19vZmZzZXRhAGQABHllYXJiAAAH6mQACXpvbmVfYWJicm0AAAADVVRDZAAMb2xkX3Bhc3N3b3JkbQAAAGEkYXJnb24yaWQkdj0xOSRtPTY1NTM2LHQ9MyxwPTQkMXZZRXhHekMrNTdOTjZ2VG1TcnVKQSQ0Z3RGaVJFaGNjbWtlc0tVSUxHaDY0V3FNdklqYmtZQWVEd3FsYUV3NmFnZAANc2lnbl9pbl9jb3VudGIAAAgUZAAEdmlld2QANUVsaXhpci5BbWlXZWIuRGFzaGJvYXJkVW5lbnJvbGxlZENvdXJzZXNDb21wb25lbnRMaXZlbgYA1UL5pp8BYgABUYA.tBivImdZCraiTomYmKHKUSPkMDH7MLgrTOfZ3NFzp5Q" data-phx-static="SFMyNTY.g2gDaAJhBHQAAAADZAAKYXNzaWduX25ld2pkAAVmbGFzaHQAAAABbQAAAAdzdWNjZXNzbQAAABZXZWxjb21lIGJhY2sgTG91YW5nZU0hZAACaWRtAAAAFHBoeC1HTVpaa093UFFtUUVnakxpbgYA2kL5pp8BYgABUYA.J_g_pKA4C4DsbJTOZ6UdBRza0WYYAYt4Z91chqWIQs4" data-phx-view="DashboardUnenrolledCoursesComponentLive" id="phx-GMZZkOwPQmQEgjLi" class="phx-connected" data-phx-root-id="phx-GMZZkOwPQmQEgjLi"><section class="journey-section">
+  <article class="container journey-article period-article dashboard">
+    <!-- Card Start -->
+    <div class="d-flex">
+      <div class="card w-100 container">
+        <!-- Card-header Start -->
+        <div class="card-header row bg-transparent border-0">
+          <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 mtr-5 d-flex gap-12 justify-content-start text-color-dark-4 learning_journeys-head">
+            <span class="text-heading-6 text-color-dark-4 m-0">Open Courses
+          </span></div>
+          <div class="col-xl-6 col-sm-12 col-xs-12 text-right mtr-5 see-all-container">
+            <a href="/dashboard/my_academy_courses?tab=2#tab2" class="text-body-normal-bold text-color-dark-teal see-all">See all <span class="ml-10">➝</span> </a>
+          </div>
+        </div>
+        <!-- Card-header Closed -->
+        <!-- Card-body Start -->
+        <div class="d-flex unenrolled_courses_card-container">
+
+            <div id="period-carousel" class="owl-carousel owl-theme space-setting owl-loaded owl-drag" phx-hook="configureDashboardOwlCarouselPeriods">
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 3528px;"><div class="owl-item active" style="width: 404px; margin-right: 100px;"><div id="course101" class="item searchable" phx-hook="OnclickAddClass" data-component-period-id="26519" data-programme-period-id="" data-component-id="101" data-type="course">
+                  <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/icons/course/managing_finance.jpg">
+                  <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title">Cash Management Basics </p>
+                  <p class="instructor-name text-color-light-1 text-body-super-small">Instructor:
+Sarunny Saibull , Training Manager</p>
+                  <div>
+                    <h4 class="text-body-normal-bold text-color-dark-4">Ends on</h4>
+                    <span class="date text-color-light-1 text-body-super-small">31 Dec 2026</span>
+                  </div>
+                  <div>
+                    <a href="javascript:void(0);" class="text-body-normal-bold text-color-dark-4 bottom-link" data-user-id="288832" data-course-period-id="26519" data-course-id="101">
+Enroll To Course <span class="text-body-normal-bold text-color-dark-4">➝</span> </a>
+                  </div>
+                  <div class="sider">
+                    <img src="/images/sider.png">
+                  </div>
+                </div></div><div class="owl-item active" style="width: 404px; margin-right: 100px;"><div id="course89" class="item searchable" phx-hook="OnclickAddClass" data-component-period-id="26304" data-programme-period-id="" data-component-id="89" data-type="course">
+                  <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/icons/course/managing_self.jpg">
+                  <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title">Problem Solving </p>
+                  <p class="instructor-name text-color-light-1 text-body-super-small">Instructor:
+</p>
+                  <div>
+                    <h4 class="text-body-normal-bold text-color-dark-4">Ends on</h4>
+                    <span class="date text-color-light-1 text-body-super-small">31 Dec 2026</span>
+                  </div>
+                  <div>
+                    <a href="javascript:void(0);" class="text-body-normal-bold text-color-dark-4 bottom-link" data-user-id="288832" data-course-period-id="26304" data-course-id="89">
+Enroll To Course <span class="text-body-normal-bold text-color-dark-4">➝</span> </a>
+                  </div>
+                  <div class="sider">
+                    <img src="/images/sider.png">
+                  </div>
+                </div></div><div class="owl-item" style="width: 404px; margin-right: 100px;"><div id="course101" class="item searchable" phx-hook="OnclickAddClass" data-component-period-id="26305" data-programme-period-id="" data-component-id="101" data-type="course">
+                  <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/icons/course/managing_finance.jpg">
+                  <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title">Cash Management Basics </p>
+                  <p class="instructor-name text-color-light-1 text-body-super-small">Instructor:
+Sarunny Saibull , Training Manager</p>
+                  <div>
+                    <h4 class="text-body-normal-bold text-color-dark-4">Ends on</h4>
+                    <span class="date text-color-light-1 text-body-super-small">31 Dec 2027</span>
+                  </div>
+                  <div>
+                    <a href="javascript:void(0);" class="text-body-normal-bold text-color-dark-4 bottom-link" data-user-id="288832" data-course-period-id="26305" data-course-id="101">
+Enroll To Course <span class="text-body-normal-bold text-color-dark-4">➝</span> </a>
+                  </div>
+                  <div class="sider">
+                    <img src="/images/sider.png">
+                  </div>
+                </div></div><div class="owl-item" style="width: 404px; margin-right: 100px;"><div id="course58" class="item searchable" phx-hook="OnclickAddClass" data-component-period-id="26307" data-programme-period-id="" data-component-id="58" data-type="course">
+                  <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/icons/course/building_your_business.jpg">
+                  <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title">Applying for a Business Loan</p>
+                  <p class="instructor-name text-color-light-1 text-body-super-small">Instructor:
+Nokwazi Mzobe, GIBS Enterprise Development Academy</p>
+                  <div>
+                    <h4 class="text-body-normal-bold text-color-dark-4">Ends on</h4>
+                    <span class="date text-color-light-1 text-body-super-small">31 Dec 2026</span>
+                  </div>
+                  <div>
+                    <a href="javascript:void(0);" class="text-body-normal-bold text-color-dark-4 bottom-link" data-user-id="288832" data-course-period-id="26307" data-course-id="58">
+Enroll To Course <span class="text-body-normal-bold text-color-dark-4">➝</span> </a>
+                  </div>
+                  <div class="sider">
+                    <img src="/images/sider.png">
+                  </div>
+                </div></div><div class="owl-item" style="width: 404px; margin-right: 100px;"><div id="course152" class="item searchable" phx-hook="OnclickAddClass" data-component-period-id="26310" data-programme-period-id="" data-component-id="152" data-type="course">
+                  <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/icons/course/managing_self.jpg">
+                  <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title">Self-Management </p>
+                  <p class="instructor-name text-color-light-1 text-body-super-small">Instructor:
+</p>
+                  <div>
+                    <h4 class="text-body-normal-bold text-color-dark-4">Ends on</h4>
+                    <span class="date text-color-light-1 text-body-super-small">31 Dec 2026</span>
+                  </div>
+                  <div>
+                    <a href="javascript:void(0);" class="text-body-normal-bold text-color-dark-4 bottom-link" data-user-id="288832" data-course-period-id="26310" data-course-id="152">
+Enroll To Course <span class="text-body-normal-bold text-color-dark-4">➝</span> </a>
+                  </div>
+                  <div class="sider">
+                    <img src="/images/sider.png">
+                  </div>
+                </div></div><div class="owl-item" style="width: 404px; margin-right: 100px;"><div id="course92" class="item searchable" phx-hook="OnclickAddClass" data-component-period-id="26308" data-programme-period-id="" data-component-id="92" data-type="course">
+                  <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/icons/course/managing_finance.jpg">
+                  <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title">Credit Scores and Loan Applications</p>
+                  <p class="instructor-name text-color-light-1 text-body-super-small">Instructor:
+</p>
+                  <div>
+                    <h4 class="text-body-normal-bold text-color-dark-4">Ends on</h4>
+                    <span class="date text-color-light-1 text-body-super-small">31 Dec 2026</span>
+                  </div>
+                  <div>
+                    <a href="javascript:void(0);" class="text-body-normal-bold text-color-dark-4 bottom-link" data-user-id="288832" data-course-period-id="26308" data-course-id="92">
+Enroll To Course <span class="text-body-normal-bold text-color-dark-4">➝</span> </a>
+                  </div>
+                  <div class="sider">
+                    <img src="/images/sider.png">
+                  </div>
+                </div></div><div class="owl-item" style="width: 404px; margin-right: 100px;"><div id="course187" class="item searchable" phx-hook="OnclickAddClass" data-component-period-id="26309" data-programme-period-id="" data-component-id="187" data-type="course">
+                  <img class="b-rad-50 mr-auto component-icon" width="80px" height="80px" src="/images/icons/course/building_your_business.jpg">
+                  <p class="text-body-normal-regular font-try-drive text-color-dark-3 journey-card-title"> Entrepreneurship: From Idea to Action</p>
+                  <p class="instructor-name text-color-light-1 text-body-super-small">Instructor:
+</p>
+                  <div>
+                    <h4 class="text-body-normal-bold text-color-dark-4">Ends on</h4>
+                    <span class="date text-color-light-1 text-body-super-small">31 Dec 2026</span>
+                  </div>
+                  <div>
+                    <a href="javascript:void(0);" class="text-body-normal-bold text-color-dark-4 bottom-link" data-user-id="288832" data-course-period-id="26309" data-course-id="187">
+Enroll To Course <span class="text-body-normal-bold text-color-dark-4">➝</span> </a>
+                  </div>
+                  <div class="sider">
+                    <img src="/images/sider.png">
+                  </div>
+                </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+            <div class="slider_nav enable-sider_nav">
+              <a type="button" role="presentation" class="font-size-18 icon-prev" disabled=""><img src="/images/left.svg" aria-hidden="true"></a>
+              <a type="button" role="presentation" class="mrl-12 mrr-12 font-size-18 icon-prev nav-bottons">Previous</a>
+              <a type="button" role="presentation" class="mrl-12 mrr-12 font-size-18 icon-next nav-bottons">Next</a>
+              <a type="button" role="presentation" class="font-size-18 icon-next"><img src="/images/right.svg" aria-hidden="true"></a>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+</div>
+
+    <!-- Journey Section Closed -->
+
+    <section class="event-section">
+      <article class="container">
+        <!-- Card Start -->
+        <div class="card">
+
+          <!-- Card-header Start -->
+          <div class="card-header row bg-transparent border-0">
+            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12 mtr-5">
+              <span class="text-heading-6 text-color-dark-4 m-0">Calendar of Events</span>
+            </div>
+          </div>
+          <!-- Card-header Closed -->
+
+          <!-- Card-body Start -->
+          <div class="card-body">
+            <div class="table-resposive">
+              <table class="table table-hover cal-table">
+                <thead class="custom-header">
+                <tr>
+                  <td class="text-body-normal-bold text-color-dark-4">Date</td>
+                  <td class="text-body-normal-bold text-color-dark-4">Time</td>
+                  <td><u class="text-body-normal-bold text-color-dark-4 text-decoration-none">Event</u></td>
+                  <td><u class="text-body-normal-bold text-color-dark-4 text-decoration-none">Location</u></td>
+                  <td><u class="text-body-normal-bold text-color-dark-4 text-decoration-none">More</u></td>
+                </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td class="text-body-super-small text-color-light-1">Mon, 27 Jul 2026</td>
+                    <td class="text-body-super-small text-color-light-1">
+                    <i class="far fa-clock"></i>
+<span class="text-label-tags badges dashboard-table-time-ongoing">18 hours ago</span>
+                    </td>
+                    <td><span class="event-title text-body-super-small text-color-dark-4">Pulse Check</span></td>
+                    <td><span class="dashboard-table-location text-body-super-small text-color-light-1"></span></td>
+                    <td><a class="table-action searchable shadow-for-buttons" data-component-id="33193" data-component-period-id="42710" data-programme-period-id="" data-type="event"><i class="fas fa-ellipsis-h"></i></a></td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-body-super-small text-color-light-1">Tue, 18 Aug 2026</td>
+                    <td class="text-body-super-small text-color-light-1">
+                    <i class="far fa-clock"></i>
+<span class="text-label-tags badges dashboard-table-time-ongoing">in 21 days</span>
+                    </td>
+                    <td><span class="event-title text-body-super-small text-color-dark-4">Kataza: Virtual Learning Lab </span></td>
+                    <td><span class="dashboard-table-location text-body-super-small text-color-light-1">Zoom</span></td>
+                    <td><a class="table-action searchable shadow-for-buttons" data-component-id="30081" data-component-period-id="39606" data-programme-period-id="" data-type="event"><i class="fas fa-ellipsis-h"></i></a></td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-body-super-small text-color-light-1">Tue, 20 Oct 2026</td>
+                    <td class="text-body-super-small text-color-light-1">
+                    <i class="far fa-clock"></i>
+<span class="text-label-tags badges dashboard-table-time-ongoing">in 2 months</span>
+                    </td>
+                    <td><span class="event-title text-body-super-small text-color-dark-4">Kataza: Virtual Learning Lab </span></td>
+                    <td><span class="dashboard-table-location text-body-super-small text-color-light-1">Zoom</span></td>
+                    <td><a class="table-action searchable shadow-for-buttons" data-component-id="30084" data-component-period-id="39611" data-programme-period-id="" data-type="event"><i class="fas fa-ellipsis-h"></i></a></td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-body-super-small text-color-light-1">Thu, 19 Nov 2026</td>
+                    <td class="text-body-super-small text-color-light-1">
+                    <i class="far fa-clock"></i>
+<span class="text-label-tags badges dashboard-table-time-ongoing">in 3 months</span>
+                    </td>
+                    <td><span class="event-title text-body-super-small text-color-dark-4">Kataza: Virtual Learning Lab </span></td>
+                    <td><span class="dashboard-table-location text-body-super-small text-color-light-1">Zoom</span></td>
+                    <td><a class="table-action searchable shadow-for-buttons" data-component-id="29298" data-component-period-id="38830" data-programme-period-id="" data-type="event"><i class="fas fa-ellipsis-h"></i></a></td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-body-super-small text-color-light-1">Thu, 18 Mar 2027</td>
+                    <td class="text-body-super-small text-color-light-1">
+                    <i class="far fa-clock"></i>
+<span class="text-label-tags badges dashboard-table-time-ongoing">in 7 months</span>
+                    </td>
+                    <td><span class="event-title text-body-super-small text-color-dark-4">Kataza: In-person Training</span></td>
+                    <td><span class="dashboard-table-location text-body-super-small text-color-light-1"></span></td>
+                    <td><a class="table-action searchable shadow-for-buttons" data-component-id="29291" data-component-period-id="38826" data-programme-period-id="" data-type="event"><i class="fas fa-ellipsis-h"></i></a></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Card-body Closed -->
+
+        </div>
+        <!-- Card Closed -->
+      </article>
+    </section>
+
+<!-- Right Side Infomation Modal Start -->
+<section class="information-modal-open">
+  <article>
+    <!-- Modal Start -->
+
+    <div class="modal right fade  " id="information-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+      <div class="modal-dialog " role="document" id="modal-slide">
+        <div class="modal-content" id="modal-content">
+          <div class="modal-body details-container" style="position:relative">
+            <div id="closeIcon" class="text-align mrt-6 mb-3">
+              <img src="/images/drag_down.svg" alt="" width="48" height="8" class="bottom-sheet">
+              <span style="border:none; cursor: pointer;" data-dismiss="modal" aria-label="Close"><i class="fas fa-times c-000000-54 font-size-22 mb-img" phx-click="close_modal"></i></span>
+            </div>
+            <div id="modal-body">
+
+            </div>
+          </div>
+
+        </div>
+        <!-- modal-content end -->
+      </div>
+      <!-- modal-dialog end -->
+    </div>
+    <div class="modal fade" id="shareViaCopyLinkModal" tabindex="-1" role="dialog" aria-labelledby="shareViaCopyLinkModalTitle" aria-hidden="true" style="padding-top: 5% !important">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-white">
+          <div class="modal_header">
+            <h5 class="modal-title modal-text-dark" id="shareViaCopyLinkModalLabel"><span id="resource-type"></span></h5>
+            <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="las la-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body position-relative">
+            <div class="row">
+              <div class="col-md-12 px15">
+                <div class="alert-info alsinfo">
+                  <i class="las la-info-circle"></i> This link will only be accessible to people logged in and have access to Kataza: Growth Guide Academy	2026 academy
+                </div>
+
+                <label class="text-body-normal text-color-dark-3 mt-3">Link to share</label>
+                <div class="row mb-0 ml-0 mr-0 gap-16">
+                  <div class="flex-auto">
+                    <input type="text" id="resources-url-input" name="resources-query-input" value="" class="form-control btn-h-50 w-100" readonly="" autocomplete="off">
+                  </div>
+                  <div class="flex-none">
+                    <button id="copy-url-btn" type="button" class="btn apply-filter-btn font-size-18 gap-5">
+                      <i class="far fa-copy"></i>
+                      <span>Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="shareViaMessageModal" tabindex="-1" role="dialog" aria-labelledby="shareViaMessageModalTitle" aria-hidden="true" style="padding-top: 5% !important">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-white">
+          <div class="modal_header">
+            <h5 class="modal-title modal-text-dark" id="exampleModalLabel">Share via private messages</h5>
+            <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="las la-times"></i></span>
+            </button>
+          </div>
+<form action="#" class="share-comp-form" id="send_link_in_message" method="post"><input name="_csrf_token" type="hidden" value="MwYqKyUlGBEzVh0OBiJSMxg1VjgnMSF_lSfNWoSXJ7HLDqaBnxcBKvo0">
+          <div class="modal-body position-relative">
+            <div class="row">
+              <div class="col-md-12 px15">
+                <div class="searchbx">
+                  <div class="sicon">
+                    <input class="form-control btn-h-50 w-100" id="share_search_phrase" name="share[search_phrase]" placeholder="Search for a name" type="text" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 px15">
+                <label class="text-body-normal text-color-dark-3 mt-3">Suggested peers</label>
+                <div id="user-result"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 px15">
+                <div class="alert-info alsinfo">
+                  <i class="las la-info-circle"></i> This link will only be accessible to people logged in and have access to Kataza: Growth Guide Academy	2026 academy
+                </div>
+              </div>
+            </div>
+
+            <div class="row share-textarea">
+              <div class="col-md-12 px15">
+                <label class="text-body-normal text-color-dark-3 mt-3">Message to send</label>
+<textarea class="form-control w-100" id="message-textarea" name="link_share_message_form[message]" onkeyup="showMessagePrompt();" placeholder="Type your message"></textarea>
+                <p class="text-red text-body-normal mt-3" id="share-resource-via-message">Please write a message</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-unenroll btn-h-50 font-size-18" data-dismiss="modal">Cancel</button>
+<button class="btn font-size-18 share-comp-btn comp-btn" id="share_component_submit" type="submit" disabled="">Share</button>
+          </div>
+</form>
+        </div>
+      </div>
+    </div>
+    <!-- information-modal end -->
+  </article>
+</section>
+
+<script>
+  window.translations = {"cancel":"Cancel","final_assignment":"Final Assignment","final_exam":"Final Exam","link_copied":"Link copied","message_sent":"Message sent","ok":"Ok","success":"Success","unenroll_body":"Once unenrolled, you will not be able to access the course material!","unenroll_success":"Course unenroll successful","unenroll_title":"Are you sure?","unit_quizzes":"Unit Quizzes"};
+
+  function showMessagePrompt() {
+    if ($("#message-textarea").val() == "") {
+      $("#share-resource-via-message").show();
+    } else {
+      $("#share-resource-via-message").hide()
+    }
+};
+</script>
+
+</div>
+
+<script>
+$(document).ready(function(){
+  function AddReadMore() {
+    var carLmt = 150;
+    var readMoreTxt = " ...see more";
+    var readLessTxt = " see less";
+
+    $(".add-read-more").each(function () {
+        if ($(this).find(".first-section").length)
+          return;
+
+        var allstr = $(this).text();
+        if (allstr.length > carLmt) {
+          var firstSet = allstr.substring(0, carLmt);
+          var secdHalf = allstr.substring(carLmt, allstr.length);
+          var strtoadd = firstSet + "<span class='second-section'>" + secdHalf + "</span><span class='read-more'  title='Click to Show More'>" + readMoreTxt + "</span><span class='read-less' title='Click to Show Less'>" + readLessTxt + "</span>";
+          $(this).html(strtoadd);
+        }
+    });
+
+    $(document).on("click", ".read-more,.read-less", function () {
+        $(this).closest(".add-read-more").toggleClass("show-less-content show-more-content");
+    });
+  }
+
+  AddReadMore();
+});
+  $(".list-group-item-card").click(function() {
+
+    var listItems = $(".list-group-item-card");
+
+    for (let i = 0; i < listItems.length; i++) {
+        listItems[i].classList.remove("active");
+    }
+
+    this.classList.add("active");
+  });
+</script>
+
+  </div>
+
+<section class="footersec pt-70 pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="ftmenu">
+          <ul class="mobml-35">
+            <li><a class="text-body-small-bold" href="https://www.africanmanagers.org/contact" target="_blank">Contact</a></li>
+            <li><a class="text-body-small-bold" href="https://www.africanmanagers.org/sitemap" target="_blank">Sitemap</a></li>
+            <li><a class="text-body-small-bold" href="https://www.africanmanagers.org/privacy-cookies" target="_blank">Privacy &amp; Cookies</a></li>
+            <li><a class="text-body-small-bold" href="#">Terms of Service</a></li>
+          </ul>
+          <ul class="socialbx">
+            <li><a href="https://www.facebook.com/africanmanagers"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="http://www.linkedin.com/groups?gid=4350648&amp;trk=vsrp_groups_res_name&amp;trkInfo=VSRPsearchId%3A461432901401369399205%2CVSRPtargetId%3A4350648%2CVSRPcmpt%3Aprimary"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/africamanager"><i class="fab fa-twitter-square"></i></a></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="addressbx">
+          <ul>
+            <li class="text-body-normal">Kenya +254 712 266 102</li>
+            <li class="text-body-normal"> South Africa +27 11 568 2664</li>
+            <li class="text-body-normal">Rwanda +250 787 339 435</li>
+            <li class="text-body-normal">info@africanmanagers.org</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <p class="copyright sm-body-text-super-small">
+          ©2021 AMI Brand by UnitedUs
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+
+    <script src="/js/ami_web/app-e8ed2121181d88f2c0e5245fff887a86.js?vsn=d"></script><iframe id="_hjSafeContext_48346553" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="about:blank" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+      if($('#lj-carousel').length >0 ){
+        var slider = tns({
+              container: '.lj-carousel',
+              items: 3,
+              navPosition: 'bottom',
+              controlsPosition: 'bottom',
+              responsive: {
+                640: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 2
+              },
+                700: {
+                gutter: 30
+              },
+                900: {
+                items: 3
+              }
+          }
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      var trackcmp_email = '';
+      var trackcmp = document.createElement("script");
+      trackcmp.async = true;
+      trackcmp.type = 'text/javascript';
+      trackcmp.src = '//trackcmp.net/visit?actid=25415820&e='+encodeURIComponent(trackcmp_email)+'&r='+encodeURIComponent(document.referrer)+'&u='+encodeURIComponent(window.location.href);
+      var trackcmp_s = document.getElementsByTagName("script");
+      if (trackcmp_s.length) {
+      trackcmp_s[0].parentNode.appendChild(trackcmp);
+      } else {
+      var trackcmp_h = document.getElementsByTagName("head");
+      trackcmp_h.length && trackcmp_h[0].appendChild(trackcmp);
+      }
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/authy-form-helpers/2.3/form.authy.min.js" type="text/javascript"></script>
+  
+
+
+<div id="fc_frame" class="fc-widget-normal" style="bottom: 15px; right: 15px;"><iframe id="fc_widget" name="fc_widget" title="Chat" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
