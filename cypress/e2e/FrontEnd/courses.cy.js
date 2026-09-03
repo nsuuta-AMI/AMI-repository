@@ -4,7 +4,7 @@ describe('Courses Page Tests', () => {
   before(() => {
     cy.visit('https://account.africanmanagers.org/ami_auth/login')
     cy.get('input[name="user[login]"]').type('stella@muraho.tech')
-    cy.get('input[name="user[password]"]').type('AMI123456')
+    cy.get('input[name="user[password]"]').type('AMI1234567890')
     cy.get('button[type="submit"]').click()
     cy.url().should('include', '/dashboard')
   })

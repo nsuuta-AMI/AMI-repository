@@ -2,12 +2,12 @@ describe(' activation page ', () => {
     it('helps find the correct selector after login', () => {
         cy.visit('https://account.africanmanagers.org/ami_auth/login')
         cy.get('input[name="user[login]"]').type('stella@muraho.tech')
-        cy.get('input[name="user[password]"]').type('AMI123456')
+        cy.get('input[name="user[password]"]').type('AMI1234567890')
         cy.get('button[type="submit"]').click()
         cy.url().should('include', '/dashboard')
         cy.visit('https://account.africanmanagers.org/dashboard/home');
   
-      // Perform login (this should redirect to dashboard)
+      // Perform login (this should redirect to dashboard) yes this
       cy.successfullogin();
   
       // Wait for redirect and confirm page

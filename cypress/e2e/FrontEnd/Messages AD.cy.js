@@ -162,25 +162,28 @@
 
 // };
 describe('PRIVATE MESSAGE TESTS', () => {
-
   const login = () => {
     cy.visit('https://account.africanmanagers.org/ami_auth/login');
 
-    cy.get('input[name="user[login]"]')
+    cy.get('input[name="user[login]"]', { timeout: 15000 })
       .should('be.visible')
+      .clear()
       .type('stella@muraho.tech');
 
-    cy.get('input[name="user[password]"]')
+    cy.get('input[name="user[password]"]', { timeout: 15000 })
       .should('be.visible')
-      .type('AMI123456789');
+      .clear()
+      .type('AMI123456789', { log: false });
 
     cy.get('button[type="submit"]')
+      .should('be.visible')
       .click();
+
+    cy.get('#select2-gybselect-container', { timeout: 20000 })
+      .should('be.visible');
   };
 
   const navigateToMessages = () => {
-
-    // Select Academy
     cy.get('#select2-gybselect-container')
       .should('be.visible')
       .click({ force: true });
@@ -194,7 +197,6 @@ describe('PRIVATE MESSAGE TESTS', () => {
       'New academy dashboard Academy'
     ).click({ force: true });
 
-    // Open Academy Menu
     cy.get(':nth-child(8) > .dropdown > .nav-link')
       .click({ force: true });
 
@@ -203,10 +205,8 @@ describe('PRIVATE MESSAGE TESTS', () => {
       'New Academy Dashboard'
     ).click({ force: true });
 
-    // Wait for dashboard
     cy.wait(3000);
 
-    // Open Messages
     cy.contains('Messages')
       .should('be.visible')
       .click({ force: true });
@@ -215,51 +215,70 @@ describe('PRIVATE MESSAGE TESTS', () => {
   };
 
   const addMemberToPrivateChat = () => {
-
     cy.get('.lg\\:border-r > :nth-child(2) > .p-4 > .h-6')
       .should('be.visible')
       .click({ force: true });
 
     cy.get('.lg\\:px-0 > .relative > .w-full')
       .should('be.visible')
-      .type('louange');
+      .type('Stellatest');
 
-    cy.get('[phx-value-user-id="288832"] > .flex > .text-primary-gray-dark-2')
+    cy.get(
+      '[phx-value-conversation-id="7461"] > .flex-col > :nth-child(2) > .flex-1'
+    )
       .should('be.visible')
       .click({ force: true });
   };
 
   const sendPrivateMessage = () => {
-
-    const messageText = 'Hey, this is an automated private message';
+    const messageText = `Hey, this is an automated private message }`;
 
     cy.get('#message-body')
       .should('be.visible')
       .click({ force: true })
-      .type(messageText, {
-        delay: 100,
-        force: true
-      });
+      .type(messageText, { delay: 100, force: true });
 
-    cy.wait(1000);
-
-    cy.get('[type="submit"]')
+    cy.get('[type="submit"] > .cursor-pointer')
       .should('be.visible')
       .click({ force: true });
+
+    // Verify that the newly sent message is displayed
+    cy.contains(messageText, { timeout: 15000 })
+      .should('be.visible');
   };
 
-  it('Sends a private message', () => {
-
+  // Login runs before every separate test.
+  beforeEach(() => {
     cy.viewport(1920, 1080);
-
     login();
+  });
 
+  // ============================================================
+  // TEST 1 - LOGIN
+  // ============================================================
+  it('Logs in successfully', () => {
+    cy.get('#select2-gybselect-container')
+      .should('be.visible');
+  });
+
+  // ============================================================
+  // TEST 2 - OPEN MESSAGES
+  // ============================================================
+  it('Opens the Messages page', () => {
+    navigateToMessages();
+
+    cy.contains('Messages')
+      .should('be.visible');
+  });
+
+  // ============================================================
+  // TEST 3 - START A PRIVATE CHAT AND SEND A MESSAGE
+  // ============================================================
+  it('Starts a private chat and sends a message', () => {
     navigateToMessages();
 
     addMemberToPrivateChat();
 
     sendPrivateMessage();
-
   });
-
 });

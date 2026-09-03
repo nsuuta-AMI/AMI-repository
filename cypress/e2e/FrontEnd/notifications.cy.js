@@ -47,7 +47,7 @@ describe('Test the Notifications Page', () => {
 
     })
 
-    //be redirected to a notification
+    //be redirected to a notification link with deep linking
     //cy.get('#notification_7200594').click()
     cy.get(':nth-child(3) > .left-side-notification-items > .notification-body > p > .text-body-normal > a')
     //cy.get('#notification_7200594> .left-side-notification-items > .notification-body > p > .text-body-normal > a')
