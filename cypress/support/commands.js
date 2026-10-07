@@ -38,43 +38,54 @@ Cypress.Commands.add('opennewacademy', () => {
     .should('contain.text', 'AMI DEMO ACADEMY');
 });
 
-Cypress.Commands.add('Academydashboard', () => {
-  cy.wait(3000); // Wait for potential redirects or slow renders after login
-
-  // Open the select2 dropdown
+Cypress.Commands.add('Academydashboard', (academy = 'New Academy Dashboard - Quality Assurance AMI - 2026') => {
+  // Step 1: Open the academy select2 dropdown on the home page
   cy.get('#select2-gybselect-container', { timeout: 60000 })
     .should('be.visible')
-    .click({ force: true });
+    .click();
 
-  // Type to search for the academy
-  cy.get('.select2-search__field', { timeout: 10000 })
+  // Step 2: Search for the academy ("Search for academy" box)
+  cy.get('.select2-container--open .select2-search__field', { timeout: 10000 })
     .should('be.visible')
-    .clear()
-    .type('New Academy Dashboard - Quality Assurance AMI - 2026');
+    .type(academy);
 
-  // Click the matching result
-  cy.get('#select2-gybselect-results', { timeout: 10000 })
-    .contains('New Academy Dashboard - Quality Assurance AMI - 2026')
-    .click({ force: true });
+  // Step 3: Select the matching academy from the results.
+  // select2 re-renders the list on every keystroke, so clicking an <li> can hit
+  // a stale element. Wait until the list has settled on our one academy, then
+  // press Enter to choose the highlighted result.
+  // Selecting triggers a full page reload (window.location = /dashboard/set_academy?...)
+  cy.get('#select2-gybselect-results li', { timeout: 10000 })
+    .should('have.length', 1)
+    .and('contain.text', academy);
+  // Mark the current page so we can tell when the reload has really happened
+  // (the URL and the select2 label already look "done" before the reload).
+  cy.window().then((win) => {
+    win.__beforeAcademySwitch = true;
+  });
 
-  // Confirm the dropdown now shows the selected academy
+  cy.get('.select2-container--open .select2-search__field')
+    .type('{enter}');
+
+  // The marker disappears once the browser has loaded the new page
+  cy.window({ timeout: 60000 }).should('not.have.property', '__beforeAcademySwitch');
+
+  // Wait until the reloaded home page shows the selected academy
+  cy.url({ timeout: 30000 }).should('include', '/dashboard/home');
   cy.get('#select2-gybselect-container', { timeout: 30000 })
-    .should('contain.text', 'New Academy Dashboard - Quality Assurance AMI - 2026');
+    .should('contain.text', academy);
 
-  // Step 1: Click the nav-link to OPEN the dropdown menu
-  // (the dropdown won't show its links until this is clicked)
-  cy.get(':nth-child(8) > .dropdown > .nav-link', { timeout: 10000 })
-    .should('be.visible')
-    .click({ force: true });
+  // Step 4: Go to "New Academy Dashboard" from the profile menu (avatar, top right).
+  // The link is always in the DOM (the menu just hides it), and its href carries a
+  // short-lived token — so read the href at runtime and visit it, rather than
+  // relying on the dropdown opening in time (that was flaky).
+  cy.get('.profile_menu .dropdown-menu a:contains("New Academy Dashboard")', { timeout: 30000 })
+    .first()
+    .invoke('attr', 'href')
+    .then((href) => {
+      cy.visit(href);
+    });
 
-  // Step 2: Click the academy my_journey link inside the now-open dropdown.
-  // We match only the STABLE parts of the href (domain + path + academy_id).
-  // The JWT token in the full href expires — never hardcode it.
-  cy.get(':nth-child(8) > .dropdown > .dropdown-menu > [href*="account-academy.africanmanagers.org"][href*="my_journey"]', { timeout: 10000 })
-    .should('exist')
-    .click({ force: true });
-
-  // Wait for the academy dashboard/journey page to fully load
+  // Wait for the academy journey page to load
   cy.url({ timeout: 30000 }).should('include', 'my_journey');
 });
 
@@ -180,43 +191,47 @@ Cypress.Commands.add('calendarofevents', () => {
 
 
 Cypress.Commands.add('forumpage', () => {
-  // If Academydashboard already landed us on the journey page, skip clicking "Journey" again.
-  // Re-clicking it triggers a page reload which causes a detached DOM error on the chained .click().
+  // If Academydashboard already landed us on the journey page or wall, skip clicking "Journey" again.
   cy.url().then((url) => {
-    if (!url.includes('my_journey')) {
-      // Not on journey page yet — navigate there.
-      // Break the chain: find first, then re-query to click. This prevents the
-      // "subject no longer attached to DOM" error caused by page re-renders after click.
-      cy.contains('.nav-link', 'Journey', { timeout: 20000 }).as('journeyLink');
-      cy.get('@journeyLink').click({ force: true });
-
-      // Wait for the journey page to load before continuing
+    if (!url.includes('my_journey') && !url.includes('academy_wall')) {
+      cy.ljnavbar().click({ force: true });
       cy.url({ timeout: 20000 }).should('include', 'my_journey');
     }
   });
 
-  // Open the sidebar by clicking the menu icon (if it exists in the DOM).
-  // Use force:true since #menuIcon itself may be visually hidden at some viewports.
+  cy.academySidebar('Wall');
+
+  // Wait for the Wall page to fully render before handing control back to the test.
+  cy.get('#post-body', { timeout: 30000 }).should('exist');
+});
+
+// Click an item in the academy's left sidebar ("Wall", "Resources", "Courses", ...)
+Cypress.Commands.add('academySidebar', (menuName) => {
+  // The sidebar item may be an <a>, <button> or a LiveView <div>/<span>, so match
+  // any element whose own text is exactly the menu name (not content containing the word).
+  const isMenuItem = (i, el) => new RegExp(`^\\s*${menuName}\\s*$`, 'i').test(el.textContent);
+
+  // On narrow screens the sidebar is collapsed — open it only if the item isn't
+  // already visible (clicking #menuIcon on an open sidebar would close it).
   cy.get('body').then(($body) => {
-    if ($body.find('#menuIcon').length > 0) {
-      cy.get('#menuIcon').click({ force: true });
+    const itemVisible = $body.find('*').filter(isMenuItem).filter(':visible').length > 0;
+    if (!itemVisible && $body.find('#menuIcon:visible').length > 0) {
+      cy.get('#menuIcon:visible').first().click();
     }
   });
 
-  // Give the sidebar a moment to animate open
-  cy.wait(1000);
+  cy.get('a, button, li, div, span, p', { timeout: 15000 })
+    .filter(isMenuItem)
+    .filter(':visible')
+    .last() // deepest/most specific match, e.g. the <span> inside the link
+    .click();
+});
 
-  // Click the Wall link using the confirmed selector.
-  // We use [data-phx-id^="m8-phx-"] (prefix match) — "m8-phx-" is stable but the
-  // random session suffix (e.g. GMazCUt-hHlUBCEB) changes every load, so never hardcode it.
-  // force:true bypasses visibility — works even if the sidebar parent is still hidden/animating.
-  cy.get('[data-phx-id^="m8-phx-"] > .lg\\:pl-6 > .flex > .w-full', { timeout: 15000 })
-    .should('exist')
-    .click({ force: true });
+Cypress.Commands.add('academyResourcesPage', () => {
+  cy.academySidebar('Resources');
 
-  // Wait for the Wall page to fully render before handing control back to the test.
-  // #post-body is the textarea for creating a new post — its presence confirms the page is ready.
-  cy.get('#post-body', { timeout: 30000 }).should('exist');
+  // Wait for the Resources page to render (its search box)
+  cy.get('input[placeholder*="Looking for a resource"]', { timeout: 30000 }).should('exist');
 });
 
 
