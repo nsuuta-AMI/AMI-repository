@@ -16,7 +16,7 @@ describe('WALL AUTOMATION TESTS', () => {
     cy.get('input[name="user[password]"]', { timeout: 15000 })
       .should('be.visible')
       .clear()
-      .type('AMI123456789', { log: false });
+      .type('AMI12345678900', { log: false });
 
     cy.get('button[type="submit"]')
       .should('be.visible')
